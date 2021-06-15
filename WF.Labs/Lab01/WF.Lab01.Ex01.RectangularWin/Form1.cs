@@ -12,9 +12,10 @@ namespace WF.Lab01.Ex01.RectangularWin
 {
     public partial class Form1 : Form
     {
-
+        nForm myF2;
         public Form1()
         {
+            myF2 = new nForm();
             InitializeComponent();
         }
 
@@ -35,7 +36,7 @@ namespace WF.Lab01.Ex01.RectangularWin
 
         private void Button_nForm_Click(object sender, EventArgs e)
         {
-            nForm myF2 = new nForm();
+            myF2 = new nForm();
             myF2.StartPosition = FormStartPosition.Manual;
             myF2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
             myF2.Show();
