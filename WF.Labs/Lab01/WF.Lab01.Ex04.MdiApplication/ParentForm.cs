@@ -31,5 +31,12 @@ namespace WF.Lab01.Ex04.MdiApplication
         {
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
         }
+
+        private void NewMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm newChild = new ChildForm();
+            newChild.MdiParent = this;
+            newChild.Show();
+        }
     }
 }
