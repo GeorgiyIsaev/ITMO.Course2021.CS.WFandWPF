@@ -35,11 +35,21 @@ namespace WF.Lab01.Ex01.RectangularWin
         }
 
         private void Button_nForm_Click(object sender, EventArgs e)
-        {
-            myF2 = new nForm();
+        {            
             myF2.StartPosition = FormStartPosition.Manual;
             myF2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
-            myF2.Show();
+            try
+            {
+                myF2.Show();
+                myF2.Activate();
+            }
+            catch (ObjectDisposedException ex)
+            {
+                myF2 = new nForm();
+                myF2.Text = "Повторное создание формы";
+                myF2.Show();
+                myF2.Activate();
+            }
         }    
     }
 }

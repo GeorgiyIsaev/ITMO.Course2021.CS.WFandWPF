@@ -16,5 +16,11 @@ namespace WF.Lab01.Ex01.RectangularWin
         {
             InitializeComponent();
         }
+
+        private void nForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (CheckBox_Exit.Checked) return;
+            e.Cancel = true; Hide();
+        }
     }
 }
