@@ -44,6 +44,7 @@
             this.FileMenuItem,
             this.WindowMenuItem});
             this.MdiMenu.Location = new System.Drawing.Point(0, 0);
+            this.MdiMenu.MdiWindowListItem = this.WindowMenuItem;
             this.MdiMenu.Name = "MdiMenu";
             this.MdiMenu.Size = new System.Drawing.Size(404, 24);
             this.MdiMenu.TabIndex = 0;
@@ -100,6 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 282);
             this.Controls.Add(this.MdiMenu);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MdiMenu;
             this.Name = "ParentForm";
             this.Text = "Parent Form";
