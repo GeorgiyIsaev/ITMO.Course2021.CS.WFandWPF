@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF.Lab01.Ex01.RectangularWin
+namespace Lab01.Ex01.RectangularWin
 {
     static class Program
     {
