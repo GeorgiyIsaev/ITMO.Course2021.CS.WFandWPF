@@ -16,7 +16,7 @@ namespace WF.Lab01.Ex04.MdiApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ParentForm());
         }
     }
 }
