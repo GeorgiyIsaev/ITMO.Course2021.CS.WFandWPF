@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab01.Ex01.RectangularWin
+namespace WF.Lab01.Ex01.RectangularWin
 {
     public partial class Form1 : Form
     {
@@ -32,5 +32,13 @@ namespace Lab01.Ex01.RectangularWin
         {
             this.Opacity = 1;
         }
+
+        private void Button_nForm_Click(object sender, EventArgs e)
+        {
+            nForm myF2 = new nForm();
+            myF2.StartPosition = FormStartPosition.Manual;
+            myF2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
+            myF2.Show();
+        }    
     }
 }

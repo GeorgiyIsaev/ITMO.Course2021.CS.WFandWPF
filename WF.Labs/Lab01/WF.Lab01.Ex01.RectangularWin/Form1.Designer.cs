@@ -1,4 +1,4 @@
-﻿namespace Lab01.Ex01.RectangularWin
+﻿namespace WF.Lab01.Ex01.RectangularWin
 {
     partial class Form1
     {
@@ -31,6 +31,7 @@
             this.Button_BorderStyle = new System.Windows.Forms.Button();
             this.Button_Resize = new System.Windows.Forms.Button();
             this.Button_Opacity = new System.Windows.Forms.Button();
+            this.Button_nForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_BorderStyle
@@ -63,11 +64,22 @@
             this.Button_Opacity.UseVisualStyleBackColor = true;
             this.Button_Opacity.Click += new System.EventHandler(this.Button_Opacity_Click);
             // 
+            // Button_nForm
+            // 
+            this.Button_nForm.Location = new System.Drawing.Point(256, 12);
+            this.Button_nForm.Name = "Button_nForm";
+            this.Button_nForm.Size = new System.Drawing.Size(75, 41);
+            this.Button_nForm.TabIndex = 3;
+            this.Button_nForm.Text = "Button_nForm";
+            this.Button_nForm.UseVisualStyleBackColor = true;
+            this.Button_nForm.Click += new System.EventHandler(this.Button_nForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Button_nForm);
             this.Controls.Add(this.Button_Opacity);
             this.Controls.Add(this.Button_Resize);
             this.Controls.Add(this.Button_BorderStyle);
@@ -86,6 +98,7 @@
         private System.Windows.Forms.Button Button_BorderStyle;
         private System.Windows.Forms.Button Button_Resize;
         private System.Windows.Forms.Button Button_Opacity;
+        private System.Windows.Forms.Button Button_nForm;
     }
 }
 
