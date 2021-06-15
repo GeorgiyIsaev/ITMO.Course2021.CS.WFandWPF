@@ -1,4 +1,4 @@
-﻿namespace WF.Lab01.Ex02.NotRectangularWinForm
+﻿namespace WF.Lab01.Ex03.InheritanceForm
 {
     partial class Form1
     {

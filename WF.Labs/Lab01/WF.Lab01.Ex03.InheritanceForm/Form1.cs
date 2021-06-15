@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF.Lab01.Ex02.NotRectangularWinForm
+namespace WF.Lab01.Ex03.InheritanceForm
 {
     public partial class Form1 : Form
     {
