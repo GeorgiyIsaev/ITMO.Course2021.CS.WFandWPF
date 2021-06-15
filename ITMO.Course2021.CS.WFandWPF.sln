@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex03.ButtonExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex04.SimpleVSWinFormsApp", "WF.Lessons\Lesson01\WF.Lesson01.Ex04.SimpleVSWinFormsApp\WF.Lesson01.Ex04.SimpleVSWinFormsApp.csproj", "{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex05.FormsClose", "WF.Lessons\Lesson01\WF.Lesson01.Ex05.FormsClose\WF.Lesson01.Ex05.FormsClose.csproj", "{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,12 @@ Global
 		{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7}.Release|Any CPU.ActiveCfg = Release|x86
 		{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7}.Release|x86.ActiveCfg = Release|x86
 		{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7}.Release|x86.Build.0 = Release|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Debug|x86.ActiveCfg = Debug|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Debug|x86.Build.0 = Debug|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|Any CPU.ActiveCfg = Release|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|x86.ActiveCfg = Release|x86
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 		{E73D0CDF-7252-4FA3-BBB5-E002A502EE68} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 		{6AFB1C74-B173-463E-B447-FEAD8AEEAA21} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 		{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
+		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
