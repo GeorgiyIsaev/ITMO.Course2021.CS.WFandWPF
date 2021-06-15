@@ -19,8 +19,18 @@ namespace WF.Lab01.Ex01.RectangularWin
 
         private void nForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (CheckBox_Exit.Checked) return;
+            if (CheckBox_Exit.Checked || nclose) return;
             e.Cancel = true; Hide();
+        }
+        private bool nclose = false;
+        private void Button_Exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        public new void Close()
+        {
+            nclose = true;
+            base.Close();
         }
     }
 }
