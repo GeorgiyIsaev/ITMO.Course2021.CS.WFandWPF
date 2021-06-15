@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lessons", "WF.Lessons", "{10C4BEFB-0B05-472D-822E-AF6631886DCE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lessons01", "WF.Lessons01", "{10C4BEFB-0B05-472D-822E-AF6631886DCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex01.HelloWorld", "WF.Lessons\Lesson01\WF.Lesson01.Ex01.HelloWorld\WF.Lesson01.Ex01.HelloWorld.csproj", "{4D7B7A6D-4121-4940-8F28-2D8D3502F0BC}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex04.SimpleVSWinFormsApp", "WF.Lessons\Lesson01\WF.Lesson01.Ex04.SimpleVSWinFormsApp\WF.Lesson01.Ex04.SimpleVSWinFormsApp.csproj", "{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex05.FormsClose", "WF.Lessons\Lesson01\WF.Lesson01.Ex05.FormsClose\WF.Lesson01.Ex05.FormsClose.csproj", "{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex06.WinFormsAppScr", "WF.Lessons\Lesson01\WF.Lesson01.Ex06.WinFormsAppScr\WF.Lesson01.Ex06.WinFormsAppScr.csproj", "{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,14 @@ Global
 		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|Any CPU.ActiveCfg = Release|x86
 		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|x86.ActiveCfg = Release|x86
 		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1}.Release|x86.Build.0 = Release|x86
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +79,7 @@ Global
 		{6AFB1C74-B173-463E-B447-FEAD8AEEAA21} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 		{F84F19F4-96BF-4FB5-980C-DD35E89EF6B7} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 		{5C1FBAD0-3EF9-4B8A-8E32-F840393C91B1} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
+		{DFD3C5FA-3F51-479D-86E6-25F5975ECD19} = {10C4BEFB-0B05-472D-822E-AF6631886DCE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
