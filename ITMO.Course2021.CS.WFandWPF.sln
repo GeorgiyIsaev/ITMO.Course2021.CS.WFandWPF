@@ -49,11 +49,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson02.Ex09.ManyButton
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson02.Ex10.ButtonNewButton", "WF.Lessons\Lesson02\WF.Lesson02.Ex10.ButtonNewButton\WF.Lesson02.Ex10.ButtonNewButton.csproj", "{D2D8CF21-F2EA-417A-8F39-0A771E75C418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task01.UseForm.Elipse", "WF.Labs\Lab01\WF.Lab01.Ex05.Exam.UseForm\WF.Lab01.Ex05.Task01.UseForm.Elipse.csproj", "{53FBF91E-D146-4B6F-873E-A96518ED5814}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task01.UseForm.Elipse", "WF.Labs\Lab01\WF.Lab01.Ex05.Task01.UseForm.Elipse\WF.Lab01.Ex05.Task01.UseForm.Elipse.csproj", "{53FBF91E-D146-4B6F-873E-A96518ED5814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task02.UseForm.FullForm", "WF.Lab01.Ex05.Task02.UseForm\WF.Lab01.Ex05.Task02.UseForm.FullForm.csproj", "{A8F33B5F-4002-4D01-98DE-D073CF56371C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task02.UseForm.FullForm", "WF.Labs\Lab01\WF.Lab01.Ex05.Task02.UseForm.Romb\WF.Lab01.Ex05.Task02.UseForm.FullForm.csproj", "{A8F33B5F-4002-4D01-98DE-D073CF56371C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task03.UseForm.ElasticForm", "WF.Lab01.Ex05.Task03.UseForm.ElasticForm\WF.Lab01.Ex05.Task03.UseForm.ElasticForm.csproj", "{F661DC5E-4407-4989-865B-F3B97A9EAB76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task03.UseForm.ElasticForm", "WF.Labs\Lab01\WF.Lab01.Ex05.Task03.UseForm.ElasticForm\WF.Lab01.Ex05.Task03.UseForm.ElasticForm.csproj", "{F661DC5E-4407-4989-865B-F3B97A9EAB76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
