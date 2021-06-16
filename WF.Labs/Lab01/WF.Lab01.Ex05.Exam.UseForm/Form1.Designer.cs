@@ -1,4 +1,4 @@
-﻿namespace WF.Lab01.Ex05.Exam.UseForm
+﻿namespace WF.Lab01.Ex05.Task01.UseForm
 {
     partial class Form1
     {
@@ -33,18 +33,20 @@
             // 
             // Button_Exit
             // 
-            this.Button_Exit.Location = new System.Drawing.Point(291, 197);
+            this.Button_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Button_Exit.Location = new System.Drawing.Point(347, 218);
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(75, 23);
             this.Button_Exit.TabIndex = 0;
             this.Button_Exit.Text = "Закрыть";
-            this.Button_Exit.UseVisualStyleBackColor = true;
+            this.Button_Exit.UseVisualStyleBackColor = false;
             this.Button_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Button_Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

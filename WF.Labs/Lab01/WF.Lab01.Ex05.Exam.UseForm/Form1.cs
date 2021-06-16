@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF.Lab01.Ex05.Exam.UseForm
+namespace WF.Lab01.Ex05.Task01.UseForm
 {
     public partial class Form1 : Form
     {

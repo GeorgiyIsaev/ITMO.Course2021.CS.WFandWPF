@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson02.Ex09.ManyButton
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson02.Ex10.ButtonNewButton", "WF.Lessons\Lesson02\WF.Lesson02.Ex10.ButtonNewButton\WF.Lesson02.Ex10.ButtonNewButton.csproj", "{D2D8CF21-F2EA-417A-8F39-0A771E75C418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Exam.UseForm", "WF.Labs\Lab01\WF.Lab01.Ex05.Exam.UseForm\WF.Lab01.Ex05.Exam.UseForm.csproj", "{53FBF91E-D146-4B6F-873E-A96518ED5814}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex05.Task01.UseForm", "WF.Labs\Lab01\WF.Lab01.Ex05.Exam.UseForm\WF.Lab01.Ex05.Task01.UseForm.csproj", "{53FBF91E-D146-4B6F-873E-A96518ED5814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
