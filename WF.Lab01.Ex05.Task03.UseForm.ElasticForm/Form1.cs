@@ -16,5 +16,12 @@ namespace WF.Lab01.Ex05.Task03.UseForm.ElasticForm
         {
             InitializeComponent();
         }
+
+        private void Button_AddItem_Click(object sender, EventArgs e)
+        {
+            if(TextBox_Item.Text != "")
+            ListBox_Collection.Items.Insert(0, TextBox_Item.Text);
+            TextBox_Item.Text = "";
+        }
     }
 }
