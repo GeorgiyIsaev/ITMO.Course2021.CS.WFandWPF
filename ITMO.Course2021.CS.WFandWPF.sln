@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lessons01", "WF.Lessons01", "{10C4BEFB-0B05-472D-822E-AF6631886DCE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lesson01", "WF.Lesson01", "{10C4BEFB-0B05-472D-822E-AF6631886DCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson01.Ex01.HelloWorld", "WF.Lessons\Lesson01\WF.Lesson01.Ex01.HelloWorld\WF.Lesson01.Ex01.HelloWorld.csproj", "{4D7B7A6D-4121-4940-8F28-2D8D3502F0BC}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex03.InheritanceForm", "WF.Labs\Lab01\WF.Lab01.Ex03.InheritanceForm\WF.Lab01.Ex03.InheritanceForm.csproj", "{1C21745D-8AC8-40AB-BA58-6C3E26AE1F32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab01.Ex04.MdiApplication", "WF.Labs\Lab01\WF.Lab01.Ex04.MdiApplication\WF.Lab01.Ex04.MdiApplication.csproj", "{124CB86F-7A3E-4313-B4C2-CB6ABA9F9383}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lesson02", "WF.Lesson02", "{A2F02751-4009-4667-BB82-55C528860041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson02.Ex01.FormsClose", "WF.Lessons\Lesson02\WF.Lesson02.Ex01.FormsClose\WF.Lesson02.Ex01.FormsClose.csproj", "{870483AF-A235-40B1-A1A2-8BCD26998192}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,12 @@ Global
 		{124CB86F-7A3E-4313-B4C2-CB6ABA9F9383}.Release|Any CPU.Build.0 = Release|Any CPU
 		{124CB86F-7A3E-4313-B4C2-CB6ABA9F9383}.Release|x86.ActiveCfg = Release|Any CPU
 		{124CB86F-7A3E-4313-B4C2-CB6ABA9F9383}.Release|x86.Build.0 = Release|Any CPU
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Debug|x86.ActiveCfg = Debug|x86
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Debug|x86.Build.0 = Debug|x86
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Release|Any CPU.ActiveCfg = Release|x86
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Release|x86.ActiveCfg = Release|x86
+		{870483AF-A235-40B1-A1A2-8BCD26998192}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +136,7 @@ Global
 		{0351F6B3-555D-4828-AE03-976DBE46DF73} = {B7CDB18A-D55F-4646-B86E-24D09E355B48}
 		{1C21745D-8AC8-40AB-BA58-6C3E26AE1F32} = {B7CDB18A-D55F-4646-B86E-24D09E355B48}
 		{124CB86F-7A3E-4313-B4C2-CB6ABA9F9383} = {B7CDB18A-D55F-4646-B86E-24D09E355B48}
+		{870483AF-A235-40B1-A1A2-8BCD26998192} = {A2F02751-4009-4667-BB82-55C528860041}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
