@@ -16,5 +16,11 @@ namespace WF.Lab01.Ex05.Task02.UseForm
         {
             InitializeComponent();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            Hide();
+        }
     }
 }

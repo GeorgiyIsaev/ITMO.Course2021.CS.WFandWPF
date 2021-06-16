@@ -12,8 +12,10 @@ namespace WF.Lab01.Ex05.Task02.UseForm
 {
     public partial class StartForm : Form
     {
+        Form1 formbase;
         public StartForm()
         {
+            formbase = new Form1();
             InitializeComponent();
         }
 
@@ -25,8 +27,8 @@ namespace WF.Lab01.Ex05.Task02.UseForm
 
         private void Button_BaseForm_Click(object sender, EventArgs e)
         {
-            Form1 newChild = new Form1();           
-            newChild.Show();
+            formbase.Show();
+            formbase.Activate();
         }
     }
 }
