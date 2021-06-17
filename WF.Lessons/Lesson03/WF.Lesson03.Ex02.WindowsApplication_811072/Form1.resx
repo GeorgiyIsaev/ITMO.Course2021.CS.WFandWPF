@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBox2.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBox1_1f.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Standard</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="helpProvider2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 17</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button5.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="$this.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button3.ToolTip" xml:space="preserve">
+    <value>Откроется новое окно</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button5.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button5.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.AutoScrollMargin" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button3.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="button3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button4.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;textBox1_1f.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button2.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button4.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 176</value>
+  </data>
+  <data name="button1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;helpProvider1.Name" xml:space="preserve">
+    <value>helpProvider1</value>
+  </data>
+  <data name="$this.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button2.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button5.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 112</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Привет</value>
+  </data>
+  <data name="button1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="button4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textBox1_1f.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="textBox1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.HelpString" xml:space="preserve">
+    <value>Откроется новое окно</value>
+  </data>
+  <data name="textBox1.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="textBox2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button5.Text" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="&gt;&gt;textBox1_1f.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox1_1f.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button2.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value>Активизируются кнопки</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="button5.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="textBox2.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button4.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Standard</value>
+  </data>
+  <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBox2.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="button1.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox2.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox2.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button4.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox2.MaxLength" type="System.Int32, mscorlib">
+    <value>32767</value>
+  </data>
+  <data name="button4.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button1.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox1.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Standard</value>
+  </data>
+  <data name="textBox2.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button2.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox2.WordWrap" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 112</value>
+  </data>
+  <data name="textBox2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button3.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="$this.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 224</value>
+  </data>
+  <data name="button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBox2.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button2.ToolTip" xml:space="preserve">
+    <value>В окне появится приветствие</value>
+  </data>
+  <data name="button3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.HelpString" xml:space="preserve">
+    <value>Активизируются элементы управления</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="$this.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Новое окно</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="button1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox1_1f.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox2.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="textBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox1.MaxLength" type="System.Int32, mscorlib">
+    <value>32767</value>
+  </data>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="button5.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="textBox2.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1_1f.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="button4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="button4.HelpKeyword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button5.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button1.AccessibleName" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBox2.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button4.ToolTip" xml:space="preserve">
+    <value>Погаснет свет</value>
+  </data>
+  <data name="helpProvider2.HelpNamespace" xml:space="preserve">
+    <value>S:\b_C#\Microsoft _NET Framework FAQ.htm</value>
+  </data>
+  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Standard</value>
+  </data>
+  <data name="textBox2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox1_1f.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button4.HelpString" xml:space="preserve">
+    <value>Давай жми</value>
+  </data>
+  <data name="button1.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="button3.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="button5.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button5.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button4.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;helpProvider2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="textBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox1.WordWrap" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox1.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button5.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button4.HelpString1" xml:space="preserve">
+    <value>Давай жми</value>
+  </data>
+  <data name="button1.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button5.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox1.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox1.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1_1f.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBox1.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button3.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="helpProvider1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="button4.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="textBox1.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button5.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button1.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox2.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;helpProvider2.Name" xml:space="preserve">
+    <value>helpProvider2</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="helpProvider1.HelpNamespace" xml:space="preserve">
+    <value>S:\b_C#\C#_lessons.htm</value>
+  </data>
+  <data name="button5.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button4.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button4.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 216</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
+  </data>
+  <data name="textBox1.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;helpProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="textBox2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolTip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 17</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button5.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button5.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Standard</value>
+  </data>
+  <data name="button1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="textBox2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultLocation</value>
+  </data>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button3.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>292, 266</value>
+  </data>
+  <data name="button3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button5.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="textBox1_1f.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="textBox1_1f.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button3.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Ввод строки приветствия</value>
+  </data>
+  <data name="button4.HelpKeyword1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button2.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 32</value>
+  </data>
+  <data name="button3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button3.HelpNavigator1" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Конец</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 20</value>
+  </data>
+  <data name="textBox2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="button4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button2.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="button3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="button3.HelpString1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="button1.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox1_1f.ShowHelp" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBox1_1f.Name" xml:space="preserve">
+    <value>textBox1_1f</value>
+  </data>
+  <data name="&gt;&gt;textBox1_1f.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.ShowHelp1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox1_1f.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 112</value>
+  </data>
+  <metadata name="helpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ru-RU</value>
+  </metadata>
+  <metadata name="helpProvider2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>137, 17</value>
+  </metadata>
+</root>
