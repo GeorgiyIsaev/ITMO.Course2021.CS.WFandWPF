@@ -11,11 +11,12 @@ namespace WindowsApplication_811072
 	/// </summary>
 	public class Form2 : System.Windows.Forms.Form
 	{
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button Button_Enter;
 		public System.Windows.Forms.TextBox textBox1_2f;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Button Button_Cansel;
         private IContainer components;
 
 		public Form2()
@@ -68,23 +69,24 @@ namespace WindowsApplication_811072
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Button_Enter = new System.Windows.Forms.Button();
             this.textBox1_2f = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Button_Cansel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Button_Enter
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(90, 122);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Передача строки";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Button_Enter.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Button_Enter.Location = new System.Drawing.Point(90, 122);
+            this.Button_Enter.Name = "Button_Enter";
+            this.Button_Enter.Size = new System.Drawing.Size(112, 23);
+            this.Button_Enter.TabIndex = 1;
+            this.Button_Enter.Text = "Передача строки";
+            this.Button_Enter.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1_2f
             // 
@@ -116,14 +118,26 @@ namespace WindowsApplication_811072
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // Button_Cansel
+            // 
+            this.Button_Cansel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Button_Cansel.Location = new System.Drawing.Point(90, 164);
+            this.Button_Cansel.Name = "Button_Cansel";
+            this.Button_Cansel.Size = new System.Drawing.Size(112, 23);
+            this.Button_Cansel.TabIndex = 5;
+            this.Button_Cansel.Text = "Отмена";
+            // 
             // Form2
             // 
+            this.AcceptButton = this.Button_Enter;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.CancelButton = this.Button_Cansel;
             this.ClientSize = new System.Drawing.Size(292, 266);
+            this.Controls.Add(this.Button_Cansel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1_2f);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Button_Enter);
             this.Name = "Form2";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -194,5 +208,15 @@ namespace WindowsApplication_811072
            
             }
         }
-	}
+
+        /*Вносим в проект изменение что бы диалоговое окно реагировало на нажатие клавиш
+        -Создаем новую кнопку (Отмент)
+        -Для свойства кнопки DialogResult выбераем Cencel
+        -Переходим в свойства окна
+        -Для свойства окна AcceptButton выбераем нужную нам кнопку которая 
+         вводит данные, теперь при нажатии на Enter будит сробатывать это кнопка
+        -Для свойства CanselButton выбераем кнопку с отменой, теперь при 
+        нажатии на Esc сробатывает событие этой кнопки
+         */
+    }
 }
