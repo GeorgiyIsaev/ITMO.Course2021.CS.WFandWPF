@@ -47,13 +47,13 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(42, 153);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 20);
+            this.textBox1.Size = new System.Drawing.Size(247, 20);
             this.textBox1.TabIndex = 3;
             // 
             // userControlTextClear1
             // 
             this.userControlTextClear1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.userControlTextClear1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.userControlTextClear1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.userControlTextClear1.Location = new System.Drawing.Point(42, 12);
             this.userControlTextClear1.Name = "userControlTextClear1";
             this.userControlTextClear1.Size = new System.Drawing.Size(247, 112);
@@ -61,6 +61,7 @@
             this.userControlTextClear1.TextB = 0;
             this.userControlTextClear1.TextM = "";
             this.userControlTextClear1.ButText += new TextBoxClear.UserControlTextClear.MyEvent(this.userControlTextClear1_ButText);
+            this.userControlTextClear1.ClearText += new TextBoxClear.UserControlTextClear.MyEvent2(this.userControlTextClear1_ClearText);
             // 
             // Form1
             // 

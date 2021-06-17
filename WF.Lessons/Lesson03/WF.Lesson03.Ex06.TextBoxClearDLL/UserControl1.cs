@@ -22,17 +22,15 @@ namespace TextBoxClear
             TextB = 1; 
         }
 
-        [
-         Category("My"),
-         Description("Передает значение поля")
+        [ 
+        Category("My"),
+        Description("Передает значение поля")
         ]
         public string TextM
-
         {
             get { return textBox1.Text; }
             set { textBox1.Text = value; }
         }
-
         public int TextB { get; set; }
 
         [
@@ -58,6 +56,21 @@ namespace TextBoxClear
         {
             ButText(2);
             TextB = 2;
+        }
+
+
+
+        public delegate void MyEvent2(String stringPassed);
+        [
+        Category("Очистка"),
+        Description("Реагирует на очистку поля.")
+        ]
+        public event MyEvent2 ClearText;
+
+        private void Button_Clear_Click(object sender, EventArgs e)
+        {
+            this.ClearText(textBox1.Text);
+            textBox1.Text = "";
         }
     }
 }

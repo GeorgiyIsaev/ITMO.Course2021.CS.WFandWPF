@@ -19,12 +19,13 @@ namespace TextBoxClearTest
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = userControlTextClear1.TextB.ToString();
-          //  MessageBox.Show(userControlTextClear1.TextM);
+            MessageBox.Show(userControlTextClear1.TextM);
             
         }
 
         private void userControlTextClear1_ClearText(string stringPassed)
         {
+            /*Необходимо добавить в событие ClearText для пользовательского контроль*/
             MessageBox.Show("Выполняется очистка (значение - " + stringPassed + ")", 
                 "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information) ;
         }
