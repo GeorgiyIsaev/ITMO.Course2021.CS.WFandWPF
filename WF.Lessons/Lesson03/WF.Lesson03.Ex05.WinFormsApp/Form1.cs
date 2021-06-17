@@ -30,5 +30,10 @@ namespace WinFormsApp
             //   var but = (Button)sender;
            //   but.Text = "Fin";
         }
+
+        private void beepButtonExclamation2_Click(object sender, EventArgs e)
+        {
+            beepButtonExclamation2.Text = "BeepNew";
+        }
     }
 }

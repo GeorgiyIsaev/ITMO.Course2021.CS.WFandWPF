@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.beepButtonExclamation1 = new ButtonLibrary.BeepButtonExclamation();
+            this.beepButtonExclamation2 = new ButtonLibrary.BeepButtonExclamation();
             this.SuspendLayout();
             // 
             // beepButtonExclamation1
@@ -41,11 +42,22 @@
             this.beepButtonExclamation1.UseVisualStyleBackColor = true;
             this.beepButtonExclamation1.Click += new System.EventHandler(this.beepButtonExclamation1_Click);
             // 
+            // beepButtonExclamation2
+            // 
+            this.beepButtonExclamation2.Location = new System.Drawing.Point(61, 189);
+            this.beepButtonExclamation2.Name = "beepButtonExclamation2";
+            this.beepButtonExclamation2.Size = new System.Drawing.Size(159, 23);
+            this.beepButtonExclamation2.TabIndex = 1;
+            this.beepButtonExclamation2.Text = "beepButtonExclamation2";
+            this.beepButtonExclamation2.UseVisualStyleBackColor = true;
+            this.beepButtonExclamation2.Click += new System.EventHandler(this.beepButtonExclamation2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.beepButtonExclamation2);
             this.Controls.Add(this.beepButtonExclamation1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private ButtonLibrary.BeepButtonExclamation beepButtonExclamation1;
+        private ButtonLibrary.BeepButtonExclamation beepButtonExclamation2;
     }
 }
 
