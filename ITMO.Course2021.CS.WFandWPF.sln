@@ -85,7 +85,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson03.Ex09.OuthsNCros
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lab02", "WF.Lab02", "{7B811E7B-5488-4714-B7C1-A1B40CD084BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab02.Ex01.EventClick", "WF.Lab02.Ex01.EventClick\WF.Lab02.Ex01.EventClick.csproj", "{44025155-8613-4994-BFB2-C16A7F0CF9AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab02.Ex01.EventClick", "WF.Labs\Lab02\WF.Lab02.Ex01.EventClick\WF.Lab02.Ex01.EventClick.csproj", "{44025155-8613-4994-BFB2-C16A7F0CF9AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
