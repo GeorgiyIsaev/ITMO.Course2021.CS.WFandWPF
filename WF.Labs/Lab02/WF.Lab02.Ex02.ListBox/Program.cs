@@ -16,7 +16,7 @@ namespace WF.Lab02.Ex02.ListBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new TestList());
         }
     }
 }
