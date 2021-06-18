@@ -97,7 +97,7 @@
       <Name>System.XML</Name>
     </Reference>
     <ProjectReference Include="..\Controls\WF.Lesson03.Ex07.ControlsDLL.csproj">
-      <Name>Controls</Name>
+      <Name>WF.Lesson03.Ex07.ControlsDLL</Name>
       <Project>{5210B13C-A535-41A0-B260-85C1FF8DB5C6}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
