@@ -53,6 +53,7 @@ namespace WF.Lab02.Ex08.KeyPress
         {
             if (char.IsDigit(e.KeyChar))
             {
+                errorProvider1.SetError(textBox1, "Must be letter");
                 e.Handled = true;
                 MessageBox.Show("Поле Name не может содержать цифры");
             }
@@ -60,10 +61,32 @@ namespace WF.Lab02.Ex08.KeyPress
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar))
+
+        //    if (!char.IsDigit(e.KeyChar))
+        //    {
+        //        e.Handled = true;
+        //        MessageBox.Show("Поле PIN не может содержать буквы");
+        //    }
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (textBox2.Text == "")
             {
-                e.Handled = true;
-                MessageBox.Show("Поле PIN не может содержать буквы");
+                e.Cancel = false;
+            }
+            else
+            {
+                try
+                {
+                    double.Parse(textBox2.Text);
+                    e.Cancel = false;
+                }
+                catch
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Поле PIN не может содержать буквы");
+                }
             }
         }
     }
