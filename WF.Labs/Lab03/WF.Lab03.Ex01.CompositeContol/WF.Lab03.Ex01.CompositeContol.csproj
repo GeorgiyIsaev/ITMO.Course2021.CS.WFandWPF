@@ -72,6 +72,9 @@
     <EmbeddedResource Include="UserControlTimer.resx">
       <DependentUpon>UserControlTimer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinTimer1.resx">
+      <DependentUpon>WinTimer1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

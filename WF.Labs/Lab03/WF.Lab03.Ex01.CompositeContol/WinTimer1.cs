@@ -16,5 +16,17 @@ namespace WF.Lab03.Ex01.CompositeContol
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                userControlTimer1.TimeEnabled = false;
+            }
+            else
+            {
+                userControlTimer1.TimeEnabled = true;
+            }
+        }
     }
 }
