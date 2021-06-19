@@ -18,5 +18,7 @@ namespace WF.Lab02.Ex06.InputOutput
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new BiblWorm());
         }
+
+        //Для свойства MaximizeBox ставим False, что бы запретить разворачивание окна
     }
 }
