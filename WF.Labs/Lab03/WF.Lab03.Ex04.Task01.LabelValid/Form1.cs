@@ -16,5 +16,20 @@ namespace WF.Lab03.Ex04.Task01.LabelValid
         {
             InitializeComponent();
         }
+
+        private void Button_Add_Click(object sender, EventArgs e)
+        {
+            if (TBValidForm.TextA != "" && TBValidForm.TextB != "")
+            {
+                string item = TBValidForm.TextA + " (" + TBValidForm.TextB + ")";
+                ListBox_NameAndAge.Items.Add(item);
+                TBValidForm.TextA = "";
+                TBValidForm.TextB = "";
+            }
+            else
+            {
+                MessageBox.Show("Данные не в ведены!");
+            }
+        }
     }
 }
