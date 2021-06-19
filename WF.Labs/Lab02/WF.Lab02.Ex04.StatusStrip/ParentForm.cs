@@ -15,8 +15,9 @@ namespace WF.Lab02.Ex04.StatusStrip
         public ParentForm()
         {
             InitializeComponent();
-        }
-
+            // Свойству Text панели spData устанавливается текущая дата
+            spData.Text = Convert.ToString(System.DateTime.Today.ToLongDateString());
+        }  
         private void ExitMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,11 +25,13 @@ namespace WF.Lab02.Ex04.StatusStrip
 
         private void WindowCascadeMenuItem_Click(object sender, EventArgs e)
         {
+            spWin.Text = "Windows is cascade";
             this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
         }
 
         private void WindowTileMenuItem_Click(object sender, EventArgs e)
         {
+            spWin.Text = "Windows is horizontal";
             this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
         }
 
@@ -53,9 +56,11 @@ namespace WF.Lab02.Ex04.StatusStrip
                     newChild.Text = newChild.Text + " " + ++openDocuments;
                     break;
                 case "Cascade":
+                    spWin.Text = "Windows is cascade";
                     this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
                     break;
                 case "Title":
+                    spWin.Text = "Windows is horizontal";
                     this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
                     break;                 
             }
