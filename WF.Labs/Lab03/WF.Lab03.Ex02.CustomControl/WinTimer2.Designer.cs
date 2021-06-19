@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.userControlTimer21 = new WF.Lab03.Ex02.CustomControl.UserControlTimer2();
             this.SuspendLayout();
+            // 
+            // userControlTimer21
+            // 
+            this.userControlTimer21.Location = new System.Drawing.Point(13, 13);
+            this.userControlTimer21.Name = "userControlTimer21";
+            this.userControlTimer21.Size = new System.Drawing.Size(75, 23);
+            this.userControlTimer21.TabIndex = 0;
+            this.userControlTimer21.Text = "userControlTimer21";
             // 
             // WinTimer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(246, 106);
+            this.Controls.Add(this.userControlTimer21);
             this.Name = "WinTimer2";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +52,8 @@
         }
 
         #endregion
+
+        private UserControlTimer2 userControlTimer21;
     }
 }
 
