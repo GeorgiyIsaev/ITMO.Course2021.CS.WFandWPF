@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30016327-8544-4255-9E05-C2E5F8BE0BB0}</ProjectGuid>
+    <ProjectGuid>{8A5EC847-5D87-43C5-835B-57C572094C36}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WF.Lab02.Ex03.ToolStrip</RootNamespace>
-    <AssemblyName>WF.Lab02.Ex03.ToolStrip</AssemblyName>
+    <RootNamespace>WF.Lab02.Ex04.StatusStrip</RootNamespace>
+    <AssemblyName>WF.Lab02.Ex04.StatusStrip</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
