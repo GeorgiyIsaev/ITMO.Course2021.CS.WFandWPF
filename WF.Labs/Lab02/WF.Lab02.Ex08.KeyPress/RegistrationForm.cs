@@ -34,6 +34,7 @@ namespace WF.Lab02.Ex08.KeyPress
                 txt.Name = "textboxx";
                 txt.TabIndex = 1;
                 txt.Text = "";
+                txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
                 groupBox1.Controls.Add(txt);
             }
             else
@@ -45,6 +46,24 @@ namespace WF.Lab02.Ex08.KeyPress
                     groupBox1.Controls.RemoveAt(lcv - 1);
                     lcv -= 1;
                 }
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле Name не может содержать цифры");
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле PIN не может содержать буквы");
             }
         }
     }
