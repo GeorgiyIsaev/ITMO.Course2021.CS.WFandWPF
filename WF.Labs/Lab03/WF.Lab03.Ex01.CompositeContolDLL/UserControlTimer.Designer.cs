@@ -1,4 +1,4 @@
-﻿namespace WF.Lab03.Ex01.CompositeContol
+﻿namespace WF.Lab03.Ex01.CompositeContolDLL
 {
     partial class UserControlTimer
     {

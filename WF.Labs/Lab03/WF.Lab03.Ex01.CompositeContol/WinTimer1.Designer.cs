@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.userControlTimer1 = new WF.Lab03.Ex01.CompositeContol.UserControlTimer();
+            this.userControlTimer1 = new WF.Lab03.Ex01.CompositeContolDLL.UserControlTimer();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -45,10 +45,10 @@
             // 
             // userControlTimer1
             // 
-            this.userControlTimer1.Location = new System.Drawing.Point(13, 24);
+            this.userControlTimer1.Location = new System.Drawing.Point(13, 13);
             this.userControlTimer1.Name = "userControlTimer1";
             this.userControlTimer1.Size = new System.Drawing.Size(104, 23);
-            this.userControlTimer1.TabIndex = 0;
+            this.userControlTimer1.TabIndex = 2;
             this.userControlTimer1.TimeEnabled = true;
             // 
             // WinTimer1
@@ -56,8 +56,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.userControlTimer1);
+            this.Controls.Add(this.checkBox1);
             this.Name = "WinTimer1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -66,9 +66,8 @@
         }
 
         #endregion
-
-        private UserControlTimer userControlTimer1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private CompositeContolDLL.UserControlTimer userControlTimer1;
     }
 }
 

@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControlTimer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlTimer.Designer.cs">
-      <DependentUpon>UserControlTimer.cs</DependentUpon>
-    </Compile>
     <Compile Include="WinTimer1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,9 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControlTimer.resx">
-      <DependentUpon>UserControlTimer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="WinTimer1.resx">
       <DependentUpon>WinTimer1.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Lab03.Ex01.CompositeContolDLL\WF.Lab03.Ex01.CompositeContolDLL.csproj">
+      <Project>{73a395b8-edd1-4654-88d4-61008806d680}</Project>
+      <Name>WF.Lab03.Ex01.CompositeContolDLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

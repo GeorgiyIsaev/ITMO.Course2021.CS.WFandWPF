@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF.Lab03.Ex01.CompositeContol
+namespace WF.Lab03.Ex01.CompositeContolDLL
 {
     public partial class UserControlTimer : UserControl
     {
