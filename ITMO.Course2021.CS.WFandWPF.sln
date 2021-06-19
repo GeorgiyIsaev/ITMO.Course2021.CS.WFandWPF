@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab02.Ex08.KeyPress", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab02.Ex09.Task01.LevelApEx06", "WF.Labs\Lab02\WF.Lab02.Ex09.Task01.LevelApEx06\WF.Lab02.Ex09.Task01.LevelApEx06.csproj", "{C18DDE34-3969-4018-A81A-0E4887581724}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lab03", "WF.Lab03", "{D7C1BB79-33B2-4A45-9334-1D9517417E97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
