@@ -52,6 +52,7 @@
     <Compile Include="BiblWorm.Designer.cs">
       <DependentUpon>BiblWorm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bibl\Jurnal.cs" />
     <Compile Include="Bibl\Book.cs" />
     <Compile Include="Bibl\IPubs.cs" />
     <Compile Include="Bibl\Item.cs" />

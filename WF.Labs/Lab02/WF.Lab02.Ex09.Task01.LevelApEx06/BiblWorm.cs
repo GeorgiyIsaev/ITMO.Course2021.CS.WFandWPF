@@ -20,6 +20,7 @@ namespace WF.Lab02.Ex09.Task01.LevelApEx06
             InitializeComponent();
         }
 
+        /*ЭТО СВОЙСТВА КНИГ*/
         public string Author // автор
         {
             get { return textBox1.Text; }
@@ -71,6 +72,55 @@ namespace WF.Lab02.Ex09.Task01.LevelApEx06
             set { numericUpDown4.Value = value; }
         }
 
+        /*ЭТО СВОЙСТВА ЖУРНАЛОВ*/
+        public string AuthorJurnal // автор
+        {
+            get { return textBox4.Text; }
+            set { textBox4.Text = value; }
+        }
+        public string TitleJurnal  // Название
+        {
+            get { return textBox5.Text; }
+            set { textBox5.Text = value; }
+        }
+        public string PublishHouseJurnal  // Издательство
+        {
+            get { return textBox6.Text; }
+            set { textBox6.Text = value; }
+        }
+        public int PageJurnal  // Количество страниц
+        {
+            get { return (int)numericUpDown4.Value; }
+            set { numericUpDown4.Value = value; }
+        }
+        public int YearJurnal  // Год издания
+        {
+            get { return (int)numericUpDown5.Value; }
+            set { numericUpDown5.Value = value; }
+        }
+        public int InvNumberJurnal  // Инвентарный номер
+        {
+            get { return (int)numericUpDown6.Value; }
+            set { numericUpDown6.Value = value; }
+        }
+        public bool ExistenceJurnal  // Наличие
+        {
+            get { return checkBox4.Checked; }
+            set { checkBox4.Checked = value; }
+        }      
+        public bool ReturnTimeJurnal  // Возвращение в срок
+        {
+            get { return checkBox5.Checked; }
+            set { checkBox5.Checked = value; }
+        }
+        public int PeriodUseJurnal  // Инвентарный номер
+        {
+            get { return (int)numericUpDown4.Value; }
+            set { numericUpDown4.Value = value; }
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             Book b = new Book(Author, Title, PublishHouse,
@@ -95,6 +145,20 @@ namespace WF.Lab02.Ex09.Task01.LevelApEx06
                 sb.Append("\n" + item.ToString());
             }
             richTextBox1.Text = sb.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Jurnal b = new Jurnal(AuthorJurnal, TitleJurnal, PublishHouseJurnal,
+               PageJurnal, YearJurnal, InvNumberJurnal, ExistenceJurnal);
+            if (ReturnTimeJurnal)
+                b.ReturnSrok();
+            b.PriceBook(PeriodUseJurnal);
+            its.Add(b);
+            Author = Title = PublishHouseJurnal = "";
+            Page = InvNumberJurnal = PeriodUseJurnal = 0;
+            Year = 0;
+            Existence = ReturnTimeJurnal = false;
         }
     }
 }
