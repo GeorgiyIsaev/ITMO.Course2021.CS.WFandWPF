@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TextBoxA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TextBoxB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TextBoxC = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelEnd = new System.Windows.Forms.Label();
             this.ResultOut = new System.Windows.Forms.RichTextBox();
             this.ButtonEqualSqrt = new System.Windows.Forms.Button();
             this.ButtonCloseSqrt = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBoxA
@@ -47,6 +50,7 @@
             this.TextBoxA.Size = new System.Drawing.Size(75, 24);
             this.TextBoxA.TabIndex = 0;
             this.TextBoxA.Text = "0";
+            this.TextBoxA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxA_KeyPress);
             // 
             // label1
             // 
@@ -66,6 +70,7 @@
             this.TextBoxB.Size = new System.Drawing.Size(75, 24);
             this.TextBoxB.TabIndex = 2;
             this.TextBoxB.Text = "0";
+            this.TextBoxB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxB_KeyPress);
             // 
             // label2
             // 
@@ -85,16 +90,17 @@
             this.TextBoxC.Size = new System.Drawing.Size(75, 24);
             this.TextBoxC.TabIndex = 4;
             this.TextBoxC.Text = "0";
+            this.TextBoxC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxC_KeyPress);
             // 
-            // label3
+            // labelEnd
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(346, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "= 0";
+            this.labelEnd.AutoSize = true;
+            this.labelEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEnd.Location = new System.Drawing.Point(346, 24);
+            this.labelEnd.Name = "labelEnd";
+            this.labelEnd.Size = new System.Drawing.Size(29, 18);
+            this.labelEnd.TabIndex = 5;
+            this.labelEnd.Text = "= 0";
             // 
             // ResultOut
             // 
@@ -127,6 +133,10 @@
             this.ButtonCloseSqrt.UseVisualStyleBackColor = true;
             this.ButtonCloseSqrt.Click += new System.EventHandler(this.ButtonCloseSqrt_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // SqrtEquation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,7 +146,7 @@
             this.Controls.Add(this.ButtonCloseSqrt);
             this.Controls.Add(this.ButtonEqualSqrt);
             this.Controls.Add(this.ResultOut);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelEnd);
             this.Controls.Add(this.TextBoxC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TextBoxB);
@@ -146,6 +156,7 @@
             this.MaximizeBox = false;
             this.Name = "SqrtEquation";
             this.Text = "SqrtEquation";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,9 +169,10 @@
         private System.Windows.Forms.TextBox TextBoxB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TextBoxC;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelEnd;
         private System.Windows.Forms.RichTextBox ResultOut;
         private System.Windows.Forms.Button ButtonEqualSqrt;
         private System.Windows.Forms.Button ButtonCloseSqrt;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

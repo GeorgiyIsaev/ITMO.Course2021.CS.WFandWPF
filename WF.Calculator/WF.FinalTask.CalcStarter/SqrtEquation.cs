@@ -64,8 +64,13 @@ namespace SimpleCalculator
             x1 = 0;
             x2 = 0;
 
-            double d = b * b - 4 * a * c;
+            if (a == 0 && b == 0 && c!=0)
+            {
+                i = -1;
+                return i;
+            }
 
+            double d = b * b - 4 * a * c;            
             if (d > 0)
             {
                 x1 = (-b + Math.Sqrt(d)) / (2 * a);
@@ -83,6 +88,63 @@ namespace SimpleCalculator
             {
                 i = -1;
                 return i;
+            }
+        }
+
+        private void TextBoxA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '-') || (e.KeyChar == '.'))
+            {
+                e.Handled = false;
+                errorProvider1.SetError(TextBoxA, string.Empty);
+
+            }
+            else if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(TextBoxA, "Можно вводить только цифры");
+            }
+            else
+            {
+                errorProvider1.SetError(TextBoxA, string.Empty);
+            }
+        }
+
+        private void TextBoxB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '-') || (e.KeyChar == '.'))
+            {
+                e.Handled = false;
+                errorProvider1.SetError(TextBoxB, string.Empty);
+
+            }
+            else if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(TextBoxB, "Можно вводить только цифры");
+            }
+            else
+            {
+                errorProvider1.SetError(TextBoxB, string.Empty);
+            }
+        }
+
+        private void TextBoxC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar == '-') || (e.KeyChar == '.'))
+            {
+                e.Handled = false;
+                errorProvider1.SetError(TextBoxC, string.Empty);            
+
+            }
+            else if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;               
+                errorProvider1.SetError(TextBoxC, "Можно вводить только цифры");
+            }
+            else
+            {
+                errorProvider1.SetError(TextBoxC, string.Empty);
             }
         }
     }
