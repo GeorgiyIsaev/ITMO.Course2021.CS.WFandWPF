@@ -61,13 +61,9 @@ namespace SimpleCalculator
         private Button KeySqrtY;
         private Button KeyPowY;
         private Button KeySqrtEquation;
+        private IContainer components;
 
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.Container components = null;
-
-		public CalcUI()
+        public CalcUI()
 		{
 			//
 			// Required for Windows Form Designer support
@@ -590,6 +586,7 @@ namespace SimpleCalculator
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simple Calculator";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.CalcUI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -756,6 +753,41 @@ namespace SimpleCalculator
         private void KeyReverse_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcReverse();           
+        }
+
+
+
+        private void CalcUI_Load(object sender, EventArgs e)
+        {
+            /*Всплывающие подсказки*/
+            ToolTip t1 = new ToolTip();
+            t1.SetToolTip(KeyZero, "Ноль"); 
+            t1.SetToolTip(KeyOne, "Один");
+            t1.SetToolTip(KeyTwo, "Два");
+            t1.SetToolTip(KeyThree, "Три");
+            t1.SetToolTip(KeySqrtY, "Кубический корень");
+            t1.SetToolTip(KeySqrt, "Квадратный корень"); 
+            t1.SetToolTip(KeySqrtEquation, "Квадратное уравнение");
+            t1.SetToolTip(KeySix, "Шесть");
+            t1.SetToolTip(KeySign, "Отрицательное значение"); 
+            t1.SetToolTip(KeySeven, "Семь");
+            t1.SetToolTip(KeyReverse, "Перевернуть дробь");
+            t1.SetToolTip(KeyPowY, "Число в степени");
+            t1.SetToolTip(KeyPow, "Возвести в квадратную степень");
+            t1.SetToolTip(KeyPoint, "Точка");
+            t1.SetToolTip(KeyPlus, "Сложить");
+            t1.SetToolTip(KeyNine, "Девять");
+            t1.SetToolTip(KeyMultiply, "Умножить");
+            t1.SetToolTip(KeyMinus, "Вычесть");
+            t1.SetToolTip(KeyFour, "Четыри"); 
+            t1.SetToolTip(KeyFive, "Пять");
+            t1.SetToolTip(KeyFactorial, "Факториал");
+            t1.SetToolTip(KeyEight, "Восемь");
+            t1.SetToolTip(KeyExit, "Выход");
+            t1.SetToolTip(KeyEqual, "Равно");
+            t1.SetToolTip(KeyDivide, "Разделить");
+            t1.SetToolTip(KeyDate, "Дата");
+            t1.SetToolTip(KeyClear, "Очистить");
         }
     }
 }
