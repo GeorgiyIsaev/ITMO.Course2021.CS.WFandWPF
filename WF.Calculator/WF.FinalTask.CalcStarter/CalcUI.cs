@@ -752,12 +752,12 @@ namespace SimpleCalculator
 
         private void KeyFactorial_Click(object sender, EventArgs e)
         {
-            //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+            OutputDisplay.Text = CalcEngine.CalcFactorial();
         }
 
         private void KeyReverse_Click(object sender, EventArgs e)
         {
-            //eReverse    //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+            OutputDisplay.Text = CalcEngine.CalcReverse();
         }
     }
 }
