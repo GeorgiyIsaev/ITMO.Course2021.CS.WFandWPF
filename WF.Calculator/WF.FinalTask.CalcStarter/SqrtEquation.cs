@@ -16,5 +16,15 @@ namespace SimpleCalculator
         {
             InitializeComponent();
         }
+
+        private void ButtonCloseSqrt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonEqualSqrt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

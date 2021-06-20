@@ -541,6 +541,7 @@ namespace SimpleCalculator
             this.KeySqrtEquation.Size = new System.Drawing.Size(88, 40);
             this.KeySqrtEquation.TabIndex = 29;
             this.KeySqrtEquation.TabStop = false;
+            this.KeySqrtEquation.Click += new System.EventHandler(this.KeySqrtEquation_Click);
             // 
             // CalcUI
             // 
@@ -788,6 +789,12 @@ namespace SimpleCalculator
             t1.SetToolTip(KeyDivide, "Разделить");
             t1.SetToolTip(KeyDate, "Дата");
             t1.SetToolTip(KeyClear, "Очистить");
+        }
+
+        private void KeySqrtEquation_Click(object sender, EventArgs e)
+        {
+            SqrtEquation sqrtEquation = new SqrtEquation();
+            sqrtEquation.ShowDialog();
         }
     }
 }
