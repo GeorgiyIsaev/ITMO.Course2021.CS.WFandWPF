@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TextBoxC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.ResultOut = new System.Windows.Forms.RichTextBox();
             this.ButtonEqualSqrt = new System.Windows.Forms.Button();
             this.ButtonCloseSqrt = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,6 +46,7 @@
             this.TextBoxA.Name = "TextBoxA";
             this.TextBoxA.Size = new System.Drawing.Size(75, 24);
             this.TextBoxA.TabIndex = 0;
+            this.TextBoxA.Text = "0";
             // 
             // label1
             // 
@@ -64,6 +65,7 @@
             this.TextBoxB.Name = "TextBoxB";
             this.TextBoxB.Size = new System.Drawing.Size(75, 24);
             this.TextBoxB.TabIndex = 2;
+            this.TextBoxB.Text = "0";
             // 
             // label2
             // 
@@ -82,6 +84,7 @@
             this.TextBoxC.Name = "TextBoxC";
             this.TextBoxC.Size = new System.Drawing.Size(75, 24);
             this.TextBoxC.TabIndex = 4;
+            this.TextBoxC.Text = "0";
             // 
             // label3
             // 
@@ -93,15 +96,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "= 0";
             // 
-            // RichTextBox
+            // ResultOut
             // 
-            this.RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.RichTextBox.Location = new System.Drawing.Point(12, 49);
-            this.RichTextBox.Name = "RichTextBox";
-            this.RichTextBox.ReadOnly = true;
-            this.RichTextBox.Size = new System.Drawing.Size(247, 96);
-            this.RichTextBox.TabIndex = 6;
-            this.RichTextBox.Text = "";
+            this.ResultOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ResultOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ResultOut.Location = new System.Drawing.Point(12, 49);
+            this.ResultOut.Name = "ResultOut";
+            this.ResultOut.ReadOnly = true;
+            this.ResultOut.Size = new System.Drawing.Size(247, 96);
+            this.ResultOut.TabIndex = 6;
+            this.ResultOut.Text = "";
             // 
             // ButtonEqualSqrt
             // 
@@ -131,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(390, 151);
             this.Controls.Add(this.ButtonCloseSqrt);
             this.Controls.Add(this.ButtonEqualSqrt);
-            this.Controls.Add(this.RichTextBox);
+            this.Controls.Add(this.ResultOut);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TextBoxC);
             this.Controls.Add(this.label2);
@@ -139,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBoxA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "SqrtEquation";
             this.Text = "SqrtEquation";
             this.ResumeLayout(false);
@@ -154,7 +159,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TextBoxC;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox RichTextBox;
+        private System.Windows.Forms.RichTextBox ResultOut;
         private System.Windows.Forms.Button ButtonEqualSqrt;
         private System.Windows.Forms.Button ButtonCloseSqrt;
     }
