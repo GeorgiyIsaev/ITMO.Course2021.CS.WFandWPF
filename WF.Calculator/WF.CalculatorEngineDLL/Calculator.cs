@@ -226,20 +226,28 @@ namespace Calculator
 			return (stringAnswer);
 		}
 
-		private void KeyPowY_Click(object sender, EventArgs e)
-		{
-			//ePowY //ePow
-			numericAnswer = Math.Pow(firstNumber, secondNumber);
+		public static string CalcSqrt()
+		{			
+			double numHold;
+			if (stringAnswer != "")
+			{
+				numHold = System.Convert.ToDouble(stringAnswer);
+				numHold = Math.Sqrt(numHold);
+				stringAnswer = System.Convert.ToString(numHold);
+			}
+			return (stringAnswer);
 		}
 
-		private void KeySqrt_Click(object sender, EventArgs e)
-		{
-			// eSQrt  //ePowY //ePow
-		}
-
-		private void KeySqrtY_Click(object sender, EventArgs e)
-		{
-			// eSQrtY // eSQrt  //ePowY //ePow
+		public static string CalcSqrtY()
+		{			
+			double numHold;
+			if (stringAnswer != "")
+			{
+				numHold = System.Convert.ToDouble(stringAnswer);
+				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
+				stringAnswer = System.Convert.ToString(numHold);
+			}
+			return (stringAnswer);
 		}
 
 		private void KeyFactorial_Click(object sender, EventArgs e)

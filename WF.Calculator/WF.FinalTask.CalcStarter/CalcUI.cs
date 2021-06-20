@@ -742,12 +742,12 @@ namespace SimpleCalculator
 
         private void KeySqrt_Click(object sender, EventArgs e)
         {
-            // eSQrt  //ePowY //ePow
+            OutputDisplay.Text = CalcEngine.CalcSqrt();
         }
 
         private void KeySqrtY_Click(object sender, EventArgs e)
         {
-            // eSQrtY // eSQrt  //ePowY //ePow
+            OutputDisplay.Text = CalcEngine.CalcSqrtY();
         }
 
         private void KeyFactorial_Click(object sender, EventArgs e)
