@@ -726,38 +726,41 @@ namespace SimpleCalculator
 			Application.Run(new CalcUI());
 		}
 
+       
+        
+        private void KeyPowY_Click(object sender, EventArgs e)
+        {
+            CalcEngine.CalcOperation(CalcEngine.Operator.ePowY);          
+        }
+
         private void KeyPow_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcPow();
-            // CalcEngine.CalcOperation (CalcEngine.Operator.ePow);
-            // CalcEngine.CalcOperation(CalcEngine.Operator.);
-            //ePow
-        }
-
-        private void KeyPowY_Click(object sender, EventArgs e)
-        {
-            CalcEngine.CalcOperation(CalcEngine.Operator.ePowY);
-            //ePowY //ePow
+            CalcEngine.CalcReset();
         }
 
         private void KeySqrt_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcSqrt();
+            CalcEngine.CalcReset();
         }
 
         private void KeySqrtY_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcSqrtY();
+            CalcEngine.CalcReset();
         }
 
         private void KeyFactorial_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcFactorial();
+            CalcEngine.CalcReset();
         }
 
         private void KeyReverse_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcReverse();
+            CalcEngine.CalcReset();
         }
     }
 }
