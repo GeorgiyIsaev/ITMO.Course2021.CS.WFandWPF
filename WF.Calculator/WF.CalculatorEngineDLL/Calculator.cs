@@ -250,14 +250,41 @@ namespace Calculator
 			return (stringAnswer);
 		}
 
-		private void KeyFactorial_Click(object sender, EventArgs e)
+		public static string CalcFactorial()
 		{
-			//eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+			double numHold;
+			double numHoldTemp;
+			if (stringAnswer != "")
+			{
+				numHoldTemp = System.Convert.ToDouble(stringAnswer);
+				if (numHoldTemp > 0)
+				{
+					numHold = 1;
+					for (int i = 1; i < numHoldTemp + 1; i++)
+					{
+						numHold *= i;
+					}
+					stringAnswer = System.Convert.ToString(numHold);
+				}
+                else
+                {
+					stringAnswer = "NaN";				
+				}				
+			}
+			return (stringAnswer);			
 		}
 
-		private void KeyReverse_Click(object sender, EventArgs e)
+		public static string CalcReverse()
 		{
-			//eReverse    //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+			double numHold;
+			if (stringAnswer != "")
+			{
+				numHold = System.Convert.ToDouble(stringAnswer);
+				numHold = 1 / numHold;	
+				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
+				stringAnswer = System.Convert.ToString(numHold);
+			}
+			return (stringAnswer);
 		}
 
 
