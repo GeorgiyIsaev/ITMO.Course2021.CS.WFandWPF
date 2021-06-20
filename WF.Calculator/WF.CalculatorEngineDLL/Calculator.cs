@@ -214,13 +214,16 @@ namespace Calculator
 
 
 		/*Выполнение новых операций, которые будут добавлены в кейс*/
-		private void KeyPow()
+		public static string CalcPow()
 		{
-			//ePow
-			Math.Pow(firstNumber, secondNumber);
-
-			numericAnswer = Math.Pow(firstNumber, 2);
-
+			double numHold;
+			if (stringAnswer != "")
+			{
+				numHold = System.Convert.ToDouble(stringAnswer);
+				numHold = Math.Pow(numHold, 2);			
+				stringAnswer = System.Convert.ToString(numHold);
+			}
+			return (stringAnswer);
 		}
 
 		private void KeyPowY_Click(object sender, EventArgs e)

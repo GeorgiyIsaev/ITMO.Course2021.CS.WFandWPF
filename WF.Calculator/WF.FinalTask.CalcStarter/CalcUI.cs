@@ -728,7 +728,8 @@ namespace SimpleCalculator
 
         private void KeyPow_Click(object sender, EventArgs e)
         {
-           CalcEngine.CalcOperation (CalcEngine.Operator.ePow);
+            OutputDisplay.Text = CalcEngine.CalcPow();
+            // CalcEngine.CalcOperation (CalcEngine.Operator.ePow);
             // CalcEngine.CalcOperation(CalcEngine.Operator.);
             //ePow
         }
