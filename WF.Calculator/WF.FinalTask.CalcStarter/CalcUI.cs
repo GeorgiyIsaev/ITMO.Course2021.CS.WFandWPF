@@ -736,31 +736,26 @@ namespace SimpleCalculator
         private void KeyPow_Click(object sender, EventArgs e)
         {
             OutputDisplay.Text = CalcEngine.CalcPow();
-            CalcEngine.CalcReset();
         }
 
         private void KeySqrt_Click(object sender, EventArgs e)
         {
-            OutputDisplay.Text = CalcEngine.CalcSqrt();
-            CalcEngine.CalcReset();
+            OutputDisplay.Text = CalcEngine.CalcSqrt();    
         }
 
         private void KeySqrtY_Click(object sender, EventArgs e)
         {
-            OutputDisplay.Text = CalcEngine.CalcSqrtY();
-            CalcEngine.CalcReset();
+            OutputDisplay.Text = CalcEngine.CalcSqrtY(); 
         }
 
         private void KeyFactorial_Click(object sender, EventArgs e)
         {
-            OutputDisplay.Text = CalcEngine.CalcFactorial();
-            CalcEngine.CalcReset();
+            OutputDisplay.Text = CalcEngine.CalcFactorial();   
         }
 
         private void KeyReverse_Click(object sender, EventArgs e)
         {
-            OutputDisplay.Text = CalcEngine.CalcReverse();
-            CalcEngine.CalcReset();
+            OutputDisplay.Text = CalcEngine.CalcReverse();           
         }
     }
 }

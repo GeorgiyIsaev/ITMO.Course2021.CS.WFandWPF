@@ -217,11 +217,14 @@ namespace Calculator
 		public static string CalcPow()
 		{
 			double numHold;
-			if (stringAnswer != "")
-			{
-				numHold = System.Convert.ToDouble(stringAnswer);
+			if (Double.TryParse(stringAnswer, out numHold))
+			{ 
 				numHold = Math.Pow(numHold, 2);			
 				stringAnswer = System.Convert.ToString(numHold);
+			}
+			else
+			{
+				stringAnswer = "";
 			}
 			return (stringAnswer);
 		}
@@ -229,11 +232,14 @@ namespace Calculator
 		public static string CalcSqrt()
 		{			
 			double numHold;
-			if (stringAnswer != "")
-			{
-				numHold = System.Convert.ToDouble(stringAnswer);
+			if (Double.TryParse(stringAnswer, out numHold))
+			{				
 				numHold = Math.Sqrt(numHold);
 				stringAnswer = System.Convert.ToString(numHold);
+			}
+			else
+			{
+				stringAnswer = "";
 			}
 			return (stringAnswer);
 		}
@@ -241,11 +247,14 @@ namespace Calculator
 		public static string CalcSqrtY()
 		{			
 			double numHold;
-			if (stringAnswer != "")
+			if (Double.TryParse(stringAnswer, out numHold))
 			{
-				numHold = System.Convert.ToDouble(stringAnswer);
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
 				stringAnswer = System.Convert.ToString(numHold);
+			}
+			else
+			{
+				stringAnswer = "";
 			}
 			return (stringAnswer);
 		}
@@ -254,9 +263,8 @@ namespace Calculator
 		{
 			double numHold;
 			double numHoldTemp;
-			if (stringAnswer != "")
-			{
-				numHoldTemp = System.Convert.ToDouble(stringAnswer);
+			if (Double.TryParse(stringAnswer, out numHoldTemp))
+			{				
 				if (numHoldTemp > 0)
 				{
 					numHold = 1;
@@ -271,18 +279,25 @@ namespace Calculator
 					stringAnswer = "NaN";				
 				}				
 			}
+			else
+			{
+				stringAnswer = "";
+			}
 			return (stringAnswer);			
 		}
 
 		public static string CalcReverse()
 		{
 			double numHold;
-			if (stringAnswer != "")
-			{
-				numHold = System.Convert.ToDouble(stringAnswer);
+			if (Double.TryParse(stringAnswer, out numHold))
+			{				
 				numHold = 1 / numHold;	
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
 				stringAnswer = System.Convert.ToString(numHold);
+			}
+            else
+            {
+				stringAnswer = "";
 			}
 			return (stringAnswer);
 		}
