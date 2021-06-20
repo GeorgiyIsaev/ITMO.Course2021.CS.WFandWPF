@@ -728,13 +728,14 @@ namespace SimpleCalculator
 
         private void KeyPow_Click(object sender, EventArgs e)
         {
-           CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);
+           CalcEngine.CalcOperation (CalcEngine.Operator.ePow);
             // CalcEngine.CalcOperation(CalcEngine.Operator.);
             //ePow
         }
 
         private void KeyPowY_Click(object sender, EventArgs e)
         {
+            CalcEngine.CalcOperation(CalcEngine.Operator.ePowY);
             //ePowY //ePow
         }
 
