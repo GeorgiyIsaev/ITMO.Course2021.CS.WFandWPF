@@ -100,11 +100,15 @@ namespace Calculator
 		{
 			if (stringAnswer != "" && !secondNumberAdded)
 			{
-				firstNumber = System.Convert.ToDouble (stringAnswer);
+				secondNumber = System.Convert.ToDouble (stringAnswer);
 				calcOperation = calcOper;
 				stringAnswer = "";
 				decimalAdded = false;			
-			}			
+			}
+			//if (firstNumber == 0) 
+			//	firstNumber = secondNumber;
+			//CalcEqual();
+
 		}
 
 		//
@@ -160,6 +164,10 @@ namespace Calculator
 				{
 					case Operator.eUnknown:
 						validEquation = false;
+						//secondNumberAdded = false;
+						//stopInput = true;
+						//firstNumber = secondNumber;
+						//stringAnswer = "";
 						break;
 
 					case Operator.eAdd:

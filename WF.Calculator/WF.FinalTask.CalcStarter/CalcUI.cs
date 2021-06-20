@@ -599,9 +599,9 @@ namespace SimpleCalculator
 		#endregion
 
 		protected void KeyPlus_Click (object sender, System.EventArgs e)
-		{         
-            CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);
-		}
+		{            
+            CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);  
+        }
 
 		protected void KeyMinus_Click (object sender, System.EventArgs e)
 		{     
