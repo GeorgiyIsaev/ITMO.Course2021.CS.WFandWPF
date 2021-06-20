@@ -82,6 +82,13 @@ namespace Calculator
 
 		public static string CalcNumber (string KeyNumber)
 		{
+			//double numHold;
+			//if (Double.TryParse(stringAnswer, out numHold))
+   //         {
+
+   //         }
+
+
 			stringAnswer = stringAnswer + KeyNumber;
 			return (stringAnswer);
 		}
@@ -214,17 +221,24 @@ namespace Calculator
 
 
 		/*Выполнение новых операций, которые будут добавлены в кейс*/
+		static bool ifNotClear()
+        {
+			if (stringAnswer == "бесконечность" || stringAnswer == "Nan")
+				return false;
+			return true;
+
+		}
 		public static string CalcPow()
 		{
 			double numHold;
-			if (Double.TryParse(stringAnswer, out numHold))
+			if (Double.TryParse(stringAnswer, out numHold) && ifNotClear())
 			{ 
 				numHold = Math.Pow(numHold, 2);			
 				stringAnswer = System.Convert.ToString(numHold);
 			}
 			else
 			{
-				stringAnswer = "";
+				stringAnswer = "0";
 			}
 			return (stringAnswer);
 		}
@@ -232,14 +246,14 @@ namespace Calculator
 		public static string CalcSqrt()
 		{			
 			double numHold;
-			if (Double.TryParse(stringAnswer, out numHold))
+			if (Double.TryParse(stringAnswer, out numHold) && ifNotClear())
 			{				
 				numHold = Math.Sqrt(numHold);
 				stringAnswer = System.Convert.ToString(numHold);
 			}
 			else
 			{
-				stringAnswer = "";
+				stringAnswer = "0";
 			}
 			return (stringAnswer);
 		}
@@ -247,14 +261,14 @@ namespace Calculator
 		public static string CalcSqrtY()
 		{			
 			double numHold;
-			if (Double.TryParse(stringAnswer, out numHold))
+			if (Double.TryParse(stringAnswer, out numHold) && ifNotClear())
 			{
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
 				stringAnswer = System.Convert.ToString(numHold);
 			}
 			else
 			{
-				stringAnswer = "";
+				stringAnswer = "0";
 			}
 			return (stringAnswer);
 		}
@@ -263,7 +277,7 @@ namespace Calculator
 		{
 			double numHold;
 			double numHoldTemp;
-			if (Double.TryParse(stringAnswer, out numHoldTemp))
+			if (Double.TryParse(stringAnswer, out numHoldTemp) && ifNotClear())
 			{				
 				if (numHoldTemp > 0)
 				{
@@ -276,12 +290,13 @@ namespace Calculator
 				}
                 else
                 {
-					stringAnswer = "NaN";				
+					stringAnswer = "NaN";
+					CalcReset();
 				}				
 			}
 			else
 			{
-				stringAnswer = "";
+				stringAnswer = "0";
 			}
 			return (stringAnswer);			
 		}
@@ -289,7 +304,7 @@ namespace Calculator
 		public static string CalcReverse()
 		{
 			double numHold;
-			if (Double.TryParse(stringAnswer, out numHold))
+			if (Double.TryParse(stringAnswer, out numHold) && ifNotClear())
 			{				
 				numHold = 1 / numHold;	
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
@@ -297,7 +312,7 @@ namespace Calculator
 			}
             else
             {
-				stringAnswer = "";
+				stringAnswer = "0";
 			}
 			return (stringAnswer);
 		}
