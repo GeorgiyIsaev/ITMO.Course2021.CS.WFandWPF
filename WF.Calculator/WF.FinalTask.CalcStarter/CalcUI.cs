@@ -54,13 +54,13 @@ namespace SimpleCalculator
         private ToolStripMenuItem âèäToolStripMenuItem;
         private ToolStripMenuItem îáû÷íûéToolStripMenuItem;
         private ToolStripMenuItem èíæèíåðíûéToolStripMenuItem;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private Button KeyFactorial;
+        private Button KeySqrt;
+        private Button KeyPow;
+        private Button KeyReverse;
+        private Button KeySqrtY;
+        private Button KeyPowY;
+        private Button KeySqrtEquation;
 
         /// <summary>
         /// Required designer variable.
@@ -135,13 +135,13 @@ namespace SimpleCalculator
             this.âèäToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.îáû÷íûéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.èíæèíåðíûéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.KeyFactorial = new System.Windows.Forms.Button();
+            this.KeySqrt = new System.Windows.Forms.Button();
+            this.KeyPow = new System.Windows.Forms.Button();
+            this.KeyReverse = new System.Windows.Forms.Button();
+            this.KeySqrtY = new System.Windows.Forms.Button();
+            this.KeyPowY = new System.Windows.Forms.Button();
+            this.KeySqrtEquation = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -463,82 +463,82 @@ namespace SimpleCalculator
             this.èíæèíåðíûéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.èíæèíåðíûéToolStripMenuItem.Text = "Èíæèíåðíûé";
             // 
-            // button1
+            // KeyFactorial
             // 
-            this.button1.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(198, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 23;
-            this.button1.TabStop = false;
+            this.KeyFactorial.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeyFactorial.ForeColor = System.Drawing.Color.Blue;
+            this.KeyFactorial.Image = ((System.Drawing.Image)(resources.GetObject("KeyFactorial.Image")));
+            this.KeyFactorial.Location = new System.Drawing.Point(198, 193);
+            this.KeyFactorial.Name = "KeyFactorial";
+            this.KeyFactorial.Size = new System.Drawing.Size(40, 40);
+            this.KeyFactorial.TabIndex = 23;
+            this.KeyFactorial.TabStop = false;
             // 
-            // button2
+            // KeySqrt
             // 
-            this.button2.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(198, 145);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 24;
-            this.button2.TabStop = false;
+            this.KeySqrt.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeySqrt.ForeColor = System.Drawing.Color.Blue;
+            this.KeySqrt.Image = ((System.Drawing.Image)(resources.GetObject("KeySqrt.Image")));
+            this.KeySqrt.Location = new System.Drawing.Point(198, 145);
+            this.KeySqrt.Name = "KeySqrt";
+            this.KeySqrt.Size = new System.Drawing.Size(40, 40);
+            this.KeySqrt.TabIndex = 24;
+            this.KeySqrt.TabStop = false;
             // 
-            // button3
+            // KeyPow
             // 
-            this.button3.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(198, 97);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 25;
-            this.button3.TabStop = false;
+            this.KeyPow.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeyPow.ForeColor = System.Drawing.Color.Blue;
+            this.KeyPow.Image = ((System.Drawing.Image)(resources.GetObject("KeyPow.Image")));
+            this.KeyPow.Location = new System.Drawing.Point(198, 97);
+            this.KeyPow.Name = "KeyPow";
+            this.KeyPow.Size = new System.Drawing.Size(40, 40);
+            this.KeyPow.TabIndex = 25;
+            this.KeyPow.TabStop = false;
             // 
-            // button4
+            // KeyReverse
             // 
-            this.button4.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(246, 193);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 26;
-            this.button4.TabStop = false;
+            this.KeyReverse.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeyReverse.ForeColor = System.Drawing.Color.Red;
+            this.KeyReverse.Image = ((System.Drawing.Image)(resources.GetObject("KeyReverse.Image")));
+            this.KeyReverse.Location = new System.Drawing.Point(246, 193);
+            this.KeyReverse.Name = "KeyReverse";
+            this.KeyReverse.Size = new System.Drawing.Size(40, 40);
+            this.KeyReverse.TabIndex = 26;
+            this.KeyReverse.TabStop = false;
             // 
-            // button5
+            // KeySqrtY
             // 
-            this.button5.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(246, 145);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 27;
-            this.button5.TabStop = false;
+            this.KeySqrtY.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeySqrtY.ForeColor = System.Drawing.Color.Red;
+            this.KeySqrtY.Image = ((System.Drawing.Image)(resources.GetObject("KeySqrtY.Image")));
+            this.KeySqrtY.Location = new System.Drawing.Point(246, 145);
+            this.KeySqrtY.Name = "KeySqrtY";
+            this.KeySqrtY.Size = new System.Drawing.Size(40, 40);
+            this.KeySqrtY.TabIndex = 27;
+            this.KeySqrtY.TabStop = false;
             // 
-            // button6
+            // KeyPowY
             // 
-            this.button6.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button6.ForeColor = System.Drawing.Color.Red;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(246, 97);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(40, 40);
-            this.button6.TabIndex = 28;
-            this.button6.TabStop = false;
+            this.KeyPowY.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeyPowY.ForeColor = System.Drawing.Color.Red;
+            this.KeyPowY.Image = ((System.Drawing.Image)(resources.GetObject("KeyPowY.Image")));
+            this.KeyPowY.Location = new System.Drawing.Point(246, 97);
+            this.KeyPowY.Name = "KeyPowY";
+            this.KeyPowY.Size = new System.Drawing.Size(40, 40);
+            this.KeyPowY.TabIndex = 28;
+            this.KeyPowY.TabStop = false;
             // 
-            // button7
+            // KeySqrtEquation
             // 
-            this.button7.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.button7.ForeColor = System.Drawing.Color.Red;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(198, 241);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 40);
-            this.button7.TabIndex = 29;
-            this.button7.TabStop = false;
+            this.KeySqrtEquation.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.KeySqrtEquation.ForeColor = System.Drawing.Color.Red;
+            this.KeySqrtEquation.Image = ((System.Drawing.Image)(resources.GetObject("KeySqrtEquation.Image")));
+            this.KeySqrtEquation.Location = new System.Drawing.Point(198, 241);
+            this.KeySqrtEquation.Name = "KeySqrtEquation";
+            this.KeySqrtEquation.Size = new System.Drawing.Size(88, 40);
+            this.KeySqrtEquation.TabIndex = 29;
+            this.KeySqrtEquation.TabStop = false;
             // 
             // CalcUI
             // 
@@ -546,13 +546,13 @@ namespace SimpleCalculator
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(354, 290);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.KeySqrtEquation);
+            this.Controls.Add(this.KeyFactorial);
+            this.Controls.Add(this.KeySqrt);
+            this.Controls.Add(this.KeyPow);
+            this.Controls.Add(this.KeyReverse);
+            this.Controls.Add(this.KeySqrtY);
+            this.Controls.Add(this.KeyPowY);
             this.Controls.Add(this.KeyOne);
             this.Controls.Add(this.KeyTwo);
             this.Controls.Add(this.KeyThree);
