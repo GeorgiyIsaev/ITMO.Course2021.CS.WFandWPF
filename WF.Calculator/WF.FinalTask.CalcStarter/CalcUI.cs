@@ -105,6 +105,7 @@ namespace SimpleCalculator
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalcUI));
             this.KeyDate = new System.Windows.Forms.Button();
             this.KeyOne = new System.Windows.Forms.Button();
             this.VersionInfo = new System.Windows.Forms.TextBox();
@@ -466,78 +467,78 @@ namespace SimpleCalculator
             // 
             this.button1.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(198, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 23;
             this.button1.TabStop = false;
-            this.button1.Text = "1/х";
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.Blue;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(198, 145);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 40);
             this.button2.TabIndex = 24;
             this.button2.TabStop = false;
-            this.button2.Text = "sqr(x)";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.Blue;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(198, 97);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 40);
             this.button3.TabIndex = 25;
             this.button3.TabStop = false;
-            this.button3.Text = "x^2";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.Red;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(246, 193);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 40);
             this.button4.TabIndex = 26;
             this.button4.TabStop = false;
-            this.button4.Text = "!х";
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.Red;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.Location = new System.Drawing.Point(246, 145);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
             this.button5.TabIndex = 27;
             this.button5.TabStop = false;
-            this.button5.Text = "?";
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.Red;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(246, 97);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
             this.button6.TabIndex = 28;
             this.button6.TabStop = false;
-            this.button6.Text = "x^y";
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.Red;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.Location = new System.Drawing.Point(198, 241);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(88, 40);
             this.button7.TabIndex = 29;
             this.button7.TabStop = false;
-            this.button7.Text = " нопка";
             // 
             // CalcUI
             // 
