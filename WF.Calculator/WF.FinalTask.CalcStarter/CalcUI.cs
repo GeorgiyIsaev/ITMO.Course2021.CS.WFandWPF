@@ -49,11 +49,11 @@ namespace SimpleCalculator
 		private const string zeroOut = "0";
         private MenuStrip menuStrip1;
         private ToolStripMenuItem ìåíşToolStripMenuItem;
-        private ToolStripMenuItem î÷èñòèòüToolStripMenuItem;
-        private ToolStripMenuItem âûõîäToolStripMenuItem;
+        private ToolStripMenuItem ToolStripMenuItemClear;
+        private ToolStripMenuItem ToolStripMenuItemExit;
         private ToolStripMenuItem âèäToolStripMenuItem;
-        private ToolStripMenuItem îáû÷íûéToolStripMenuItem;
-        private ToolStripMenuItem èíæèíåğíûéToolStripMenuItem;
+        private ToolStripMenuItem ToolStripMenuItemNnormal;
+        private ToolStripMenuItem ToolStripMenuItemEngineering;
         private Button KeyFactorial;
         private Button KeySqrt;
         private Button KeyPow;
@@ -126,11 +126,11 @@ namespace SimpleCalculator
             this.KeyDivide = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ìåíşToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.î÷èñòèòüToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.âûõîäToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.âèäToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.îáû÷íûéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.èíæèíåğíûéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemNnormal = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemEngineering = new System.Windows.Forms.ToolStripMenuItem();
             this.KeyFactorial = new System.Windows.Forms.Button();
             this.KeySqrt = new System.Windows.Forms.Button();
             this.KeyPow = new System.Windows.Forms.Button();
@@ -420,44 +420,48 @@ namespace SimpleCalculator
             // ìåíşToolStripMenuItem
             // 
             this.ìåíşToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.î÷èñòèòüToolStripMenuItem,
-            this.âûõîäToolStripMenuItem});
+            this.ToolStripMenuItemClear,
+            this.ToolStripMenuItemExit});
             this.ìåíşToolStripMenuItem.Name = "ìåíşToolStripMenuItem";
             this.ìåíşToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ìåíşToolStripMenuItem.Text = "Ìåíş";
             // 
-            // î÷èñòèòüToolStripMenuItem
+            // ToolStripMenuItemClear
             // 
-            this.î÷èñòèòüToolStripMenuItem.Name = "î÷èñòèòüToolStripMenuItem";
-            this.î÷èñòèòüToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.î÷èñòèòüToolStripMenuItem.Text = "Î÷èñòèòü";
+            this.ToolStripMenuItemClear.Name = "ToolStripMenuItemClear";
+            this.ToolStripMenuItemClear.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemClear.Text = "Î÷èñòèòü";
+            this.ToolStripMenuItemClear.Click += new System.EventHandler(this.ToolStripMenuItemClear_Click);
             // 
-            // âûõîäToolStripMenuItem
+            // ToolStripMenuItemExit
             // 
-            this.âûõîäToolStripMenuItem.Name = "âûõîäToolStripMenuItem";
-            this.âûõîäToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.âûõîäToolStripMenuItem.Text = "Âûõîä";
+            this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
+            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemExit.Text = "Âûõîä";
+            this.ToolStripMenuItemExit.Click += new System.EventHandler(this.ToolStripMenuItemExit_Click);
             // 
             // âèäToolStripMenuItem
             // 
             this.âèäToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.îáû÷íûéToolStripMenuItem,
-            this.èíæèíåğíûéToolStripMenuItem});
+            this.ToolStripMenuItemNnormal,
+            this.ToolStripMenuItemEngineering});
             this.âèäToolStripMenuItem.Name = "âèäToolStripMenuItem";
             this.âèäToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.âèäToolStripMenuItem.Text = "Âèä";
             // 
-            // îáû÷íûéToolStripMenuItem
+            // ToolStripMenuItemNnormal
             // 
-            this.îáû÷íûéToolStripMenuItem.Name = "îáû÷íûéToolStripMenuItem";
-            this.îáû÷íûéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.îáû÷íûéToolStripMenuItem.Text = "Îáû÷íûé";
+            this.ToolStripMenuItemNnormal.Name = "ToolStripMenuItemNnormal";
+            this.ToolStripMenuItemNnormal.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemNnormal.Text = "Îáû÷íûé";
+            this.ToolStripMenuItemNnormal.Click += new System.EventHandler(this.ToolStripMenuItemNnormal_Click);
             // 
-            // èíæèíåğíûéToolStripMenuItem
+            // ToolStripMenuItemEngineering
             // 
-            this.èíæèíåğíûéToolStripMenuItem.Name = "èíæèíåğíûéToolStripMenuItem";
-            this.èíæèíåğíûéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.èíæèíåğíûéToolStripMenuItem.Text = "Èíæèíåğíûé";
+            this.ToolStripMenuItemEngineering.Name = "ToolStripMenuItemEngineering";
+            this.ToolStripMenuItemEngineering.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemEngineering.Text = "Èíæèíåğíûé";
+            this.ToolStripMenuItemEngineering.Click += new System.EventHandler(this.ToolStripMenuItemEngineering_Click);
             // 
             // KeyFactorial
             // 
@@ -795,6 +799,56 @@ namespace SimpleCalculator
         {
             SqrtEquation sqrtEquation = new SqrtEquation();
             sqrtEquation.ShowDialog();
+        }
+      
+
+        private void ToolStripMenuItemClear_Click(object sender, EventArgs e)
+        {
+            CalcEngine.CalcReset();
+            OutputDisplay.Text = "0";
+        }
+
+        private void ToolStripMenuItemExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ToolStripMenuItemNnormal_Click(object sender, EventArgs e)
+        {
+            KeyPow.Hide();
+            KeyPowY.Hide();
+            KeySqrt.Hide();
+            KeyFactorial.Hide();
+            KeySqrtEquation.Hide();
+            KeyReverse.Hide();
+            KeySqrtY.Hide();
+            KeyPowY.Hide();
+
+            KeyClear.Location = new System.Drawing.Point(198, 97);
+            KeyDate.Location = new System.Drawing.Point(198, 145);
+            KeyExit.Location = new System.Drawing.Point(198, 193);
+            KeyEqual.Location = new System.Drawing.Point(198, 241);
+        }
+
+        private void ToolStripMenuItemEngineering_Click(object sender, EventArgs e)
+        {
+            KeyPow.Show(); ;
+            KeyPowY.Show();
+            KeySqrt.Show();
+            KeyFactorial.Show();
+            KeySqrtEquation.Show();
+            KeyReverse.Show();
+            KeySqrtY.Show();
+            KeyPowY.Show();
+
+            KeyClear.Location = new System.Drawing.Point(292, 97);
+            KeyDate.Location = new System.Drawing.Point(292, 145);
+            KeyExit.Location = new System.Drawing.Point(292, 193);
+            KeyEqual.Location = new System.Drawing.Point(292, 241);
+
+            370; 328
+
+
         }
     }
 }
