@@ -16,16 +16,21 @@ namespace Calculator
 			eAdd = 1,
 			eSubtract = 2,
 			eMultiply = 3,
-			eDivide = 4
+			eDivide = 4,
+			eReverse = 5,
+			eyFactorial = 6,
+			eSQrtY = 7,
+			eSQrt = 8,
+			ePowY = 9,
+			ePow = 10
 		}
 
 		//
 		// Module-Level Constants
 		//
 
-		private static double negativeConverter = -1;
-		// TODO: Upgrade the version number to 3.0.1.1
-		private static string versionInfo = "Calculator v2.0.1.1";
+		private static double negativeConverter = -1;	
+		private static string versionInfo = "Calculator v3.0.1.1";
 
 		//
 		// Module-level Variables.
@@ -170,6 +175,15 @@ namespace Calculator
 						numericAnswer = firstNumber / secondNumber;
 						validEquation = true;
 						break;
+					case Operator.ePow:
+						numericAnswer = Math.Pow(firstNumber, 2);
+						validEquation = true;
+						break;
+					case Operator.ePowY:
+						numericAnswer = Math.Pow(firstNumber, secondNumber);
+						validEquation = true;
+						break;
+
 
 					default:
 						validEquation = false;
@@ -197,5 +211,45 @@ namespace Calculator
 			decimalAdded = false;
 			secondNumberAdded = false;			
 		}
+
+
+		/*Выполнение новых операций, которые будут добавлены в кейс*/
+		private void KeyPow()
+		{
+			//ePow
+			Math.Pow(firstNumber, secondNumber);
+
+			numericAnswer = Math.Pow(firstNumber, 2);
+
+		}
+
+		private void KeyPowY_Click(object sender, EventArgs e)
+		{
+			//ePowY //ePow
+			numericAnswer = Math.Pow(firstNumber, secondNumber);
+		}
+
+		private void KeySqrt_Click(object sender, EventArgs e)
+		{
+			// eSQrt  //ePowY //ePow
+		}
+
+		private void KeySqrtY_Click(object sender, EventArgs e)
+		{
+			// eSQrtY // eSQrt  //ePowY //ePow
+		}
+
+		private void KeyFactorial_Click(object sender, EventArgs e)
+		{
+			//eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+		}
+
+		private void KeyReverse_Click(object sender, EventArgs e)
+		{
+			//eReverse    //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
+		}
+
+
+
 	}
 }

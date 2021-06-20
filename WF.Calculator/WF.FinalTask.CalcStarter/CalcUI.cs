@@ -728,32 +728,34 @@ namespace SimpleCalculator
 
         private void KeyPow_Click(object sender, EventArgs e)
         {
-           // CalcEngine.CalcOperation(CalcEngine.Operator.);
+           CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);
+            // CalcEngine.CalcOperation(CalcEngine.Operator.);
+            //ePow
         }
 
         private void KeyPowY_Click(object sender, EventArgs e)
         {
-
+            //ePowY //ePow
         }
 
         private void KeySqrt_Click(object sender, EventArgs e)
         {
-
+            // eSQrt  //ePowY //ePow
         }
 
         private void KeySqrtY_Click(object sender, EventArgs e)
         {
-
+            // eSQrtY // eSQrt  //ePowY //ePow
         }
 
         private void KeyFactorial_Click(object sender, EventArgs e)
         {
-
+            //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
         }
 
         private void KeyReverse_Click(object sender, EventArgs e)
         {
-
+            //eReverse    //eyFactorial  // eSQrtY // eSQrt  //ePowY //ePow
         }
     }
 }
