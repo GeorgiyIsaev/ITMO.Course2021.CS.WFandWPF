@@ -599,23 +599,23 @@ namespace SimpleCalculator
 		#endregion
 
 		protected void KeyPlus_Click (object sender, System.EventArgs e)
-		{
-			CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);
+		{         
+            CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);
 		}
 
 		protected void KeyMinus_Click (object sender, System.EventArgs e)
-		{
-			CalcEngine.CalcOperation (CalcEngine.Operator.eSubtract);
+		{     
+            CalcEngine.CalcOperation (CalcEngine.Operator.eSubtract);
 		}
 
 		protected void KeyMultiply_Click (object sender, System.EventArgs e)
-		{
-			CalcEngine.CalcOperation (CalcEngine.Operator.eMultiply);
+		{         
+            CalcEngine.CalcOperation (CalcEngine.Operator.eMultiply);
 		}
 
 		protected void KeyDivide_Click (object sender, System.EventArgs e)
-		{
-			CalcEngine.CalcOperation (CalcEngine.Operator.eDivide);
+		{         
+            CalcEngine.CalcOperation (CalcEngine.Operator.eDivide);
 		}
 
 		//

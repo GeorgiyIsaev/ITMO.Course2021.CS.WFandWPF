@@ -82,14 +82,13 @@ namespace Calculator
 
 		public static string CalcNumber (string KeyNumber)
 		{
-			//double numHold;
-			//if (Double.TryParse(stringAnswer, out numHold))
-   //         {
+			if (stopInput)
+            {
+				CalcReset();
+				stopInput = false;
 
-   //         }
-
-
-			stringAnswer = stringAnswer + KeyNumber;
+			}
+			stringAnswer = stringAnswer + KeyNumber;			
 			return (stringAnswer);
 		}
 
@@ -104,7 +103,7 @@ namespace Calculator
 				firstNumber = System.Convert.ToDouble (stringAnswer);
 				calcOperation = calcOper;
 				stringAnswer = "";
-				decimalAdded = false;
+				decimalAdded = false;			
 			}			
 		}
 
@@ -181,17 +180,11 @@ namespace Calculator
 					case Operator.eDivide:
 						numericAnswer = firstNumber / secondNumber;
 						validEquation = true;
-						break;
-					case Operator.ePow:
-						numericAnswer = Math.Pow(firstNumber, 2);
-						validEquation = true;
-						break;
+						break;				
 					case Operator.ePowY:
 						numericAnswer = Math.Pow(firstNumber, secondNumber);
 						validEquation = true;
 						break;
-
-
 					default:
 						validEquation = false;
 						break;
@@ -221,6 +214,7 @@ namespace Calculator
 
 
 		/*Выполнение новых операций, которые будут добавлены в кейс*/
+		static bool stopInput = false;
 		static bool ifNotClear()
         {
 			if (stringAnswer == "бесконечность" || stringAnswer == "Nan")
@@ -229,12 +223,12 @@ namespace Calculator
 
 		}
 		public static string CalcPow()
-		{
-			double numHold;
-			if (Double.TryParse(stringAnswer, out numHold) && ifNotClear())
-			{ 
-				numHold = Math.Pow(numHold, 2);			
-				stringAnswer = System.Convert.ToString(numHold);
+		{			
+			if (Double.TryParse(stringAnswer, out firstNumber) && ifNotClear())
+			{
+				firstNumber = Math.Pow(firstNumber, 2);
+				stringAnswer=  System.Convert.ToString(firstNumber);
+				stopInput = true;
 			}
 			else
 			{
@@ -250,6 +244,7 @@ namespace Calculator
 			{				
 				numHold = Math.Sqrt(numHold);
 				stringAnswer = System.Convert.ToString(numHold);
+				stopInput = true;
 			}
 			else
 			{
@@ -265,6 +260,7 @@ namespace Calculator
 			{
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
 				stringAnswer = System.Convert.ToString(numHold);
+				stopInput = true;
 			}
 			else
 			{
@@ -287,6 +283,7 @@ namespace Calculator
 						numHold *= i;
 					}
 					stringAnswer = System.Convert.ToString(numHold);
+					stopInput = true;
 				}
                 else
                 {
@@ -309,6 +306,7 @@ namespace Calculator
 				numHold = 1 / numHold;	
 				numHold = Math.Round(Math.Pow(numHold, 1 / 3f), 2);
 				stringAnswer = System.Convert.ToString(numHold);
+				stopInput = true;
 			}
             else
             {
