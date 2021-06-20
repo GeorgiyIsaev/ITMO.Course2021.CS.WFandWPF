@@ -130,11 +130,11 @@ namespace SimpleCalculator
         }
 
         private void TextBoxC_KeyPress(object sender, KeyPressEventArgs e)
-        {
+        {        
             if ((e.KeyChar == '-') || (e.KeyChar == '.'))
             {
-                e.Handled = false;
-                errorProvider1.SetError(TextBoxC, string.Empty);            
+                e.Handled = false;   
+                errorProvider1.SetError(TextBoxC, string.Empty);                 
 
             }
             else if (!char.IsDigit(e.KeyChar))
@@ -145,7 +145,7 @@ namespace SimpleCalculator
             else
             {
                 errorProvider1.SetError(TextBoxC, string.Empty);
-            }
+            }   
         }
     }
 }
