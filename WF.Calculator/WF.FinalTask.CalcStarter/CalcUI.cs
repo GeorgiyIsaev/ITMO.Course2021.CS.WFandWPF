@@ -473,6 +473,7 @@ namespace SimpleCalculator
             this.KeyFactorial.Size = new System.Drawing.Size(40, 40);
             this.KeyFactorial.TabIndex = 23;
             this.KeyFactorial.TabStop = false;
+            this.KeyFactorial.Click += new System.EventHandler(this.KeyFactorial_Click);
             // 
             // KeySqrt
             // 
@@ -484,6 +485,7 @@ namespace SimpleCalculator
             this.KeySqrt.Size = new System.Drawing.Size(40, 40);
             this.KeySqrt.TabIndex = 24;
             this.KeySqrt.TabStop = false;
+            this.KeySqrt.Click += new System.EventHandler(this.KeySqrt_Click);
             // 
             // KeyPow
             // 
@@ -495,6 +497,7 @@ namespace SimpleCalculator
             this.KeyPow.Size = new System.Drawing.Size(40, 40);
             this.KeyPow.TabIndex = 25;
             this.KeyPow.TabStop = false;
+            this.KeyPow.Click += new System.EventHandler(this.KeyPow_Click);
             // 
             // KeyReverse
             // 
@@ -506,6 +509,7 @@ namespace SimpleCalculator
             this.KeyReverse.Size = new System.Drawing.Size(40, 40);
             this.KeyReverse.TabIndex = 26;
             this.KeyReverse.TabStop = false;
+            this.KeyReverse.Click += new System.EventHandler(this.KeyReverse_Click);
             // 
             // KeySqrtY
             // 
@@ -517,6 +521,7 @@ namespace SimpleCalculator
             this.KeySqrtY.Size = new System.Drawing.Size(40, 40);
             this.KeySqrtY.TabIndex = 27;
             this.KeySqrtY.TabStop = false;
+            this.KeySqrtY.Click += new System.EventHandler(this.KeySqrtY_Click);
             // 
             // KeyPowY
             // 
@@ -528,6 +533,7 @@ namespace SimpleCalculator
             this.KeyPowY.Size = new System.Drawing.Size(40, 40);
             this.KeyPowY.TabIndex = 28;
             this.KeyPowY.TabStop = false;
+            this.KeyPowY.Click += new System.EventHandler(this.KeyPowY_Click);
             // 
             // KeySqrtEquation
             // 
@@ -719,5 +725,35 @@ namespace SimpleCalculator
 		{
 			Application.Run(new CalcUI());
 		}
-	}
+
+        private void KeyPow_Click(object sender, EventArgs e)
+        {
+           // CalcEngine.CalcOperation(CalcEngine.Operator.);
+        }
+
+        private void KeyPowY_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KeySqrt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KeySqrtY_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KeyFactorial_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KeyReverse_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
