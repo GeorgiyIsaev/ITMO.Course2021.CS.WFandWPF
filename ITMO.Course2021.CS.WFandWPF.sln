@@ -159,6 +159,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex17.EditPerson
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex18.FibonacciForm", "WF.Lessons\Lesson04\WF.Lesson04.Ex18.FibonacciForm\WF.Lesson04.Ex18.FibonacciForm.csproj", "{0D76C72B-061C-47DA-868E-CA6D997C65EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lab04", "WF.Lab04", "{374AF7C9-9BC1-48DE-8D03-74245993DE10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
