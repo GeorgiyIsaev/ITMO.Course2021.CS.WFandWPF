@@ -10,25 +10,27 @@ using System.Windows.Forms;
 
 namespace WF.Lab04.Ex04.NonmodalWindow
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
-        public string SolData
+
+        private void textBoxF23_TextChanged(object sender, EventArgs e)
         {
-            get
-            { return textBoxF1.Text; }
-            set
-            { textBoxF1.Text = value; }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
-            frm2.Show(this);
+            string s = textBoxF21.Text + " " + textBoxF22.Text + " " + textBoxF23.Text;
+            Form1 frm1 = this.Owner as Form1;
+            if (frm1 != null)
+            {
+                frm1.SolData = s;
+            }
+            this.Close();
         }
     }
 }
