@@ -14,7 +14,7 @@ namespace WF.Lab03.Ex01.CompositeContol
     {
         public WinTimer1()
         {
-            InitializeComponent();
+            InitializeComponent();             
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -27,6 +27,7 @@ namespace WF.Lab03.Ex01.CompositeContol
             {
                 userControlTimer1.TimeEnabled = true;
             }
+
         }
     }
 }
