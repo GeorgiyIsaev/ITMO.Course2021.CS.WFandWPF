@@ -27,5 +27,13 @@ namespace WF.Lab04.Ex02.ColorDialog
                 RichTextBoxStreamType.PlainText);
             }
         }
+
+        private void цветФонаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.BackColor = colorDialog1.Color;
+            }
+        }
     }
 }
