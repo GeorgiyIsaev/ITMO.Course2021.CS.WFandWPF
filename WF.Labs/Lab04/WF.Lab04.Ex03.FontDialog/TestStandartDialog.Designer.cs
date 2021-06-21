@@ -31,11 +31,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.форматToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.цветФонаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.шрифтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,19 +67,11 @@
             this.сохранитьКакToolStripMenuItem.Text = "Сохранить как..";
             this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 24);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(800, 426);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
             // форматToolStripMenuItem
             // 
             this.форматToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.цветФонаToolStripMenuItem});
+            this.цветФонаToolStripMenuItem,
+            this.шрифтToolStripMenuItem});
             this.форматToolStripMenuItem.Name = "форматToolStripMenuItem";
             this.форматToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.форматToolStripMenuItem.Text = "Формат";
@@ -88,6 +82,22 @@
             this.цветФонаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.цветФонаToolStripMenuItem.Text = "Цвет фона";
             this.цветФонаToolStripMenuItem.Click += new System.EventHandler(this.цветФонаToolStripMenuItem_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 24);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(800, 426);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // шрифтToolStripMenuItem
+            // 
+            this.шрифтToolStripMenuItem.Name = "шрифтToolStripMenuItem";
+            this.шрифтToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.шрифтToolStripMenuItem.Text = "Шрифт";
+            this.шрифтToolStripMenuItem.Click += new System.EventHandler(this.шрифтToolStripMenuItem_Click);
             // 
             // TestStandartDialog
             // 
@@ -116,6 +126,8 @@
         private System.Windows.Forms.ToolStripMenuItem форматToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem цветФонаToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem шрифтToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }
 
