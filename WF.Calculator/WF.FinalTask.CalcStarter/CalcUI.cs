@@ -61,6 +61,11 @@ namespace SimpleCalculator
         private Button KeySqrtY;
         private Button KeyPowY;
         private Button KeySqrtEquation;
+        private GroupBox groupBox1;
+        private Button Button_Factorial;
+        private RichTextBox RichTextBox_OutPutFactorial;
+        private TextBox TextBox_InputFactorial;
+        private ErrorProvider errorProvider2;
         private IContainer components;
 
         public CalcUI()
@@ -101,6 +106,7 @@ namespace SimpleCalculator
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalcUI));
             this.KeyDate = new System.Windows.Forms.Button();
             this.KeyOne = new System.Windows.Forms.Button();
@@ -138,7 +144,14 @@ namespace SimpleCalculator
             this.KeySqrtY = new System.Windows.Forms.Button();
             this.KeyPowY = new System.Windows.Forms.Button();
             this.KeySqrtEquation = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TextBox_InputFactorial = new System.Windows.Forms.TextBox();
+            this.RichTextBox_OutPutFactorial = new System.Windows.Forms.RichTextBox();
+            this.Button_Factorial = new System.Windows.Forms.Button();
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // KeyDate
@@ -551,12 +564,67 @@ namespace SimpleCalculator
             this.KeySqrtEquation.TabStop = false;
             this.KeySqrtEquation.Click += new System.EventHandler(this.KeySqrtEquation_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Button_Factorial);
+            this.groupBox1.Controls.Add(this.RichTextBox_OutPutFactorial);
+            this.groupBox1.Controls.Add(this.TextBox_InputFactorial);
+            this.groupBox1.Location = new System.Drawing.Point(6, 297);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(342, 109);
+            this.groupBox1.TabIndex = 30;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Факториал числа:";
+            // 
+            // TextBox_InputFactorial
+            // 
+            this.TextBox_InputFactorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_InputFactorial.BackColor = System.Drawing.Color.Lime;
+            this.TextBox_InputFactorial.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
+            this.TextBox_InputFactorial.Location = new System.Drawing.Point(6, 19);
+            this.TextBox_InputFactorial.Name = "TextBox_InputFactorial";
+            this.TextBox_InputFactorial.Size = new System.Drawing.Size(330, 26);
+            this.TextBox_InputFactorial.TabIndex = 31;
+            this.TextBox_InputFactorial.TabStop = false;
+            this.TextBox_InputFactorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TextBox_InputFactorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // RichTextBox_OutPutFactorial
+            // 
+            this.RichTextBox_OutPutFactorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.RichTextBox_OutPutFactorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.RichTextBox_OutPutFactorial.Location = new System.Drawing.Point(6, 51);
+            this.RichTextBox_OutPutFactorial.Name = "RichTextBox_OutPutFactorial";
+            this.RichTextBox_OutPutFactorial.ReadOnly = true;
+            this.RichTextBox_OutPutFactorial.Size = new System.Drawing.Size(219, 52);
+            this.RichTextBox_OutPutFactorial.TabIndex = 32;
+            this.RichTextBox_OutPutFactorial.Text = "";
+            // 
+            // Button_Factorial
+            // 
+            this.Button_Factorial.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.Button_Factorial.ForeColor = System.Drawing.Color.Red;
+            this.Button_Factorial.Location = new System.Drawing.Point(240, 51);
+            this.Button_Factorial.Name = "Button_Factorial";
+            this.Button_Factorial.Size = new System.Drawing.Size(96, 52);
+            this.Button_Factorial.TabIndex = 31;
+            this.Button_Factorial.TabStop = false;
+            this.Button_Factorial.Text = "Посчитать факториал";
+            this.Button_Factorial.Click += new System.EventHandler(this.Button_Factorial_Click);
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // CalcUI
             // 
             this.AcceptButton = this.KeyZero;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(354, 290);
+            this.ClientSize = new System.Drawing.Size(354, 418);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.KeySqrtEquation);
             this.Controls.Add(this.KeyFactorial);
             this.Controls.Add(this.KeySqrt);
@@ -598,6 +666,9 @@ namespace SimpleCalculator
             this.Load += new System.EventHandler(this.CalcUI_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -798,7 +869,7 @@ namespace SimpleCalculator
             t1.SetToolTip(KeyDate, "Дата");
             t1.SetToolTip(KeyClear, "Очистить");
 
-            StartForma();
+            //StartForma();
         }
 
         private void KeySqrtEquation_Click(object sender, EventArgs e)
@@ -860,7 +931,30 @@ namespace SimpleCalculator
             KeyDate.Location = new System.Drawing.Point(292, 145);
             KeyExit.Location = new System.Drawing.Point(292, 193);
             KeyEqual.Location = new System.Drawing.Point(292, 241);
-            Size = new Size(370, 328);  
+            Size = new Size(370, 456);  
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+             if (!char.IsDigit(e.KeyChar))
+             {
+                e.Handled = true;
+                errorProvider2.SetError(RichTextBox_OutPutFactorial, "Можно вводить только цифры");
+             }
+            else
+            {
+                errorProvider2.SetError(RichTextBox_OutPutFactorial, string.Empty);
+            }
+        }
+
+        private void Button_Factorial_Click(object sender, EventArgs e)
+        {
+            Button_Factorial.Enabled = false;
+            TextBox_InputFactorial.Enabled = false;
+            RichTextBox_OutPutFactorial.Text = "Идет расчет факториала! (10s)";
+
+
+
         }
     }
 }
