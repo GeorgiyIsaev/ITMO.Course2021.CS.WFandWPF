@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using Calculator;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
@@ -596,6 +597,7 @@ namespace SimpleCalculator
             this.RichTextBox_OutPutFactorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.RichTextBox_OutPutFactorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.RichTextBox_OutPutFactorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RichTextBox_OutPutFactorial.Location = new System.Drawing.Point(6, 51);
             this.RichTextBox_OutPutFactorial.Name = "RichTextBox_OutPutFactorial";
             this.RichTextBox_OutPutFactorial.ReadOnly = true;
@@ -947,26 +949,40 @@ namespace SimpleCalculator
                 errorProvider2.SetError(RichTextBox_OutPutFactorial, string.Empty);
             }
         }
+           
 
+        /*Асинхронный файториал*/
         private void Button_Factorial_Click(object sender, EventArgs e)
-        {      
+        {         
             Thread thread = new Thread(new ThreadStart(FactorialLoad));
-            thread.Start();
-            Button_Factorial.Enabled = false;
-            TextBox_InputFactorial.Enabled = false;
+            thread.Start();      
         }   
         private void FactorialLoad()
-        {     
-            int count = 16;
-            while (count-- >= 0)
+        {
+            Button_Factorial.Enabled = false;
+            TextBox_InputFactorial.Enabled = false;
+
+            int count = 11;
+            while (count-- >= 1)
             {
                 System.Threading.Thread.Sleep(1000);
                 RichTextBox_OutPutFactorial.Text = $"Идет расчет факториала! ({count}s)";
             }
+
+            double num = 0;
+            double numHold = 1;
+            if (Double.TryParse(TextBox_InputFactorial.Text, out num) && num > 0)
+            {             
+                for (int i = 1; i < num + 1; i++)
+                {
+                    numHold *= i;
+                }
+            }
+
+            string temp = CalcEngine.CalcFactorial();
+            RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
             Button_Factorial.Enabled = true;
             TextBox_InputFactorial.Enabled = true;
-        }
-     
-
+        }   
     }
 }
