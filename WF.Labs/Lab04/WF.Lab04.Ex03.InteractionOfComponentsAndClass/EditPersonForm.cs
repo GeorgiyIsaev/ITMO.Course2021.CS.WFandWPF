@@ -28,9 +28,15 @@ namespace WF.Lab04.Ex03.InteractionOfComponentsAndClass
             set { ageNumericUpDown.Value = value; }
         }
 
-        public EditPersonForm()
+        Person p;
+        public EditPersonForm(Person p)
         {
             InitializeComponent();
+            this.p = p;
+            this.FirstName = p.FirstName;
+            this.LastName = p.LastName;
+            this.Age = p.Age;
+            MessageBox.Show("Сотрудник: " + p.ToString());
         }
 
     }

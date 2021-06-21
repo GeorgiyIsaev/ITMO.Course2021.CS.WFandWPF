@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WF.Lab04.Ex03.InteractionOfComponentsAndClass
 {
-    class Persson
+    public class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
