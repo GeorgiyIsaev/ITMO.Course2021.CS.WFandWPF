@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using Calculator;
+using System.Threading;
 
 namespace SimpleCalculator
 {
@@ -948,13 +949,24 @@ namespace SimpleCalculator
         }
 
         private void Button_Factorial_Click(object sender, EventArgs e)
-        {
+        {      
+            Thread thread = new Thread(new ThreadStart(FactorialLoad));
+            thread.Start();
             Button_Factorial.Enabled = false;
             TextBox_InputFactorial.Enabled = false;
-            RichTextBox_OutPutFactorial.Text = "Идет расчет факториала! (10s)";
-
-
-
+        }   
+        private void FactorialLoad()
+        {     
+            int count = 16;
+            while (count-- >= 0)
+            {
+                System.Threading.Thread.Sleep(1000);
+                RichTextBox_OutPutFactorial.Text = $"Идет расчет факториала! ({count}s)";
+            }
+            Button_Factorial.Enabled = true;
+            TextBox_InputFactorial.Enabled = true;
         }
+     
+
     }
 }

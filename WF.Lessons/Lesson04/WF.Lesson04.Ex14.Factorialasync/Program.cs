@@ -17,7 +17,10 @@ namespace Factorialasync
 
 
             for (int i = 1; i <= 10; i++)
-            { Thread.Sleep(1000); Console.WriteLine("Печать ..."); }
+            { 
+                Thread.Sleep(1000); 
+                Console.WriteLine("Печать ...");
+            }
             Console.ReadLine();
 
         }
