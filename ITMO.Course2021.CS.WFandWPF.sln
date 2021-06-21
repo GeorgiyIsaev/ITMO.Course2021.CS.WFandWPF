@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex15.FactorialA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex16.AsyncAwaitForms", "WF.Lessons\Lesson04\WF.Lesson04.Ex16.AsyncAwaitForms\WF.Lesson04.Ex16.AsyncAwaitForms.csproj", "{34AEF600-6432-443C-A634-D2D9A92D7970}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex17.EditPerson", "WF.Lessons\Lesson04\WF.Lesson04.Ex17.EditPerson\WF.Lesson04.Ex17.EditPerson.csproj", "{08AAEA30-1933-4152-9A86-0216609AE14C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -689,6 +691,12 @@ Global
 		{34AEF600-6432-443C-A634-D2D9A92D7970}.Release|Any CPU.Build.0 = Release|Any CPU
 		{34AEF600-6432-443C-A634-D2D9A92D7970}.Release|x86.ActiveCfg = Release|Any CPU
 		{34AEF600-6432-443C-A634-D2D9A92D7970}.Release|x86.Build.0 = Release|Any CPU
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Debug|x86.ActiveCfg = Debug|x86
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Debug|x86.Build.0 = Debug|x86
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Release|Any CPU.ActiveCfg = Release|x86
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Release|x86.ActiveCfg = Release|x86
+		{08AAEA30-1933-4152-9A86-0216609AE14C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -762,6 +770,7 @@ Global
 		{14670303-07FB-49D8-8A01-12AE7417AC12} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 		{64CB1E7C-2B20-4EF7-93C6-21189CA8EF62} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 		{34AEF600-6432-443C-A634-D2D9A92D7970} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
+		{08AAEA30-1933-4152-9A86-0216609AE14C} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
