@@ -147,9 +147,9 @@ namespace SimpleCalculator
             this.KeyPowY = new System.Windows.Forms.Button();
             this.KeySqrtEquation = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TextBox_InputFactorial = new System.Windows.Forms.TextBox();
-            this.RichTextBox_OutPutFactorial = new System.Windows.Forms.RichTextBox();
             this.Button_Factorial = new System.Windows.Forms.Button();
+            this.RichTextBox_OutPutFactorial = new System.Windows.Forms.RichTextBox();
+            this.TextBox_InputFactorial = new System.Windows.Forms.TextBox();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -578,19 +578,17 @@ namespace SimpleCalculator
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Факториал числа:";
             // 
-            // TextBox_InputFactorial
+            // Button_Factorial
             // 
-            this.TextBox_InputFactorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox_InputFactorial.BackColor = System.Drawing.Color.Lime;
-            this.TextBox_InputFactorial.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBox_InputFactorial.Location = new System.Drawing.Point(6, 19);
-            this.TextBox_InputFactorial.Name = "TextBox_InputFactorial";
-            this.TextBox_InputFactorial.Size = new System.Drawing.Size(330, 26);
-            this.TextBox_InputFactorial.TabIndex = 31;
-            this.TextBox_InputFactorial.TabStop = false;
-            this.TextBox_InputFactorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TextBox_InputFactorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.Button_Factorial.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
+            this.Button_Factorial.ForeColor = System.Drawing.Color.Red;
+            this.Button_Factorial.Location = new System.Drawing.Point(240, 51);
+            this.Button_Factorial.Name = "Button_Factorial";
+            this.Button_Factorial.Size = new System.Drawing.Size(96, 52);
+            this.Button_Factorial.TabIndex = 31;
+            this.Button_Factorial.TabStop = false;
+            this.Button_Factorial.Text = "Посчитать факториал";
+            this.Button_Factorial.Click += new System.EventHandler(this.Button_Factorial_Click);
             // 
             // RichTextBox_OutPutFactorial
             // 
@@ -605,17 +603,19 @@ namespace SimpleCalculator
             this.RichTextBox_OutPutFactorial.TabIndex = 32;
             this.RichTextBox_OutPutFactorial.Text = "";
             // 
-            // Button_Factorial
+            // TextBox_InputFactorial
             // 
-            this.Button_Factorial.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
-            this.Button_Factorial.ForeColor = System.Drawing.Color.Red;
-            this.Button_Factorial.Location = new System.Drawing.Point(240, 51);
-            this.Button_Factorial.Name = "Button_Factorial";
-            this.Button_Factorial.Size = new System.Drawing.Size(96, 52);
-            this.Button_Factorial.TabIndex = 31;
-            this.Button_Factorial.TabStop = false;
-            this.Button_Factorial.Text = "Посчитать факториал";
-            this.Button_Factorial.Click += new System.EventHandler(this.Button_Factorial_Click);
+            this.TextBox_InputFactorial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_InputFactorial.BackColor = System.Drawing.Color.Lime;
+            this.TextBox_InputFactorial.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
+            this.TextBox_InputFactorial.Location = new System.Drawing.Point(6, 19);
+            this.TextBox_InputFactorial.Name = "TextBox_InputFactorial";
+            this.TextBox_InputFactorial.Size = new System.Drawing.Size(330, 26);
+            this.TextBox_InputFactorial.TabIndex = 31;
+            this.TextBox_InputFactorial.TabStop = false;
+            this.TextBox_InputFactorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TextBox_InputFactorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // errorProvider2
             // 
@@ -982,7 +982,7 @@ namespace SimpleCalculator
             string temp = CalcEngine.CalcFactorial();
             RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
             Button_Factorial.Enabled = true;
-            TextBox_InputFactorial.Enabled = true;
+            TextBox_InputFactorial.Enabled = true; 
         }   
     }
 }
