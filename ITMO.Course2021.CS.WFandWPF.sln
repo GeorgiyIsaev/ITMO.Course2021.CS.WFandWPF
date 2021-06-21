@@ -129,6 +129,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex02.ConsStram0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex03.ConsStram02", "WF.Lessons\Lesson04\WF.Lesson04.Ex03.ConsStram02\WF.Lesson04.Ex03.ConsStram02.csproj", "{FDF65A0B-2AE0-4514-8004-A2ECBDD4704D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lesson04.Ex04.AddWithThreads", "WF.Lessons\Lesson04\WF.Lesson04.Ex04.AddWithThreads\WF.Lesson04.Ex04.AddWithThreads.csproj", "{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -565,6 +567,12 @@ Global
 		{FDF65A0B-2AE0-4514-8004-A2ECBDD4704D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDF65A0B-2AE0-4514-8004-A2ECBDD4704D}.Release|x86.ActiveCfg = Release|Any CPU
 		{FDF65A0B-2AE0-4514-8004-A2ECBDD4704D}.Release|x86.Build.0 = Release|Any CPU
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Debug|x86.ActiveCfg = Debug|x86
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Debug|x86.Build.0 = Debug|x86
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Release|Any CPU.ActiveCfg = Release|x86
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Release|x86.ActiveCfg = Release|x86
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -625,6 +633,7 @@ Global
 		{9A4EE66A-D782-4DDD-B9B0-82BB27627484} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 		{7858354F-E100-4624-8673-5AF505F95399} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 		{FDF65A0B-2AE0-4514-8004-A2ECBDD4704D} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
+		{E2A69E26-A5F1-4577-9265-EB30F7FBCF90} = {3FB8E469-771E-4B0E-9B77-2353593D44C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
