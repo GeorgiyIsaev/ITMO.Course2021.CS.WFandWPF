@@ -167,13 +167,15 @@ namespace SimpleCalculator
             // 
             // VersionInfo
             // 
+            this.VersionInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.VersionInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.VersionInfo.Cursor = System.Windows.Forms.Cursors.No;
             this.VersionInfo.Font = new System.Drawing.Font("Verdana", 8F);
             this.VersionInfo.Location = new System.Drawing.Point(6, 33);
             this.VersionInfo.Name = "VersionInfo";
             this.VersionInfo.ReadOnly = true;
-            this.VersionInfo.Size = new System.Drawing.Size(342, 23);
+            this.VersionInfo.Size = new System.Drawing.Size(342, 20);
             this.VersionInfo.TabIndex = 0;
             this.VersionInfo.TabStop = false;
             this.VersionInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -324,6 +326,8 @@ namespace SimpleCalculator
             // 
             // OutputDisplay
             // 
+            this.OutputDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.OutputDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.OutputDisplay.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
             this.OutputDisplay.Location = new System.Drawing.Point(6, 65);
@@ -429,14 +433,14 @@ namespace SimpleCalculator
             // ToolStripMenuItemClear
             // 
             this.ToolStripMenuItemClear.Name = "ToolStripMenuItemClear";
-            this.ToolStripMenuItemClear.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemClear.Size = new System.Drawing.Size(126, 22);
             this.ToolStripMenuItemClear.Text = "Очистить";
             this.ToolStripMenuItemClear.Click += new System.EventHandler(this.ToolStripMenuItemClear_Click);
             // 
             // ToolStripMenuItemExit
             // 
             this.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
-            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemExit.Size = new System.Drawing.Size(126, 22);
             this.ToolStripMenuItemExit.Text = "Выход";
             this.ToolStripMenuItemExit.Click += new System.EventHandler(this.ToolStripMenuItemExit_Click);
             // 
@@ -452,14 +456,14 @@ namespace SimpleCalculator
             // ToolStripMenuItemNnormal
             // 
             this.ToolStripMenuItemNnormal.Name = "ToolStripMenuItemNnormal";
-            this.ToolStripMenuItemNnormal.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemNnormal.Size = new System.Drawing.Size(149, 22);
             this.ToolStripMenuItemNnormal.Text = "Обычный";
             this.ToolStripMenuItemNnormal.Click += new System.EventHandler(this.ToolStripMenuItemNnormal_Click);
             // 
             // ToolStripMenuItemEngineering
             // 
             this.ToolStripMenuItemEngineering.Name = "ToolStripMenuItemEngineering";
-            this.ToolStripMenuItemEngineering.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemEngineering.Size = new System.Drawing.Size(149, 22);
             this.ToolStripMenuItemEngineering.Text = "Инжинерный";
             this.ToolStripMenuItemEngineering.Click += new System.EventHandler(this.ToolStripMenuItemEngineering_Click);
             // 
@@ -828,6 +832,7 @@ namespace SimpleCalculator
             KeyDate.Location = new System.Drawing.Point(198, 145);
             KeyExit.Location = new System.Drawing.Point(198, 193);
             KeyEqual.Location = new System.Drawing.Point(198, 241);
+            Size = new Size(280, 328);
         }
 
         private void ToolStripMenuItemEngineering_Click(object sender, EventArgs e)
@@ -846,9 +851,7 @@ namespace SimpleCalculator
             KeyExit.Location = new System.Drawing.Point(292, 193);
             KeyEqual.Location = new System.Drawing.Point(292, 241);
 
-            370; 328
-
-
+            Size = new Size(370, 328);  
         }
     }
 }
