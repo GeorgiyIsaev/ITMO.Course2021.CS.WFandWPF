@@ -25,7 +25,20 @@ namespace WF.Lab04.Ex05.ControlTask.FunctionCalculation
             if (formRange.ShowDialog() == DialogResult.OK)
             {
                 label2.Text = $"Левая граница: {s.BeginInterval} - Провая граница{s.EndInterval}";
+                SinText(s);
             }
+        }
+
+        private void SinText(SinInterval s)
+        {
+            string str="";
+
+            for(double i = s.BeginInterval; i<s.EndInterval; i += 0.1)
+            {              
+                str += $"x = {i}  y = {Math.Round(Math.Sin(i),2)};\n";
+            }
+            richTextBox1.Text = str;
+                
         }
 
 
