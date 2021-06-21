@@ -615,7 +615,7 @@ namespace SimpleCalculator
             this.TextBox_InputFactorial.TabIndex = 31;
             this.TextBox_InputFactorial.TabStop = false;
             this.TextBox_InputFactorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TextBox_InputFactorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.TextBox_InputFactorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_InputFactorial_KeyPress);
             // 
             // errorProvider2
             // 
@@ -872,7 +872,7 @@ namespace SimpleCalculator
             t1.SetToolTip(KeyDate, "Дата");
             t1.SetToolTip(KeyClear, "Очистить");
 
-            //StartForma();
+            StartForma();
         }
 
         private void KeySqrtEquation_Click(object sender, EventArgs e)
@@ -893,6 +893,7 @@ namespace SimpleCalculator
             this.Close();
         }
 
+        /*Изменинение вида калькулятора*/
         private void ToolStripMenuItemNnormal_Click(object sender, EventArgs e)
         {
             StartForma();
@@ -916,9 +917,6 @@ namespace SimpleCalculator
             Size = new Size(280, 328);
         }
 
-
-
-
         private void ToolStripMenuItemEngineering_Click(object sender, EventArgs e)
         {
             KeyPow.Show(); ;
@@ -937,7 +935,7 @@ namespace SimpleCalculator
             Size = new Size(370, 456);  
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBox_InputFactorial_KeyPress(object sender, KeyPressEventArgs e)
         {
              if (!char.IsDigit(e.KeyChar))
              {
@@ -953,9 +951,11 @@ namespace SimpleCalculator
 
         /*Асинхронный файториал*/
         private void Button_Factorial_Click(object sender, EventArgs e)
-        {         
-            Thread thread = new Thread(new ThreadStart(FactorialLoad));
-            thread.Start();      
+        {
+            if (TextBox_InputFactorial.Text != "") {
+                Thread thread = new Thread(new ThreadStart(FactorialLoad));
+                thread.Start();
+            }
         }   
         private void FactorialLoad()
         {
@@ -981,6 +981,7 @@ namespace SimpleCalculator
 
             string temp = CalcEngine.CalcFactorial();
             RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
+            TextBox_InputFactorial.Text = "";
             Button_Factorial.Enabled = true;
             TextBox_InputFactorial.Enabled = true; 
         }   
