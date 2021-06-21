@@ -42,6 +42,7 @@
             this.TextBox_Begin.Name = "TextBox_Begin";
             this.TextBox_Begin.Size = new System.Drawing.Size(131, 24);
             this.TextBox_Begin.TabIndex = 0;
+            this.TextBox_Begin.Validating += new System.ComponentModel.CancelEventHandler(this.TextBox_Validating);
             // 
             // TextBox_End
             // 
@@ -50,6 +51,7 @@
             this.TextBox_End.Name = "TextBox_End";
             this.TextBox_End.Size = new System.Drawing.Size(131, 24);
             this.TextBox_End.TabIndex = 1;
+            this.TextBox_End.Validating += new System.ComponentModel.CancelEventHandler(this.TextBox_Validating);
             // 
             // label1
             // 
@@ -70,6 +72,7 @@
             this.Button_Start.TabIndex = 3;
             this.Button_Start.Text = "Передать данные";
             this.Button_Start.UseVisualStyleBackColor = true;
+            this.Button_Start.Click += new System.EventHandler(this.Button_Start_Click);
             // 
             // Button_Censel
             // 
@@ -80,10 +83,10 @@
             this.Button_Censel.TabIndex = 4;
             this.Button_Censel.Text = "Отменить передачу";
             this.Button_Censel.UseVisualStyleBackColor = true;
+            this.Button_Censel.Click += new System.EventHandler(this.Button_Censel_Click);
             // 
             // FormRange
             // 
-            this.AcceptButton = this.Button_Start;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Button_Censel;
@@ -95,6 +98,7 @@
             this.Controls.Add(this.TextBox_Begin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormRange";
+            this.ShowInTaskbar = false;
             this.Text = "FormRange";
             this.ResumeLayout(false);
             this.PerformLayout();

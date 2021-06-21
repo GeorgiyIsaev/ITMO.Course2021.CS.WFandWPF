@@ -19,8 +19,15 @@ namespace WF.Lab04.Ex05.ControlTask.FunctionCalculation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormRange formRange = new FormRange();
-            formRange.Show(this);
+            SinInterval s = new SinInterval();
+            FormRange formRange = new FormRange(out s);
+            //formRange.Show(this);
+            if (formRange.ShowDialog() == DialogResult.OK)
+            {
+                label2.Text = $"Левая граница: {s.BeginInterval} - Провая граница{s.EndInterval}";
+            }
         }
+
+
     }
 }
