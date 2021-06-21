@@ -54,5 +54,17 @@ namespace WF.Lab04.Ex03.InteractionOfComponentsAndClass
                 e.Item.SubItems.Add(pers[e.ItemIndex].Age.ToString());
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (Person item in pers)
+                {
+                    sb.Append("Сотрудник: \n" + item.ToString());
+                }
+                richTextBox1.Text = sb.ToString();
+            }
+        }
     }
 }
