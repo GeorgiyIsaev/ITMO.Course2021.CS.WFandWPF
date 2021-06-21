@@ -605,23 +605,23 @@ namespace SimpleCalculator
 		#endregion
 
 		protected void KeyPlus_Click (object sender, System.EventArgs e)
-		{            
-            CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);  
+		{
+            OutputDisplay.Text = CalcEngine.CalcOperation (CalcEngine.Operator.eAdd);  
         }
 
 		protected void KeyMinus_Click (object sender, System.EventArgs e)
-		{     
-            CalcEngine.CalcOperation (CalcEngine.Operator.eSubtract);
+		{
+            OutputDisplay.Text = CalcEngine.CalcOperation (CalcEngine.Operator.eSubtract);
 		}
 
 		protected void KeyMultiply_Click (object sender, System.EventArgs e)
-		{         
-            CalcEngine.CalcOperation (CalcEngine.Operator.eMultiply);
+		{
+            OutputDisplay.Text = CalcEngine.CalcOperation (CalcEngine.Operator.eMultiply);
 		}
 
 		protected void KeyDivide_Click (object sender, System.EventArgs e)
-		{         
-            CalcEngine.CalcOperation (CalcEngine.Operator.eDivide);
+		{
+            OutputDisplay.Text = CalcEngine.CalcOperation (CalcEngine.Operator.eDivide);
 		}
 
 		//
@@ -736,7 +736,7 @@ namespace SimpleCalculator
         
         private void KeyPowY_Click(object sender, EventArgs e)
         {
-            CalcEngine.CalcOperation(CalcEngine.Operator.ePowY);          
+            OutputDisplay.Text = CalcEngine.CalcOperation(CalcEngine.Operator.ePowY);          
         }
 
         private void KeyPow_Click(object sender, EventArgs e)

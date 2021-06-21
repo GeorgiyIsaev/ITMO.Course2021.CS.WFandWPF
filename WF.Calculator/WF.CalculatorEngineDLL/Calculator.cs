@@ -84,7 +84,7 @@ namespace Calculator
 		{
 			if (stopInput)
             {
-				CalcReset();
+				stringAnswer = "";
 				stopInput = false;
 
 			}
@@ -96,19 +96,20 @@ namespace Calculator
 		// Called when an operator is selected (+, -, *, /)
 		//
 
-		public static void CalcOperation (Operator calcOper)
+		public static string CalcOperation (Operator calcOper)
 		{
-			if (stringAnswer != "" && !secondNumberAdded)
+			if (firstNumber != 0)
+				stringAnswer = CalcEqual();
+
+			if (stringAnswer != "" /*&& !secondNumberAdded*/)
 			{
-				secondNumber = System.Convert.ToDouble (stringAnswer);
+				firstNumber = System.Convert.ToDouble (stringAnswer);
 				calcOperation = calcOper;
-				stringAnswer = "";
+				//stringAnswer = "";
 				decimalAdded = false;			
 			}
-			//if (firstNumber == 0) 
-			//	firstNumber = secondNumber;
-			//CalcEqual();
-
+			stopInput = true;
+			return stringAnswer;
 		}
 
 		//
@@ -222,7 +223,7 @@ namespace Calculator
 
 
 		/*Выполнение новых операций, которые будут добавлены в кейс*/
-		static bool stopInput = false;
+		static bool stopInput = false; //оповещает о конце числа
 		static bool ifNotClear()
         {
 			if (stringAnswer == "бесконечность" || stringAnswer == "Nan")
