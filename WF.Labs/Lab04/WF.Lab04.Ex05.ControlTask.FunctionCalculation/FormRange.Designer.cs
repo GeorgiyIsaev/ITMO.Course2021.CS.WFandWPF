@@ -63,6 +63,7 @@
             // 
             // Button_Start
             // 
+            this.Button_Start.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Button_Start.Location = new System.Drawing.Point(27, 88);
             this.Button_Start.Name = "Button_Start";
             this.Button_Start.Size = new System.Drawing.Size(131, 23);
@@ -72,6 +73,7 @@
             // 
             // Button_Censel
             // 
+            this.Button_Censel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Button_Censel.Location = new System.Drawing.Point(164, 88);
             this.Button_Censel.Name = "Button_Censel";
             this.Button_Censel.Size = new System.Drawing.Size(131, 23);
@@ -81,14 +83,17 @@
             // 
             // FormRange
             // 
+            this.AcceptButton = this.Button_Start;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Button_Censel;
             this.ClientSize = new System.Drawing.Size(322, 135);
             this.Controls.Add(this.Button_Censel);
             this.Controls.Add(this.Button_Start);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBox_End);
             this.Controls.Add(this.TextBox_Begin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormRange";
             this.Text = "FormRange";
             this.ResumeLayout(false);

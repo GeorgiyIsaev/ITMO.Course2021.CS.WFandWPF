@@ -16,5 +16,11 @@ namespace WF.Lab04.Ex05.ControlTask.FunctionCalculation
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormRange formRange = new FormRange();
+            formRange.Show(this);
+        }
     }
 }
