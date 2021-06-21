@@ -797,6 +797,8 @@ namespace SimpleCalculator
             t1.SetToolTip(KeyDivide, "Разделить");
             t1.SetToolTip(KeyDate, "Дата");
             t1.SetToolTip(KeyClear, "Очистить");
+
+            StartForma();
         }
 
         private void KeySqrtEquation_Click(object sender, EventArgs e)
@@ -819,6 +821,11 @@ namespace SimpleCalculator
 
         private void ToolStripMenuItemNnormal_Click(object sender, EventArgs e)
         {
+            StartForma();
+        }
+        private void StartForma()
+        {
+
             KeyPow.Hide();
             KeyPowY.Hide();
             KeySqrt.Hide();
@@ -835,6 +842,9 @@ namespace SimpleCalculator
             Size = new Size(280, 328);
         }
 
+
+
+
         private void ToolStripMenuItemEngineering_Click(object sender, EventArgs e)
         {
             KeyPow.Show(); ;
@@ -850,7 +860,6 @@ namespace SimpleCalculator
             KeyDate.Location = new System.Drawing.Point(292, 145);
             KeyExit.Location = new System.Drawing.Point(292, 193);
             KeyEqual.Location = new System.Drawing.Point(292, 241);
-
             Size = new Size(370, 328);  
         }
     }
