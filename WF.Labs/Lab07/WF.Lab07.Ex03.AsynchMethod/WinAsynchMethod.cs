@@ -27,6 +27,7 @@ namespace WF.Lab07.Ex03.AsynchMethod
             while (count-- >0)
             {
                 System.Threading.Thread.Sleep(1000);
+                lblResult.Invoke(PrintDlegateFunc, new object[] { "Ожидание! "+ count });
             }   
             return a + b;
         }
