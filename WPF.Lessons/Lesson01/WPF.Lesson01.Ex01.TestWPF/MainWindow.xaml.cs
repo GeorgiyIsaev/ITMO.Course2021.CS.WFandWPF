@@ -21,8 +21,9 @@ namespace WPF.Lesson01.Ex01.TestWPF
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {        
             InitializeComponent();
+            Button1.Content = "Текст из конструктора";
         }
     }
 }
