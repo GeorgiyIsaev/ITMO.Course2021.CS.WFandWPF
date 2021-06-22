@@ -205,7 +205,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WF.Lesson05.Ex03.DegreeConv
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "49238"
+		SlnRelativePath = "WF.Lessons\Lesson05\WF.Lesson05.Ex03.DegreeConverter.WebView\"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Lesson01", "WPF.Lesson01", "{849347A7-5C23-4EE4-8C6B-952000DA7B35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -94,7 +94,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WF.Lesson05.Ex03.DegreeConverter.Engine\WF.Lesson05.Ex03.DegreeConverter.Engine.csproj">
       <Project>{EF93D894-001E-4495-BA24-2AAF5EB12AC3}</Project>
-      <Name>DegreeConverter.Engine</Name>
+      <Name>WF.Lesson05.Ex03.DegreeConverter.Engine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
