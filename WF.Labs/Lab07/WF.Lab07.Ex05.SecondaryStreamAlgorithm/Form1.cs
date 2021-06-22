@@ -12,11 +12,7 @@ namespace WF.Lab07.Ex05.SecondaryStreamAlgorithm
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
+               
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar))
@@ -26,38 +22,61 @@ namespace WF.Lab07.Ex05.SecondaryStreamAlgorithm
             }
         }
 
-        private void Button_Start_Click(object sender, EventArgs e)
+        public Form1()
         {
-            RichTextBox_OutPut.Text = GoButt();
+            InitializeComponent();
+            PrintDlegateFunc = new PrintRichTextBox(PrintFunc);
         }
 
-        public string GoButt()
-        {
-            int maxValue = 0;
-            System.Text.StringBuilder resultText = new System.Text.StringBuilder();
-            if (int.TryParse(TextBox_Input.Text, out maxValue))
+
+        private void Button_Start_Click(object sender, EventArgs e)
+        {           
+            int Value = 0;
+            if (int.TryParse(TextBox_Input.Text, out Value))
             {
-                for (int trial = 2; trial <= maxValue; trial++)
+                AsyncSumm summdelegate = new AsyncSumm(Summ);
+                AsyncCallback cb = new AsyncCallback(CallBackMethod);
+                summdelegate.BeginInvoke(Value, cb, summdelegate);
+            }           
+        }
+
+
+
+        /*Вызов через асинхронный метод через делегат*/
+        private delegate int AsyncSumm(int a);
+        delegate void PrintRichTextBox(string str);
+        private PrintRichTextBox PrintDlegateFunc;
+        void PrintFunc(string str)
+        {     
+            RichTextBox_OutPut.Text += str;            
+        }
+        private void CallBackMethod(IAsyncResult ar)
+        {     
+            RichTextBox_OutPut.Invoke(PrintDlegateFunc, new object[] { ";\n" });       
+        }
+
+        private int Summ(int Value)
+        {
+          
+            RichTextBox_OutPut.Invoke(PrintDlegateFunc, new object[] { "Расчет для числа (" + Value + "): " });
+            for (int trial = 2; trial <= Value; trial++)
+            {
+                System.Threading.Thread.Sleep(1000);
+                bool isPrime = true;
+                for (int divisor = 2; divisor <= Math.Sqrt(trial); divisor++)
                 {
-                    bool isPrime = true;
-                    for (int divisor = 2; divisor <= Math.Sqrt(trial); divisor++)
+                    if (trial % divisor == 0)
                     {
-                        if (trial % divisor == 0)
-                        {
-                            isPrime = false; break;
-                        }
-                    }
-                    if (isPrime)
-                    {
-                        resultText.AppendFormat("{0} ", trial);
+                        isPrime = false; break;
                     }
                 }
-            }
-            else
-            {
-                resultText.Append("Unable to parse maximum value.");
-            }
-            return resultText.ToString();
+                if (isPrime)
+                {
+                    RichTextBox_OutPut.Invoke(PrintDlegateFunc, new object[] { " " + trial });
+                }
+            }       
+            return Value;
         }
+       
     }
 }
