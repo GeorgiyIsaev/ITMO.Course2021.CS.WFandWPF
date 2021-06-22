@@ -54,6 +54,7 @@ namespace WF.Lab07.Ex01.BackgroundWorker
             else
                 System.Windows.Forms.MessageBox.Show("Run Cancelled");
         }
+        /*PS  все свойства для backgroundWorker установть в True*/
 
         private void Button_Start_Click(object sender, EventArgs e)
         {

@@ -12,6 +12,8 @@ namespace WF.Lab07.Ex02.AsynchDelegate
 {
     public partial class WinAsynchDelegate : Form
     {
+        bool Cancel;
+
         public WinAsynchDelegate()
         {
             InitializeComponent();
@@ -25,48 +27,51 @@ namespace WF.Lab07.Ex02.AsynchDelegate
                 MessageBox.Show("Поле должно содержать цифры");
             }
         }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void TimeConsumingMethod(int seconds)
         {
-            int i;
-            i = int.Parse(e.Argument.ToString());
-            for (int j = 1; j <= i; j++)
+            for (int j = 1; j <= seconds; j++)
             {
-                if (backgroundWorker1.CancellationPending)
-                {
-                    e.Cancel = true;
-                    return;
-                }
+                if (Cancel)
+                    break;
+                SetProgress((int)(j * 100) / seconds);
                 System.Threading.Thread.Sleep(1000);
-                backgroundWorker1.ReportProgress((int)(j * 100 / i));
+                label3.Text = "->" + j;
+            }
+            if (Cancel)
+            {
+                System.Windows.Forms.MessageBox.Show("Cancelled");
+                Cancel = false;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Complete");
+            }
+        }
+        private delegate void TimeConsumingMethodDelegate(int seconds);
+        public delegate void SetProgressDelegate(int val);
+        public void SetProgress(int val)
+        {
+            if (progressBar1.InvokeRequired)
+            {
+                SetProgressDelegate del = new SetProgressDelegate(SetProgress);
+                this.Invoke(del, new object[] { val });
+            }
+            else
+            {
+                progressBar1.Value = val;
             }
         }
 
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            progressBar1.Value = e.ProgressPercentage;
-        }
-
-        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (!(e.Cancelled))
-                System.Windows.Forms.MessageBox.Show("Run Completed!");
-            else
-                System.Windows.Forms.MessageBox.Show("Run Cancelled");
-        }
 
         private void Button_Start_Click(object sender, EventArgs e)
         {
-            if (!(textBox1.Text == ""))
-            {
-                int i = int.Parse(textBox1.Text);
-                backgroundWorker1.RunWorkerAsync(i);
-            }
+            TimeConsumingMethodDelegate del = new TimeConsumingMethodDelegate(TimeConsumingMethod);
+            del.BeginInvoke(int.Parse(textBox1.Text), null, null);
         }
 
         private void Button_Cancel_Click(object sender, EventArgs e)
         {
-            backgroundWorker1.CancelAsync();
+            Cancel = true;
         }
     }
 }
