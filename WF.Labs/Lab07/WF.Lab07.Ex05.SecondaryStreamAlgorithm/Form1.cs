@@ -25,5 +25,39 @@ namespace WF.Lab07.Ex05.SecondaryStreamAlgorithm
                 MessageBox.Show("Поле должно содержать цифры");
             }
         }
+
+        private void Button_Start_Click(object sender, EventArgs e)
+        {
+            RichTextBox_OutPut.Text = GoButt();
+        }
+
+        public string GoButt()
+        {
+            int maxValue = 0;
+            System.Text.StringBuilder resultText = new System.Text.StringBuilder();
+            if (int.TryParse(TextBox_Input.Text, out maxValue))
+            {
+                for (int trial = 2; trial <= maxValue; trial++)
+                {
+                    bool isPrime = true;
+                    for (int divisor = 2; divisor <= Math.Sqrt(trial); divisor++)
+                    {
+                        if (trial % divisor == 0)
+                        {
+                            isPrime = false; break;
+                        }
+                    }
+                    if (isPrime)
+                    {
+                        resultText.AppendFormat("{0} ", trial);
+                    }
+                }
+            }
+            else
+            {
+                resultText.Append("Unable to parse maximum value.");
+            }
+            return resultText.ToString();
+        }
     }
 }

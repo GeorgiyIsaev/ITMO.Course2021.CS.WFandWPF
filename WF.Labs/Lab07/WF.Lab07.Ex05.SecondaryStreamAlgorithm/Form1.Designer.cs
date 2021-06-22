@@ -62,6 +62,7 @@
             this.Button_Start.TabIndex = 2;
             this.Button_Start.Text = "Начать расчет";
             this.Button_Start.UseVisualStyleBackColor = true;
+            this.Button_Start.Click += new System.EventHandler(this.Button_Start_Click);
             // 
             // RichTextBox_OutPut
             // 
