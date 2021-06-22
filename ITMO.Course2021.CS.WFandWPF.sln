@@ -177,6 +177,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab04.Ex04.NonmodalWindo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab04.Ex05.ControlTask.FunctionCalculation", "WF.Labs\Lab04\WF.Lab04.Ex05.ControlTask.FunctionCalculation\WF.Lab04.Ex05.ControlTask.FunctionCalculation.csproj", "{A35FDA88-E25A-45FA-B141-30952099BDC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lesson05", "WF.Lesson05", "{BBCCF758-05AC-4774-81B8-7B45ACF2CB40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
