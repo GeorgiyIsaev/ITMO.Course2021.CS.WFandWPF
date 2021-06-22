@@ -13,7 +13,6 @@ namespace WF.Lab07.Ex02.AsynchDelegate
     public partial class WinAsynchDelegate : Form
     {
         bool Cancel;
-
         public WinAsynchDelegate()
         {
             InitializeComponent();
@@ -30,12 +29,11 @@ namespace WF.Lab07.Ex02.AsynchDelegate
         private void TimeConsumingMethod(int seconds)
         {
             for (int j = 1; j <= seconds; j++)
-            {
-                if (Cancel)
-                    break;
+            {               
                 SetProgress((int)(j * 100) / seconds);
                 System.Threading.Thread.Sleep(1000);
-                label3.Text = "->" + j;
+                if (Cancel)
+                    break;                
             }
             if (Cancel)
             {
@@ -54,7 +52,7 @@ namespace WF.Lab07.Ex02.AsynchDelegate
             if (progressBar1.InvokeRequired)
             {
                 SetProgressDelegate del = new SetProgressDelegate(SetProgress);
-                this.Invoke(del, new object[] { val });
+                this.Invoke(del, new object[] { val });               
             }
             else
             {
