@@ -218,7 +218,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WF.Lab07", "WF.Lab07", "{F6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab07.Ex01.BackgroundWorker", "WF.Labs\Lab07\WF.Lab07.Ex01.BackgroundWorker\WF.Lab07.Ex01.BackgroundWorker.csproj", "{29735B2C-E5CF-4708-A198-D1D2738C0E70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab07.Ex02.AsynchDelegate", "WF.Lab07.Ex02.AsynchDelegate\WF.Lab07.Ex02.AsynchDelegate.csproj", "{901600B4-4B19-469D-A853-347AF07A1D21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Lab07.Ex02.AsynchDelegate", "WF.Labs\Lab07\WF.Lab07.Ex02.AsynchDelegate\WF.Lab07.Ex02.AsynchDelegate.csproj", "{901600B4-4B19-469D-A853-347AF07A1D21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
