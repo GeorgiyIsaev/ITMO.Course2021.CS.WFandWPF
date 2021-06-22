@@ -35,6 +35,7 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnDev = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbA
@@ -98,11 +99,22 @@
             this.lblResult.TabIndex = 6;
             this.lblResult.Text = "lblResult";
             // 
+            // btnDev
+            // 
+            this.btnDev.Location = new System.Drawing.Point(119, 52);
+            this.btnDev.Name = "btnDev";
+            this.btnDev.Size = new System.Drawing.Size(75, 23);
+            this.btnDev.TabIndex = 7;
+            this.btnDev.Text = "Разность";
+            this.btnDev.UseVisualStyleBackColor = true;
+            this.btnDev.Click += new System.EventHandler(this.btnDev_Click);
+            // 
             // WinAsynchMethod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 162);
+            this.Controls.Add(this.btnDev);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnDev;
     }
 }
 

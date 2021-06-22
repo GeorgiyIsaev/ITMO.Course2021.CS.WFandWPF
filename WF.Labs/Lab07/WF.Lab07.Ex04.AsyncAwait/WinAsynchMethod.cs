@@ -72,5 +72,33 @@ namespace WF.Lab07.Ex04.AsyncAwait
         {
             lblResult.Text = str;
         }
+
+        /*Методы async и await*/
+        private async void btnDev_Click(object sender, EventArgs e)
+        {
+            int a, b;
+            try
+            {
+                a = Int32.Parse(txbA.Text);
+                b = Int32.Parse(txbB.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("При выполнении преобразования типов возникла ошибка");
+                txbA.Text = txbB.Text = "";              
+            return;
+            }
+            int res = await Subb(a, b);
+            lblResult.Text = res.ToString();
+        }
+        private async Task<int> Subb(int a, int b)
+        {
+            return await Task.Run(() =>
+            {
+                System.Threading.Thread.Sleep(5000);
+                return a - b;
+            }
+            );
+        }
     }
 }
