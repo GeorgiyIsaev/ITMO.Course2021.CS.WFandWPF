@@ -949,7 +949,7 @@ namespace SimpleCalculator
         }
 
 
-        /*Делешаты для асинхронного вызова*/
+        /*Делегаты для асинхронного вызова для рич бокса*/
         private delegate string AsyncSumm(double a);
         delegate void PrintRichTextBox(string str);
         private PrintRichTextBox PrintDlegateFunc;
@@ -959,7 +959,10 @@ namespace SimpleCalculator
         }
         private void CallBackMethod(IAsyncResult ar)
         {
-            RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { ";\n" });
+            string str;
+            AsyncSumm summdelegate = (AsyncSumm)ar.AsyncState;
+            str = summdelegate.EndInvoke(ar);
+            RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { str });           
         }
 
 
@@ -979,33 +982,36 @@ namespace SimpleCalculator
         }   
         private string FactorialLoad(double value)
         {
-            Button_Factorial.Enabled = false;
-            TextBox_InputFactorial.Enabled = false;
+            //Button_Factorial.Enabled = false;
+            //TextBox_InputFactorial.Enabled = false;
 
             int count = 11;
             while (count-- >= 1)
             {
                 System.Threading.Thread.Sleep(1000);
-                RichTextBox_OutPutFactorial.Text = $"Идет расчет факториала! ({count}s)";
+                RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { $"Идет расчет факториала! ({count}s)" });
+               // RichTextBox_OutPutFactorial.Text = $"Идет расчет факториала! ({count}s)";
             }
 
-            double num = 0;
+            //double num = 0;
             double numHold = 1;
-            if (Double.TryParse(TextBox_InputFactorial.Text, out num) && num > 0)
-            {             
-                for (int i = 1; i < num + 1; i++)
+            //if (Double.TryParse(TextBox_InputFactorial.Text, out num) && num > 0)
+            //{             
+                for (int i = 1; i < value + 1; i++)
                 {
                     numHold *= i;
                 }
-            }
+            //}
 
             string temp = CalcEngine.CalcFactorial();
-            RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
-            TextBox_InputFactorial.Text = "";
-            Button_Factorial.Enabled = true;
-            TextBox_InputFactorial.Enabled = true;
 
-            return "";
+            RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}" });
+            //  RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
+            //TextBox_InputFactorial.Text = "";
+            //Button_Factorial.Enabled = true;
+            //TextBox_InputFactorial.Enabled = true;
+
+            return $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
         }   
     }
 }
