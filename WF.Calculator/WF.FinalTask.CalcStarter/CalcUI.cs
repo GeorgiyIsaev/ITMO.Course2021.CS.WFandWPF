@@ -997,40 +997,24 @@ namespace SimpleCalculator
                     summdelegate.BeginInvoke(value, cb, summdelegate);
                 }
             }
-        }   
+        }
         private string FactorialLoad(double value)
         {
-            //Button_Factorial.Enabled = false;
-            //TextBox_InputFactorial.Enabled = false;
             Button_Factorial.Invoke(delegatButtonEnabled, new object[] { false }); ;
             int count = 11;
             while (count-- >= 1)
             {
                 System.Threading.Thread.Sleep(1000);
                 RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { $"Идет расчет факториала! ({count}s)" });
-               // RichTextBox_OutPutFactorial.Text = $"Идет расчет факториала! ({count}s)";
+            }
+            double numHold = 1;
+            for (int i = 1; i < value + 1; i++)
+            {
+                numHold *= i;
             }
 
-            //double num = 0;
-            double numHold = 1;
-            //if (Double.TryParse(TextBox_InputFactorial.Text, out num) && num > 0)
-            //{             
-                for (int i = 1; i < value + 1; i++)
-                {
-                    numHold *= i;
-                }
-            //}
-
-            string temp = CalcEngine.CalcFactorial();
-
-            //RichTextBox_OutPutFactorial.Invoke(delegatButtonEnabled, new object[] { true }); ;
             Button_Factorial.Invoke(delegatButtonEnabled, new object[] { true }); ;
-            //  RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
-            //TextBox_InputFactorial.Text = "";
-            //Button_Factorial.Enabled = true;
-            //TextBox_InputFactorial.Enabled = true;
-
             return $"Факториал числа {value} равен:\n{numHold}";
-        }       
+        }      
     }
 }
