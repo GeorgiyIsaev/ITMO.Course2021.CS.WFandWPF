@@ -78,11 +78,11 @@ namespace SimpleCalculator
 
 			InitializeComponent();
 
-			//
-			// Get version information from the Calculator Module.
-			//
-
-			VersionInfo.Text = CalcEngine.GetVersion();
+            //
+            // Get version information from the Calculator Module.
+            //
+            PrintDlegateFunc = new PrintRichTextBox(PrintFunc);
+            VersionInfo.Text = CalcEngine.GetVersion();
 			OutputDisplay.Text = "0";
 		}
 
@@ -947,17 +947,37 @@ namespace SimpleCalculator
                 errorProvider2.SetError(RichTextBox_OutPutFactorial, string.Empty);
             }
         }
-           
+
+
+        /*Делешаты для асинхронного вызова*/
+        private delegate string AsyncSumm(double a);
+        delegate void PrintRichTextBox(string str);
+        private PrintRichTextBox PrintDlegateFunc;
+        void PrintFunc(string str)
+        {
+            RichTextBox_OutPutFactorial.Text = str;
+        }
+        private void CallBackMethod(IAsyncResult ar)
+        {
+            RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { ";\n" });
+        }
+
+
 
         /*Асинхронный файториал*/
         private void Button_Factorial_Click(object sender, EventArgs e)
         {
             if (TextBox_InputFactorial.Text != "") {
-                Thread thread = new Thread(new ThreadStart(FactorialLoad));
-                thread.Start();
+                double value;
+                if (Double.TryParse(TextBox_InputFactorial.Text, out value) && value > 0)
+                {
+                    AsyncSumm summdelegate = new AsyncSumm(FactorialLoad);
+                    AsyncCallback cb = new AsyncCallback(CallBackMethod);
+                    summdelegate.BeginInvoke(value, cb, summdelegate);
+                }
             }
         }   
-        private void FactorialLoad()
+        private string FactorialLoad(double value)
         {
             Button_Factorial.Enabled = false;
             TextBox_InputFactorial.Enabled = false;
@@ -983,7 +1003,9 @@ namespace SimpleCalculator
             RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
             TextBox_InputFactorial.Text = "";
             Button_Factorial.Enabled = true;
-            TextBox_InputFactorial.Enabled = true; 
+            TextBox_InputFactorial.Enabled = true;
+
+            return "";
         }   
     }
 }
