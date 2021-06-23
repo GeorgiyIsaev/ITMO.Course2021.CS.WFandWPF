@@ -973,7 +973,14 @@ namespace SimpleCalculator
         {
             Button_Factorial.Enabled = iftrue;
             TextBox_InputFactorial.Enabled = iftrue;
-            TextBox_InputFactorial.Text = "";
+
+            if (iftrue)
+            {
+                TextBox_InputFactorial.BackColor = Color.Lime;           
+                TextBox_InputFactorial.Text = "";
+            }
+            else
+                TextBox_InputFactorial.BackColor = Color.LightGray;
         }
         private DelegatButtonEnabled delegatButtonEnabled;
 
