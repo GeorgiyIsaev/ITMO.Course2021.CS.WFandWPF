@@ -1030,7 +1030,7 @@ namespace SimpleCalculator
             //Button_Factorial.Enabled = true;
             //TextBox_InputFactorial.Enabled = true;
 
-            return $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
+            return $"Факториал числа {value} равен:\n{numHold}";
         }       
     }
 }
