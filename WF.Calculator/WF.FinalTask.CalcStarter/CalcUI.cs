@@ -82,6 +82,7 @@ namespace SimpleCalculator
             // Get version information from the Calculator Module.
             //
             PrintDlegateFunc = new PrintRichTextBox(PrintFunc);
+            delegatButtonEnabled = new DelegatButtonEnabled(ButtonEnabled);
             VersionInfo.Text = CalcEngine.GetVersion();
 			OutputDisplay.Text = "0";
 		}
@@ -949,7 +950,7 @@ namespace SimpleCalculator
         }
 
 
-        /*Делегаты для асинхронного вызова для рич бокса*/
+        /*Делегаты для асинхронного вызова для ричбокса*/
         private delegate string AsyncSumm(double a);
         delegate void PrintRichTextBox(string str);
         private PrintRichTextBox PrintDlegateFunc;
@@ -958,18 +959,28 @@ namespace SimpleCalculator
             RichTextBox_OutPutFactorial.Text = str;
         }
         private void CallBackMethod(IAsyncResult ar)
-        {
+        {       
             string str;
             AsyncSumm summdelegate = (AsyncSumm)ar.AsyncState;
             str = summdelegate.EndInvoke(ar);
+
             RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { str });           
         }
 
-
-
-        /*Асинхронный файториал*/
-        private void Button_Factorial_Click(object sender, EventArgs e)
+        /*Делегаты для асинхронного вызова для видимости кнопок*/
+        delegate void DelegatButtonEnabled(bool iftrue);
+        void ButtonEnabled(bool iftrue)
         {
+            Button_Factorial.Enabled = iftrue;
+            TextBox_InputFactorial.Enabled = iftrue;
+            TextBox_InputFactorial.Text = "";
+        }
+        private DelegatButtonEnabled delegatButtonEnabled;
+
+
+        /*Асинхронный файториал и кнопка*/
+        private void Button_Factorial_Click(object sender, EventArgs e)
+        {            
             if (TextBox_InputFactorial.Text != "") {
                 double value;
                 if (Double.TryParse(TextBox_InputFactorial.Text, out value) && value > 0)
@@ -984,7 +995,7 @@ namespace SimpleCalculator
         {
             //Button_Factorial.Enabled = false;
             //TextBox_InputFactorial.Enabled = false;
-
+            Button_Factorial.Invoke(delegatButtonEnabled, new object[] { false }); ;
             int count = 11;
             while (count-- >= 1)
             {
@@ -1005,13 +1016,14 @@ namespace SimpleCalculator
 
             string temp = CalcEngine.CalcFactorial();
 
-            RichTextBox_OutPutFactorial.Invoke(PrintDlegateFunc, new object[] { $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}" });
+            //RichTextBox_OutPutFactorial.Invoke(delegatButtonEnabled, new object[] { true }); ;
+            Button_Factorial.Invoke(delegatButtonEnabled, new object[] { true }); ;
             //  RichTextBox_OutPutFactorial.Text = $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
             //TextBox_InputFactorial.Text = "";
             //Button_Factorial.Enabled = true;
             //TextBox_InputFactorial.Enabled = true;
 
             return $"Факториал числа {TextBox_InputFactorial.Text} равен:\n{numHold}";
-        }   
+        }       
     }
 }
