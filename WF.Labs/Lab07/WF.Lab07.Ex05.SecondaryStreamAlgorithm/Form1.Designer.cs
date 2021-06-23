@@ -51,7 +51,7 @@
             this.TextBox_Input.Name = "TextBox_Input";
             this.TextBox_Input.Size = new System.Drawing.Size(129, 20);
             this.TextBox_Input.TabIndex = 1;
-            this.TextBox_Input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.TextBox_Input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_Input_KeyPress);
             // 
             // Button_Start
             // 

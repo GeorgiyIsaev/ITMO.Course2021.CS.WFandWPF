@@ -13,7 +13,7 @@ namespace WF.Lab07.Ex05.SecondaryStreamAlgorithm
     public partial class Form1 : Form
     {
                
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBox_Input_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar))
             {
