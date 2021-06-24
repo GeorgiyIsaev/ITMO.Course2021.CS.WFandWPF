@@ -8,6 +8,7 @@
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -19,5 +20,16 @@
         <Button x:Name="txtName" Grid.Row="1" Grid.Column="0" Margin="10, 10, 10, 10" Content="Получить данные" Click="txtName_Click"/>
         <TextBox x:Name="txtAge" Grid.Row="1" Grid.Column="1" Margin="10, 10, 10, 10" />
 
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="10,10,10,10">
+            <Button>New</Button>
+            <TextBlock>123</TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,10,10,10" Orientation="Horizontal">
+            <Button>New</Button>
+            <TextBlock>123</TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
     </Grid>
 </Window>
