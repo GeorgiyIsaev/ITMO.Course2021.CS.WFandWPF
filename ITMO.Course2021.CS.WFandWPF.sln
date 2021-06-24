@@ -236,6 +236,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson02.Ex03.Wpf_Wins"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson02.Ex04.Demo_mod_2", "WPF.Lessons\Lesson02\WPF.Lesson02.Ex04.Demo_mod_2\WPF.Lesson02.Ex04.Demo_mod_2.csproj", "{78CF9B13-AD23-4CDF-9AF8-7246A3670A72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson02.Ex05.DialogBoxSample", "WPF.Lessons\Lesson02\WPF.Lesson02.Ex05.DialogBoxSample\WPF.Lesson02.Ex05.DialogBoxSample.csproj", "{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -972,6 +974,12 @@ Global
 		{78CF9B13-AD23-4CDF-9AF8-7246A3670A72}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78CF9B13-AD23-4CDF-9AF8-7246A3670A72}.Release|x86.ActiveCfg = Release|Any CPU
 		{78CF9B13-AD23-4CDF-9AF8-7246A3670A72}.Release|x86.Build.0 = Release|Any CPU
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Debug|x86.ActiveCfg = Debug|x86
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Debug|x86.Build.0 = Debug|x86
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Release|Any CPU.ActiveCfg = Release|x86
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Release|x86.ActiveCfg = Release|x86
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1071,6 +1079,7 @@ Global
 		{D436AE06-92C6-4CC8-AF31-3AC1FE67CA96} = {4B7E522B-A163-4A27-A988-80E519CB3D72}
 		{EEE118A8-495F-4F8F-AA17-35750AD82740} = {4B7E522B-A163-4A27-A988-80E519CB3D72}
 		{78CF9B13-AD23-4CDF-9AF8-7246A3670A72} = {4B7E522B-A163-4A27-A988-80E519CB3D72}
+		{EA0E4DC4-BDFF-4836-BA20-625C7FF55298} = {4B7E522B-A163-4A27-A988-80E519CB3D72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
