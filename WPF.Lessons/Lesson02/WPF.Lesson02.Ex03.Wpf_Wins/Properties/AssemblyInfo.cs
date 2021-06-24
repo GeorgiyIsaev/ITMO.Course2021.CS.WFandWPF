@@ -7,12 +7,12 @@ using System.Windows;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("WpfControlLibrary")]
+[assembly: AssemblyTitle("Wpf_Wins")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("WpfControlLibrary")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2021")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Wpf_Wins")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +21,7 @@ using System.Windows;
 // COM, задайте атрибуту ComVisible значение TRUE для этого типа.
 [assembly: ComVisible(false)]
 
-//Чтобы начать построение локализованных приложений, задайте 
+//Чтобы начать сборку локализованных приложений, задайте 
 //<UICulture>CultureYouAreCodingWith</UICulture> в файле .csproj
 //внутри <PropertyGroup>.  Например, если используется английский США
 //в своих исходных файлах установите <UICulture> в en-US.  Затем отмените преобразование в комментарий
@@ -31,13 +31,13 @@ using System.Windows;
 //[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 
 
-[assembly:ThemeInfo(
+[assembly: ThemeInfo(
     ResourceDictionaryLocation.None, //где расположены словари ресурсов по конкретным тематикам
-                             //(используется, если ресурс не найден на странице 
-                             // или в словарях ресурсов приложения)
+                                     //(используется, если ресурс не найден на странице 
+                                     // или в словарях ресурсов приложения)
     ResourceDictionaryLocation.SourceAssembly //где расположен словарь универсальных ресурсов
-                                      //(используется, если ресурс не найден на странице, 
-                                      // в приложении или в каких-либо словарях ресурсов для конкретной темы)
+                                              //(используется, если ресурс не найден на странице, 
+                                              // в приложении или в каких-либо словарях ресурсов для конкретной темы)
 )]
 
 
@@ -45,10 +45,10 @@ using System.Windows;
 //
 //      Основной номер версии
 //      Дополнительный номер версии 
-//      Номер построения
+//   Номер сборки
 //      Редакция
 //
-// Можно задать все значения или принять номер построения и номер редакции по умолчанию, 
+// Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
