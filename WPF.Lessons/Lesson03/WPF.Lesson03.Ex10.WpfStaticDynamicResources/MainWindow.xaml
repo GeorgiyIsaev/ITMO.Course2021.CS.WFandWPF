@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfStaticDynamicResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush Color="Red" x:Key="buttonBrush" />
+        <SolidColorBrush Color="Blue" x:Key="buttonBrush2" />
+    </Window.Resources>
+    
+    <StackPanel>
+        <Button x:Name="button1" Width="80" Height="40" Background="{DynamicResource buttonBrush}" Click="button1_Click" />
+        <Button x:Name="button2" Height="40" Background="{StaticResource buttonBrush2}" Width="80
+                " Click="button2_Click"/>
+    </StackPanel>
+</Window>
