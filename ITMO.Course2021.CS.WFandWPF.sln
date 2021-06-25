@@ -246,6 +246,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex02.Demo_mod_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex03.HeaderedContentControlDemo", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex03.HeaderedContentControlDemo\WPF.Lesson03.Ex03.HeaderedContentControlDemo.csproj", "{8E07115C-5DDB-4CC2-8BBB-A4BEB2775421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex04.ItemsControlDemo", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex04.ItemsControlDemo\WPF.Lesson03.Ex04.ItemsControlDemo.csproj", "{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1008,6 +1010,12 @@ Global
 		{8E07115C-5DDB-4CC2-8BBB-A4BEB2775421}.Release|Any CPU.ActiveCfg = Release|x86
 		{8E07115C-5DDB-4CC2-8BBB-A4BEB2775421}.Release|x86.ActiveCfg = Release|x86
 		{8E07115C-5DDB-4CC2-8BBB-A4BEB2775421}.Release|x86.Build.0 = Release|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Debug|x86.ActiveCfg = Debug|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Debug|x86.Build.0 = Debug|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Release|Any CPU.ActiveCfg = Release|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Release|x86.ActiveCfg = Release|x86
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1111,6 +1119,7 @@ Global
 		{340163FD-120F-434B-BCA4-3280B47DF3AD} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{F44249DF-9FE8-4BCE-9211-212D750C630C} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{8E07115C-5DDB-4CC2-8BBB-A4BEB2775421} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
+		{54C6623F-D73E-4E85-B2E6-8CEAFCB9A0AB} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}

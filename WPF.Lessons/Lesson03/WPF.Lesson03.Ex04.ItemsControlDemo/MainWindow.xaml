@@ -1,0 +1,49 @@
+﻿<Window x:Class="ItemsControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Demonstration: Using Item Controls" SizeToContent="WidthAndHeight" MinWidth="250">
+    
+    <!-- Layout Root -->
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+                
+        
+        <!-- First Row -->
+        <ListBox xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+	        BorderBrush="Black"
+            Grid.Column="0" Grid.Row="0"
+            SelectionChanged="ListBox_SelectionChanged">
+            
+            <!-- Item 1 -->
+            This is a string in a ListBox
+
+            <!-- Item 2 -->
+            <sys:DateTime>2010/3/5 13:00:55</sys:DateTime>
+
+            <!-- Item 3 -->
+            <Rectangle Height="40" Width="40" Fill="Orange"/>
+
+            <!-- Item 4 -->
+            <StackPanel>
+                <Ellipse Height="40" Fill="LightBlue"/>
+                <TextBlock FontFamily="Candara" FontSize="18">Text below an Ellipse</TextBlock>
+            </StackPanel>
+
+            <!-- Item 5 -->
+            <TextBlock>String in a TextBlock</TextBlock>
+        </ListBox>
+
+        <!-- Second Row -->
+        <TextBlock x:Name="CurrentSelection" Grid.Column="0" Grid.Row="1" 
+            FontWeight="Bold"
+            Height="25"
+            TextAlignment="Center" />
+
+    </Grid>
+</Window>
