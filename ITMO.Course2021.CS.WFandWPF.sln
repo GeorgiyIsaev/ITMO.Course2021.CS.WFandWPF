@@ -260,6 +260,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex09.WpfRouted
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex10.WpfStaticDynamicResources", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex10.WpfStaticDynamicResources\WPF.Lesson03.Ex10.WpfStaticDynamicResources.csproj", "{B054F40F-FF63-4791-A1BB-0AC07312BEB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex11.ResourceDictionary", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex11.ResourceDictionary\WPF.Lesson03.Ex11.ResourceDictionary.csproj", "{5BA5346F-C9C3-4169-92F7-D7A834E464D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1074,6 +1076,14 @@ Global
 		{B054F40F-FF63-4791-A1BB-0AC07312BEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B054F40F-FF63-4791-A1BB-0AC07312BEB5}.Release|x86.ActiveCfg = Release|Any CPU
 		{B054F40F-FF63-4791-A1BB-0AC07312BEB5}.Release|x86.Build.0 = Release|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Debug|x86.Build.0 = Debug|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1184,6 +1194,7 @@ Global
 		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{D6D553AF-ED00-44EE-9984-4D8E50D2843C} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{B054F40F-FF63-4791-A1BB-0AC07312BEB5} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
+		{5BA5346F-C9C3-4169-92F7-D7A834E464D1} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
