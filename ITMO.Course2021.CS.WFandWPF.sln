@@ -254,6 +254,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex06.WpfResour
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex07.WpfResources2", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex07.WpfResources2\WPF.Lesson03.Ex07.WpfResources2.csproj", "{A94CFCA0-50D5-4965-8999-2377B92BEE50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson03.Ex08.WpfRoutedEventBut", "WPF.Lessons\Lesson03\WPF.Lesson03.Ex08.WpfRoutedEventBut\WPF.Lesson03.Ex08.WpfRoutedEventBut.csproj", "{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1044,6 +1046,14 @@ Global
 		{A94CFCA0-50D5-4965-8999-2377B92BEE50}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A94CFCA0-50D5-4965-8999-2377B92BEE50}.Release|x86.ActiveCfg = Release|Any CPU
 		{A94CFCA0-50D5-4965-8999-2377B92BEE50}.Release|x86.Build.0 = Release|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1151,6 +1161,7 @@ Global
 		{8B5C1AF7-DBDD-4121-85FA-1F3C25F466E9} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{E6F93360-D88F-4AD7-805A-932B8B79970B} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 		{A94CFCA0-50D5-4965-8999-2377B92BEE50} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
+		{5DC57742-4EBE-4395-8FF1-E248E8DD7C6D} = {37AC3C64-5F1A-4BEA-B98D-13E7E0A6E694}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
