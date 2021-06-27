@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <StackPanel ButtonBase.Click="StackPanel_Click_1" HorizontalAlignment="Left" Margin="350,40,0,0" VerticalAlignment="Top" Width="100">
+            <Button x:Name="butAdd" Content="x+x"/>
+            <Button x:Name="butMult" Content="x*x"/>
+            <Button x:Name="butSqrt" Content="sqrt(x)"/>
+        </StackPanel>
     </Grid>
 </Window>
