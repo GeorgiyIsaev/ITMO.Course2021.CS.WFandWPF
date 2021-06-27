@@ -20,12 +20,31 @@ namespace WPF.Practice04.Ex02.CustomCommand
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         string nameFile = "username.txt";
         public MainWindow()
         {
             InitializeComponent();
+            CommandBinding abinding = new CommandBinding();
+            abinding.Command = CustomCommands.Launch;
+            abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
+            abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
+            this.CommandBindings.Add(abinding);
         }
-
+        private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = (bool)check.IsChecked;
+        }
+        private void Launch_Handler(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (myWin == null)
+                myWin = new MyWindow();
+            myWin.Owner = this;
+            var location = New_Win.PointToScreen(new Point(0, 0));
+            myWin.Left = location.X + New_Win.Width;
+            myWin.Top = location.Y;
+            myWin.Show();
+        }
 
         private void setText_TextChanged(object sender, TextChangedEventArgs e)
         {
