@@ -288,6 +288,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice03.Ex02.WpfRout
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice03.Ex03.WpfRoutedEvent3", "WPF.Practice\Practice03\WPF.Practice03.Ex03.WpfRoutedEvent3\WPF.Practice03.Ex03.WpfRoutedEvent3.csproj", "{24CFFB5E-2604-4D85-937B-BF92F496D08E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Practice04", "WPF.Practice04", "{6CF6C8E4-5FA4-4B6D-8512-F6F922482FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice04.Ex01.WorkCommand", "WPF.Practice\Practice04\WPF.Practice04.Ex01.WorkCommand\WPF.Practice04.Ex01.WorkCommand.csproj", "{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1182,6 +1186,14 @@ Global
 		{24CFFB5E-2604-4D85-937B-BF92F496D08E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{24CFFB5E-2604-4D85-937B-BF92F496D08E}.Release|x86.ActiveCfg = Release|Any CPU
 		{24CFFB5E-2604-4D85-937B-BF92F496D08E}.Release|x86.Build.0 = Release|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1313,6 +1325,7 @@ Global
 		{1EC8600F-9F64-4FB3-BFB3-F68197D7A2BE} = {F384B91E-E291-4BC2-A507-1AAEB2783819}
 		{90A526DE-A6B0-472C-B7B1-E5E10F3F12A7} = {F384B91E-E291-4BC2-A507-1AAEB2783819}
 		{24CFFB5E-2604-4D85-937B-BF92F496D08E} = {F384B91E-E291-4BC2-A507-1AAEB2783819}
+		{CCE7FEE5-23A6-4971-ACE3-7A6043DF7172} = {6CF6C8E4-5FA4-4B6D-8512-F6F922482FFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
