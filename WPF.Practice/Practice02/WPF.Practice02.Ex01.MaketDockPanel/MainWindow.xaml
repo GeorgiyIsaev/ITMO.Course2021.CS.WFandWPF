@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF.Practice02.Ex01.MaketDockPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.Practice02.Ex01.MaketDockPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Left">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Click="MenuItem_Click_1"/>
+            </MenuItem>
+            <Label Content="ПУСК!" HorizontalAlignment="Center" DockPanel.Dock ="Top"/>
+        </Menu>
+    </DockPanel>
+    <Grid>
+        
+    </Grid>
+</Window>
