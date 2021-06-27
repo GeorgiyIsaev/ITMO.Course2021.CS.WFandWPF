@@ -90,5 +90,13 @@ namespace WPF.Practice01.Ex02.WorkWindow
         {
             this.Close();
         }
+
+        public MyWindow myWin { get; set; }
+        private void New_Win_Click(object sender, RoutedEventArgs e)
+        {
+            if (myWin == null) 
+                myWin = new MyWindow();
+            myWin.Show();
+        }
     }
 }

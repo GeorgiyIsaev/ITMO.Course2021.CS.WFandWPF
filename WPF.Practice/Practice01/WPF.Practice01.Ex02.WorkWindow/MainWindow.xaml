@@ -18,6 +18,8 @@
         <Button x:Name="RetBut" Content="Ret Name" HorizontalAlignment="Left" Margin="88,209,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="RetBut_Click"/>
         <TextBox x:Name="setText" HorizontalAlignment="Left" Height="23" Margin="228,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" RenderTransformOrigin="0.494,-0.304" TextChanged="setText_TextChanged"/>
         <Label x:Name="retLabel" Content="" HorizontalAlignment="Left" Margin="228,150,0,0" VerticalAlignment="Top" Width="149" Height="85"/>
+        <Button x:Name="New_Win" Content="New_Win" HorizontalAlignment="Left" Margin="88,240,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.562,0.43" Click="New_Win_Click"/>
+        <TextBlock x:Name="txtBlock"  HorizontalAlignment="Left" Margin="168,246,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="50" Width="75"/>
 
 
     </Grid>

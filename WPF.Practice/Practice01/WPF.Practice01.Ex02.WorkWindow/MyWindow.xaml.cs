@@ -19,9 +19,22 @@ namespace WPF.Practice01.Ex02.WorkWindow
     /// </summary>
     public partial class MyWindow : Window
     {
+        private bool _close; 
         public MyWindow()
         {
             InitializeComponent();
+        }
+        public new void Close() {
+            _close = true; 
+            base.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (_close) 
+                return; 
+            e.Cancel = true; 
+            Hide();
         }
     }
 }
