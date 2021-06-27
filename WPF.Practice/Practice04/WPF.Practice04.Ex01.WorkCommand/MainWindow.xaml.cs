@@ -51,11 +51,7 @@ namespace WPF.Practice04.Ex01.WorkCommand
         {
             this.Close();
         }
-
-        private void New_Win_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Grid_Click(object sender, RoutedEventArgs e)
         {
