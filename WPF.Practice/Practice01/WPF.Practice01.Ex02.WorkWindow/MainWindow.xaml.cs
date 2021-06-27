@@ -25,7 +25,7 @@ namespace WPF.Practice01.Ex02.WorkWindow
             InitializeComponent();
             lbl.Content = "Добрый день!";
             SetBut.IsEnabled = false;
-            RetBut.IsEnabled = false;
+            RetBut.IsEnabled = false;   
         }
 
         private void RetBut_Click(object sender, RoutedEventArgs e)
@@ -96,6 +96,14 @@ namespace WPF.Practice01.Ex02.WorkWindow
         {
             if (myWin == null) 
                 myWin = new MyWindow();
+            myWin.Owner = this;
+            var location = New_Win.PointToScreen(new Point(0, 0));
+            myWin.Left = location.X + New_Win.Width;
+            myWin.Top = location.Y;
+
+
+            //myWin.Top = this.Top;
+            //myWin.Left = this.Left + this.Width;
             myWin.Show();
         }
     }

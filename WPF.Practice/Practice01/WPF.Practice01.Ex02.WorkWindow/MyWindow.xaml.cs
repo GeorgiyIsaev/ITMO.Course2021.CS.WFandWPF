@@ -19,15 +19,17 @@ namespace WPF.Practice01.Ex02.WorkWindow
     /// </summary>
     public partial class MyWindow : Window
     {
-        private bool _close; 
+        private bool _close;
+        MainWindow wnd1 = null;
         public MyWindow()
         {
             InitializeComponent();
         }
         public new void Close() {
             _close = true; 
-            base.Close();
+            base.Close();      
         }
+
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -35,6 +37,17 @@ namespace WPF.Practice01.Ex02.WorkWindow
                 return; 
             e.Cancel = true; 
             Hide();
+            wnd1.myWin = null;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            wnd1 = Owner as MainWindow;
+            if (wnd1 != null)
+            {
+                wnd1.txtBlock.Text = textBox.Text;            
+            }
+            Close();
         }
     }
 }
