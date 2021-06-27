@@ -278,6 +278,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Practice02", "WPF.Pract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice02.Ex01.MaketDockPanel", "WPF.Practice\Practice02\WPF.Practice02.Ex01.MaketDockPanel\WPF.Practice02.Ex01.MaketDockPanel.csproj", "{FD6FAF49-54DF-41D4-B82E-90867546721A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice02.Ex02.ConfiguringInterface", "WPF.Practice\Practice02\WPF.Practice02.Ex02.ConfiguringInterface\WPF.Practice02.Ex02.ConfiguringInterface.csproj", "{CC080E9F-A469-46BA-B530-BE89DB322920}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1140,6 +1142,14 @@ Global
 		{FD6FAF49-54DF-41D4-B82E-90867546721A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD6FAF49-54DF-41D4-B82E-90867546721A}.Release|x86.ActiveCfg = Release|Any CPU
 		{FD6FAF49-54DF-41D4-B82E-90867546721A}.Release|x86.Build.0 = Release|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Debug|x86.Build.0 = Debug|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC080E9F-A469-46BA-B530-BE89DB322920}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1267,6 +1277,7 @@ Global
 		{A462A220-B4ED-4BAE-AC32-2BE73949D69E} = {8F7EED7F-5F9A-45D9-A963-9995E8C0AB1B}
 		{3A3C4452-54B2-4060-A112-CA3F310EA0BB} = {8F7EED7F-5F9A-45D9-A963-9995E8C0AB1B}
 		{FD6FAF49-54DF-41D4-B82E-90867546721A} = {311749A7-287B-4572-A3DD-B94F3363787D}
+		{CC080E9F-A469-46BA-B530-BE89DB322920} = {311749A7-287B-4572-A3DD-B94F3363787D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
