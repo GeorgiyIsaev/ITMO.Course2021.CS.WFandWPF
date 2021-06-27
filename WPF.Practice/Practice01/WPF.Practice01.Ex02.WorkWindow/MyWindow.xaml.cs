@@ -45,9 +45,20 @@ namespace WPF.Practice01.Ex02.WorkWindow
             wnd1 = Owner as MainWindow;
             if (wnd1 != null)
             {
-                wnd1.txtBlock.Text = textBox.Text;            
+                wnd1.txtBlock.Text = textBox.Text;
+                PrintLogFile();
             }
             Close();
+        }
+
+        void PrintLogFile()
+        {
+            using (System.IO.StreamWriter writer = new System.IO.StreamWriter("log.txt", true))
+            {
+                writer.WriteLine("Внесено {0}: {1} ", textBox.Text, DateTime.Now.ToShortDateString() + ", время: " +
+                DateTime.Now.ToLongTimeString());
+                writer.Flush();
+            }
         }
     }
 }
