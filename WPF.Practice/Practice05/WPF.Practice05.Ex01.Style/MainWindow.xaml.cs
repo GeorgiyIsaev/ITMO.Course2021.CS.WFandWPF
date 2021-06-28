@@ -86,6 +86,9 @@ namespace WPF.Practice05.Ex01.Style
                     case "RetBut":
                         RetButClick();
                         break;
+                    case "New_Win":
+                        NewWindowButClick();
+                        break;
                 }
                 e.Handled = true;
             }
@@ -112,5 +115,16 @@ namespace WPF.Practice05.Ex01.Style
                 isDataDirty = false;
             }
         }
+        private void NewWindowButClick()
+        {
+            if (myWin == null)
+                myWin = new MyWindow();
+            myWin.Owner = this;
+            var location = New_Win.PointToScreen(new Point(0, 0));
+            myWin.Left = location.X + New_Win.Width;
+            myWin.Top = location.Y;
+            myWin.Show();
+        }
+
     }
 }
