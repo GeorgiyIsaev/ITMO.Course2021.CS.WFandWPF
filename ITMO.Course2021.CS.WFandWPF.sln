@@ -320,6 +320,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex11.StylingIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex12.WpfStyleDemo", "WPF.Lessons\Lesson04\WPF.Lesson04.Ex12.WpfStyleDemo\WPF.Lesson04.Ex12.WpfStyleDemo.csproj", "{10E522F9-0288-4C6F-BEE8-4D8D50268B22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex13.ExpenseIt", "WPF.Lessons\Lesson04\WPF.Lesson04.Ex13.ExpenseIt\WPF.Lesson04.Ex13.ExpenseIt.csproj", "{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1322,6 +1324,12 @@ Global
 		{10E522F9-0288-4C6F-BEE8-4D8D50268B22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10E522F9-0288-4C6F-BEE8-4D8D50268B22}.Release|x86.ActiveCfg = Release|Any CPU
 		{10E522F9-0288-4C6F-BEE8-4D8D50268B22}.Release|x86.Build.0 = Release|Any CPU
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Debug|x86.ActiveCfg = Debug|x86
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Debug|x86.Build.0 = Debug|x86
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Release|Any CPU.ActiveCfg = Release|x86
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Release|x86.ActiveCfg = Release|x86
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1467,6 +1475,7 @@ Global
 		{EA21D411-683E-4B60-A343-FEB790DC5952} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 		{36E56FAD-3C2B-4293-B046-77DC219C9850} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 		{10E522F9-0288-4C6F-BEE8-4D8D50268B22} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
+		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
