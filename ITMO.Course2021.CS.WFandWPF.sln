@@ -312,6 +312,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex07.UserEvent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex08.WpfRoutedEvent_2_2", "WPF.Lessons\Lesson04\WPF.Lesson04.Ex08.WpfRoutedEvent_2_2\WPF.Lesson04.Ex08.WpfRoutedEvent_2_2.csproj", "{40041BCD-9000-4326-A040-A9F93D7CE516}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson04.Ex09.WpfCommandPasteCopyCut", "WPF.Lessons\Lesson04\WPF.Lesson04.Ex09.WpfCommandPasteCopyCut\WPF.Lesson04.Ex09.WpfCommandPasteCopyCut.csproj", "{BC66C01F-A12D-4512-8ED3-C9C387C03B52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1286,6 +1288,14 @@ Global
 		{40041BCD-9000-4326-A040-A9F93D7CE516}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40041BCD-9000-4326-A040-A9F93D7CE516}.Release|x86.ActiveCfg = Release|Any CPU
 		{40041BCD-9000-4326-A040-A9F93D7CE516}.Release|x86.Build.0 = Release|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1427,6 +1437,7 @@ Global
 		{A906B8BC-DBA7-489C-A1B8-87EFDE43D184} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 		{49838B2D-290F-4CD1-8BBF-D3FFCC14364D} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 		{40041BCD-9000-4326-A040-A9F93D7CE516} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
+		{BC66C01F-A12D-4512-8ED3-C9C387C03B52} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
