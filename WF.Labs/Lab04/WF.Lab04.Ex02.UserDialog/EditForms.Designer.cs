@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Имя");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Фамилия");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Возраст");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Имя");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Фамилия");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Возраст");
             this.personsListView = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,15 +40,17 @@
             // 
             this.personsListView.Dock = System.Windows.Forms.DockStyle.Top;
             this.personsListView.HideSelection = false;
+            listViewItem1.StateImageIndex = 0;
             this.personsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4,
-            listViewItem5,
-            listViewItem6});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.personsListView.Location = new System.Drawing.Point(0, 0);
             this.personsListView.Name = "personsListView";
             this.personsListView.Size = new System.Drawing.Size(491, 172);
             this.personsListView.TabIndex = 0;
             this.personsListView.UseCompatibleStateImageBehavior = false;
+            this.personsListView.SelectedIndexChanged += new System.EventHandler(this.personsListView_SelectedIndexChanged);
             // 
             // button1
             // 

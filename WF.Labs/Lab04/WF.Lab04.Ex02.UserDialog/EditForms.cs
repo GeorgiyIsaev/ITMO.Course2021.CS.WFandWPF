@@ -44,5 +44,10 @@ namespace WF.Lab04.Ex02.UserDialog
             item.SubItems[1].Text = editForm.LastName;
             item.SubItems[2].Text = editForm.Age.ToString();
         }
+
+        private void personsListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

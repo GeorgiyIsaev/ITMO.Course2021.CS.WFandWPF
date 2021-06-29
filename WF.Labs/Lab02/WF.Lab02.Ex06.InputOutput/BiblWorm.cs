@@ -81,7 +81,7 @@ namespace WF.Lab02.Ex06.InputOutput
             its.Add(b);
             Author = Title = PublishHouse = "";
             Page = InvNumber = PeriodUse = 0;
-            Year = 0;
+            Year = 2020;
             Existence = ReturnTime = false;
         }
 

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace WPF.Practice04.Ex02.CustomCommand
+namespace WPF.Practice04.Ex02.C1
 {
-    public static class CustomCommands
+    public class CustomCommands
     {
         public static RoutedUICommand Launch { get; }
         static CustomCommands()
