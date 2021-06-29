@@ -1,0 +1,96 @@
+﻿<Window x:Class="DataBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:DataBindingDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="Binding to Different Data Sources" Height="480" Width="640">
+    
+    <!-- Root Element -->
+    <TabControl>
+        
+        <!-- Zoom the UI -->
+        <TabControl.LayoutTransform>
+            <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+        </TabControl.LayoutTransform>
+
+        <!-- Resources -->
+        <TabControl.Resources>
+            <c:MyData x:Key="myDataSource"/>
+            <sys:String x:Key="myStringValue">Hello World!</sys:String>
+            <XmlDataProvider x:Key="inventoryData"
+                     Source="Data/InventoryData.xml"
+                     XPath="Inventory/Books" />
+        </TabControl.Resources>
+        
+        <!-- Binding to a Class Property -->
+        <TabItem Header="Class Property">
+            <Button Background="{Binding Path=ColorName, Source={StaticResource myDataSource}}"
+                    Content="I am bound to be RED!"
+                    Height="30"
+                    Width="150" />
+        </TabItem>
+        
+        <!-- Binding to Multiple Properties -->
+        <TabItem Header="Multiple Properties">
+            <TabItem.DataContext>
+                <Binding Source="{StaticResource myDataSource}"/>
+            </TabItem.DataContext>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Background="{Binding Path=ColorName}"
+                        Content="I am bound to be RED!"
+                        Height="30"
+                        Width="150" />
+                <TextBox Foreground="{Binding Path=ForeColorName}"
+                         Text="I am bound to be BLUE!" />
+            </StackPanel>
+        </TabItem>
+        
+        <!-- Binding to a Full Object -->
+        <TabItem Header="Full Object">
+            <TabItem.DataContext>
+                <Binding Source="{StaticResource myStringValue}" />
+            </TabItem.DataContext>
+            <Label Content="{Binding}" />
+        </TabItem>
+        
+        <!-- Binding to XML Data -->
+        <TabItem Header="XML Data">
+            <ListBox>
+                <ListBox.ItemsSource>
+                    <Binding Source="{StaticResource inventoryData}"
+                 XPath="*[@Stock='out'] | *[@Number>=8 or @Number=3]" />
+                </ListBox.ItemsSource>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <WrapPanel.ToolTip>
+                                <TextBlock Text="{Binding XPath=Summary}" />
+                            </WrapPanel.ToolTip>
+                            <TextBlock Text="{Binding XPath=Title}">
+                            </TextBlock>
+                            <TextBlock Text=" [" />
+                            <TextBlock Text="{Binding Path=Attributes[0].Value}" />
+                            <TextBlock Text="]" />
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </TabItem>
+        
+        <!-- Binding to UI Controls -->
+        <TabItem Header="UI Controls">
+            <StackPanel>
+                <ComboBox x:Name="myComboBox" SelectedIndex="0">
+                    <ComboBoxItem Content="Green" />
+                    <ComboBoxItem Content="LightBlue" />
+                    <ComboBoxItem Content="Red" />
+                </ComboBox>
+                <Canvas Background="{Binding ElementName=myComboBox, Path=SelectedItem.Content}"
+                        Height="100"
+                        Margin="10"
+                        Width="100" />
+            </StackPanel>
+        </TabItem>
+        
+    </TabControl>
+</Window>
