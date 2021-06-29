@@ -334,6 +334,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson05.Ex01.StylingIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson05.Ex02.Aнимация", "WPF.Lessons\Lesson05\WPF.Lesson05.Ex02.Aнимация\WPF.Lesson05.Ex02.Aнимация.csproj", "{D5563A31-6819-47D4-896E-0B53C7BAE1D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson05.Ex03.WpfAnim_Geom", "WPF.Lessons\Lesson05\WPF.Lesson05.Ex03.WpfAnim_Geom\WPF.Lesson05.Ex03.WpfAnim_Geom.csproj", "{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1372,6 +1374,12 @@ Global
 		{D5563A31-6819-47D4-896E-0B53C7BAE1D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5563A31-6819-47D4-896E-0B53C7BAE1D9}.Release|x86.ActiveCfg = Release|Any CPU
 		{D5563A31-6819-47D4-896E-0B53C7BAE1D9}.Release|x86.Build.0 = Release|Any CPU
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Debug|x86.ActiveCfg = Debug|x86
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Debug|x86.Build.0 = Debug|x86
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Release|Any CPU.ActiveCfg = Release|x86
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Release|x86.ActiveCfg = Release|x86
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1522,6 +1530,7 @@ Global
 		{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9} = {ABB7CAD5-9ED1-4A44-B7E6-B413DE64C139}
 		{DF720FAC-ACD3-457D-8643-CA7FF918C59E} = {1E3B0F91-D573-47B7-895B-1C0F6C0BE06D}
 		{D5563A31-6819-47D4-896E-0B53C7BAE1D9} = {1E3B0F91-D573-47B7-895B-1C0F6C0BE06D}
+		{CAD9A9E7-D22C-4BA1-B36D-B26C749F505B} = {1E3B0F91-D573-47B7-895B-1C0F6C0BE06D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
