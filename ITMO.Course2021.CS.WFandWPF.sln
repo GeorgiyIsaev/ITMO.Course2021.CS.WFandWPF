@@ -328,6 +328,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice05.Ex01.Style",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice05.Ex02.ElementTemplate", "WPF.Practice\Practice05\WPF.Practice05.Ex02.ElementTemplate\WPF.Practice05.Ex02.ElementTemplate.csproj", "{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Lesson05", "WPF.Lesson05", "{1E3B0F91-D573-47B7-895B-1C0F6C0BE06D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson05.Ex01.StylingIntroSample", "WPF.Lessons\Lesson05\WPF.Lesson05.Ex01.StylingIntroSample\WPF.Lesson05.Ex01.StylingIntroSample.csproj", "{DF720FAC-ACD3-457D-8643-CA7FF918C59E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1352,6 +1356,12 @@ Global
 		{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9}.Release|x86.Build.0 = Release|Any CPU
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Debug|x86.ActiveCfg = Debug|x86
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Debug|x86.Build.0 = Debug|x86
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Release|Any CPU.ActiveCfg = Release|x86
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Release|x86.ActiveCfg = Release|x86
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1500,6 +1510,7 @@ Global
 		{3B6DE8C5-24B6-421F-AB4F-3953883B3B65} = {8055EB1C-119D-4F89-ACAF-EC60777E9FF2}
 		{9719F217-F4A5-4D85-AF1B-A4B03A3617B3} = {ABB7CAD5-9ED1-4A44-B7E6-B413DE64C139}
 		{F4C88311-F0E7-4EC3-BDE4-7720C9A9BFF9} = {ABB7CAD5-9ED1-4A44-B7E6-B413DE64C139}
+		{DF720FAC-ACD3-457D-8643-CA7FF918C59E} = {1E3B0F91-D573-47B7-895B-1C0F6C0BE06D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
