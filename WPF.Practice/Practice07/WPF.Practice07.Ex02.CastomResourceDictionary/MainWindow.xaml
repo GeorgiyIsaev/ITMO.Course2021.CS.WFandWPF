@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Practice07.Ex02.CastomResourceDictionary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Background="{StaticResource gradientStyle}"
+        Title="MainWindow" Height="253.207" Width="359.184">
     <Grid>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="176,41,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="28,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button Template" Template="{DynamicResource customButtonTemplate}" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="143" Margin="91,69,0,0" Height="128"/>
+
     </Grid>
 </Window>
