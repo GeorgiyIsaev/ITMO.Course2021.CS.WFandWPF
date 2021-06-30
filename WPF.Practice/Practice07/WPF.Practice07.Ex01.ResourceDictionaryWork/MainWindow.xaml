@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPF.Practice07.Ex01.ResourceDictionaryWork"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+ 
     <Grid>
-        
+       
     </Grid>
 </Window>
