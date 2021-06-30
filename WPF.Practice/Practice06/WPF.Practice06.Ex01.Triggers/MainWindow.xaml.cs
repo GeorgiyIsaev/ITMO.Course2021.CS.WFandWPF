@@ -24,5 +24,10 @@ namespace WPF.Practice06.Ex01.Triggers
         {
             InitializeComponent();
         }
+
+        private void setText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
