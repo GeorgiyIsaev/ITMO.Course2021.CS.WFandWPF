@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Practice06.Ex02.Animation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="244.023" Width="254.227">
     <Window.Resources>
         <Style TargetType="Button">
             <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
+
+                <!--Тригер увеличет кнопку когда она в фоуксе-->
+                <!--<Trigger Property="IsMouseOver" Value="True">
                 <Trigger.EnterActions>
                     <BeginStoryboard Name="Storyboard">
                         <Storyboard Duration="0:0:1">
@@ -19,14 +21,45 @@
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>
+                -->
+                <!--Тригер когда кнопка стнет не активной-->
+                <!--
                 <Trigger.ExitActions>
                     <StopStoryboard BeginStoryboardName="Storyboard" />
                 </Trigger.ExitActions>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
+            </Trigger>-->
+                <!--Тригер который ожидает события -->
+                <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard Duration="0:0:1">
+                                <DoubleAnimation Storyboard.TargetProperty="FontSize" To="20" />
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="100"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="100" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <!--Тригер который ожидает обратного события -->
+                <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard Duration="0:0:1">
+                                <DoubleAnimation Storyboard.TargetProperty="FontSize" To="14" />
+                                <DoubleAnimation Storyboard.TargetProperty="Width" To="75"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height" To="30" />
+
+                                <!--<DoubleAnimation Storyboard.TargetProperty="FontSize />-->
+                                <!--<DoubleAnimation Storyboard.TargetProperty="Width"/>-->
+                                <!--<DoubleAnimation Storyboard.TargetProperty="Height"/>-->
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
-        <Grid>
-        
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Center" Width="74" Height="26" VerticalAlignment="Center"/>
     </Grid>
 </Window>
