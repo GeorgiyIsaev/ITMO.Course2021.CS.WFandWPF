@@ -374,6 +374,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex06.FillingSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex07.WpfDemoShape", "WPF.Lessons\Lesson06\WPF.Lesson06.Ex07.WpfDemoShape\WPF.Lesson06.Ex07.WpfDemoShape.csproj", "{16E0F5AB-D2F8-4321-B52F-5DA140A7E120}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex08.MediaGallery", "WPF.Lessons\Lesson06\WPF.Lesson06.Ex08.MediaGallery\WPF.Lesson06.Ex08.MediaGallery.csproj", "{67B34320-23DE-47A8-9B46-EC63E9048598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1542,6 +1544,12 @@ Global
 		{16E0F5AB-D2F8-4321-B52F-5DA140A7E120}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16E0F5AB-D2F8-4321-B52F-5DA140A7E120}.Release|x86.ActiveCfg = Release|Any CPU
 		{16E0F5AB-D2F8-4321-B52F-5DA140A7E120}.Release|x86.Build.0 = Release|Any CPU
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Debug|x86.ActiveCfg = Debug|x86
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Debug|x86.Build.0 = Debug|x86
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Release|Any CPU.ActiveCfg = Release|x86
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Release|x86.ActiveCfg = Release|x86
+		{67B34320-23DE-47A8-9B46-EC63E9048598}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1709,6 +1717,7 @@ Global
 		{B35CE044-8E96-4BA7-9D0D-5622E9C6C9A6} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 		{53EDCA94-31A3-4945-8684-834D51E37C71} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 		{16E0F5AB-D2F8-4321-B52F-5DA140A7E120} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
+		{67B34320-23DE-47A8-9B46-EC63E9048598} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
