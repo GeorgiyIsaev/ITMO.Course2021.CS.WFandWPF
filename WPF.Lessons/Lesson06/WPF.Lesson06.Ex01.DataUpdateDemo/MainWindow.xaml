@@ -1,0 +1,45 @@
+﻿<Window x:Class="TriggerUpdateDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:TriggerUpdateDemo.Data"
+        Title="Triggering Source Updates" SizeToContent="Height" Width="475">
+    <Window.Resources>
+        <l:MyData x:Key="myData" />
+    </Window.Resources>
+    
+    <!-- Layout Root -->
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".25*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.LayoutTransform>
+            <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+        </Grid.LayoutTransform>
+        
+        <!-- Input Row -->
+        <TextBlock Text="Enter your favorite color:" VerticalAlignment="Center" Margin="0,0,5,0"  />
+        <TextBox x:Name="ColorName" Grid.Column="1" MinWidth="100">
+            <TextBox.Text>
+                <Binding Source="{StaticResource myData}"
+                         Path="ColorName"
+                         UpdateSourceTrigger="Default" />
+            </TextBox.Text>
+        </TextBox>
+        
+        <!-- Output Row -->
+        <TextBlock DataContext="{StaticResource myData}" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Padding="20" Margin="20"
+                   Background="{Binding ColorName}">
+            <Run Text="Your favorite color is: " />
+            <TextBlock Text="{Binding ColorName}" />
+        </TextBlock>
+        
+        <!-- Control Row -->
+        <Button Content="Submit" Click="OnSubmit" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="60" />
+    </Grid>
+</Window>
