@@ -366,6 +366,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex01.DataUpdat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex02.WpfBindingIValueConverter", "WPF.Lessons\Lesson06\WPF.Lesson06.Ex02.WpfBindingIValueConverter\WPF.Lesson06.Ex02.WpfBindingIValueConverter.csproj", "{73EB5338-E572-4E47-9711-55489A2628AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson06.Ex03.DataBindingLab", "WPF.Lessons\Lesson06\WPF.Lesson06.Ex03.DataBindingLab\WPF.Lesson06.Ex03.DataBindingLab.csproj", "{6AFEA501-7402-47C4-805D-060448961C78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1502,6 +1504,14 @@ Global
 		{73EB5338-E572-4E47-9711-55489A2628AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73EB5338-E572-4E47-9711-55489A2628AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{73EB5338-E572-4E47-9711-55489A2628AB}.Release|x86.Build.0 = Release|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Debug|x86.Build.0 = Debug|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Release|x86.ActiveCfg = Release|Any CPU
+		{6AFEA501-7402-47C4-805D-060448961C78}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1665,6 +1675,7 @@ Global
 		{992B649E-1BC1-4037-8639-F26E3A6C2D15} = {CBC537CA-944C-44F9-B260-12194A9C46D6}
 		{0514BB89-BF60-46BC-8440-62EFD1CE6666} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 		{73EB5338-E572-4E47-9711-55489A2628AB} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
+		{6AFEA501-7402-47C4-805D-060448961C78} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
