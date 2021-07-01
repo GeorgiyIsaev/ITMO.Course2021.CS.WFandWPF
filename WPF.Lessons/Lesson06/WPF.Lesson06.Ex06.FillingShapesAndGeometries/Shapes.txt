@@ -1,0 +1,11 @@
+        <Ellipse Grid.Row="0" Grid.Column="0" Margin="5"
+                 Height="50"
+                 Width="100" />
+
+        <Ellipse Grid.Row="0" Grid.Column="1" Margin="5"
+                 Height="50"
+                 Width="100" />
+
+        <Rectangle Grid.Row="1" Grid.Column="0" Margin="5"
+                   Height="50"
+                   Width="100" />

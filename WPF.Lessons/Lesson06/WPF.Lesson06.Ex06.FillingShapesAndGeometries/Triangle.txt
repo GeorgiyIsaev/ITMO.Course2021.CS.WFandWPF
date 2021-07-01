@@ -1,0 +1,29 @@
+       <Path Grid.Row="1" Grid.Column="1" Margin="10"
+              Fill="Green"
+              Stroke="Black" 
+              StrokeThickness="5">
+          <Path.Data>
+            <PathGeometry>
+
+                <!-- Each PathGeometry is made up of Figures. -->
+                <PathGeometry.Figures>
+                    <PathFigureCollection>
+                        <PathFigure IsClosed="True" StartPoint="0,0">
+
+                            <!-- Each figure is made up of Segments. -->
+                            <PathFigure.Segments>
+                                <PathSegmentCollection>
+
+                                    <!-- A Triangle. -->
+                                    <LineSegment Point="0, 50" />
+                                    <LineSegment Point="100, 25" />
+
+                                </PathSegmentCollection>
+                            </PathFigure.Segments>
+
+                        </PathFigure>
+                    </PathFigureCollection>
+                </PathGeometry.Figures>
+             </PathGeometry>
+          </Path.Data>
+        </Path>
