@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfBindingIValueConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfBindingIValueConverter"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:WordToColorConverter x:Key="Сonverter1"/>
+    </Window.Resources>
+
+    <StackPanel Orientation="Vertical">
+        <Label Content="Конвертер текста из списка в заливку" 
+        FontSize="14" FontWeight="Bold" />
+        <StackPanel Orientation="Horizontal">
+            <ComboBox Name="comboBox" SelectedIndex="0" Width="100">
+                <ComboBoxItem>красный</ComboBoxItem>
+                <ComboBoxItem>синий</ComboBoxItem>
+                <ComboBoxItem>зеленый</ComboBoxItem>
+                <ComboBoxItem>желтый</ComboBoxItem>
+            </ComboBox>
+            <Rectangle Width="62" Height="25" Margin="100,0,0,0" 
+        Fill="{Binding ElementName=comboBox, Path=SelectedItem.Content, 
+        Converter={StaticResource Сonverter1}}"/>
+        </StackPanel>
+        <ComboBox x:Name="myComboBox" SelectedIndex="0" Margin="0,10">
+            <ComboBoxItem Content="Green" />
+            <ComboBoxItem Content="LightBlue" />
+            <ComboBoxItem Content="Red" />
+        </ComboBox>
+        <Canvas Background="{Binding ElementName=myComboBox, Path=SelectedItem.Content}"
+                        Height="100"
+                        Margin="10"
+                        Width="100" />
+    </StackPanel>
+
+</Window>
