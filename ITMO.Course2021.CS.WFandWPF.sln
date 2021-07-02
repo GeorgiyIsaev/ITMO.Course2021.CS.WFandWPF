@@ -386,6 +386,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson07.Ex01.OpacityMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson07.Ex02.Animate3DRotation", "WPF.Lessons\Lesson07\WPF.Lesson07.Ex02.Animate3DRotation\WPF.Lesson07.Ex02.Animate3DRotation.csproj", "{C5FC6978-67F2-4CAD-9DDD-9A9722B34225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Lesson07.Ex03.BlankSample", "WPF.Lessons\Lesson07\WPF.Lesson07.Ex03.BlankSample\WPF.Lesson07.Ex03.BlankSample.csproj", "{429DB3BD-67C2-4903-AB64-156719A504CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1584,6 +1586,12 @@ Global
 		{C5FC6978-67F2-4CAD-9DDD-9A9722B34225}.Release|Any CPU.ActiveCfg = Release|x86
 		{C5FC6978-67F2-4CAD-9DDD-9A9722B34225}.Release|x86.ActiveCfg = Release|x86
 		{C5FC6978-67F2-4CAD-9DDD-9A9722B34225}.Release|x86.Build.0 = Release|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Debug|x86.ActiveCfg = Debug|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Debug|x86.Build.0 = Debug|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Release|Any CPU.ActiveCfg = Release|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Release|x86.ActiveCfg = Release|x86
+		{429DB3BD-67C2-4903-AB64-156719A504CD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1756,6 +1764,7 @@ Global
 		{00F39C27-33A8-4152-8753-E668B8CD3F8D} = {9C5B985F-A296-48A2-A0F4-60FF422C5877}
 		{279F9E49-8628-44ED-91C6-0332B9A3CE51} = {C7D64044-1C98-4419-9449-DA0A333FE2F2}
 		{C5FC6978-67F2-4CAD-9DDD-9A9722B34225} = {C7D64044-1C98-4419-9449-DA0A333FE2F2}
+		{429DB3BD-67C2-4903-AB64-156719A504CD} = {C7D64044-1C98-4419-9449-DA0A333FE2F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
