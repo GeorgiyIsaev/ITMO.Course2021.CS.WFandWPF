@@ -24,5 +24,10 @@ namespace WPF.Practice06.Ex02.Animation.v2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
