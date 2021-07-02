@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfViewbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.0" Color="Red" />
+                    <GradientStop Offset="0.4" Color="Indigo"/>
+                    <GradientStop Offset="1.0" Color="Blue" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Viewbox Stretch="Uniform">
+            <StackPanel Margin="3" >
+                <Button Margin="2" Content="Start" Background="Blue" Foreground="Red" />
+                <Button Margin="2" Content="Finish" Background="Blue" Foreground="Red" />
+            </StackPanel>
+
+        </Viewbox>
+    </Grid>
+</Window>
