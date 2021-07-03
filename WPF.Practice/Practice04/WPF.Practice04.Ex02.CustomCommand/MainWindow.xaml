@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"      
         xmlns:Local="clr-namespace:WPF.Practice04.Ex02.CustomCommand"        
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing_1">
     <DockPanel>
         <Menu DockPanel.Dock="Top" HorizontalAlignment="Left">
             <MenuItem Header="File">
-                <MenuItem Header="Launch" Command="Local:CustomCommands.Launch"/>
+                <MenuItem Header="Launch" />
                 <MenuItem Header="Exit" Click="MenuItem_Click_1"/>
             </MenuItem>
             <MenuItem Header="Edit">
@@ -17,23 +17,25 @@
                 <MenuItem Header="Вырезать" CommandTarget="{Binding ElementName=MainWindow}" Command="Cut"/>
                 <MenuItem Header="Вставить" CommandTarget="{Binding ElementName=MainWindow}" Command="Paste"/>
             </MenuItem>
-            <Label Content="ПУСК!" HorizontalAlignment="Center" DockPanel.Dock ="Top"/>
-            <StatusBar x:Name="stb" DockPanel.Dock="Bottom">
-                <StatusBarItem x:Name="stb1">
-                    <TextBlock>Статусная панель</TextBlock>
-                </StatusBarItem >
-                <Separator/>
-                <StatusBarItem x:Name="stb2">
-                    <TextBlock>Online</TextBlock>
-                </StatusBarItem>
-                <StatusBarItem x:Name="stb3">
-                    <TextBlock></TextBlock>
-                </StatusBarItem>
-            </StatusBar>
+            
+        </Menu>
+        <Label Content="ПУСК!" HorizontalAlignment="Center" DockPanel.Dock ="Top"/>
+        <StatusBar x:Name="stb" DockPanel.Dock="Bottom">
+            <StatusBarItem x:Name="stb1">
+                <TextBlock>Статусная панель</TextBlock>
+            </StatusBarItem >
+            <Separator/>
+            <StatusBarItem x:Name="stb2">
+                <TextBlock>Online</TextBlock>
+            </StatusBarItem>
+            <StatusBarItem x:Name="stb3">
+                <TextBlock></TextBlock>
+            </StatusBarItem>
             <StatusBarItem x:Name="stb4">
                 <CheckBox x:Name="check">Разрешить открытие формы</CheckBox>
             </StatusBarItem>
-        </Menu>
+        </StatusBar>
+      
         <Grid Button.Click="Grid_Click">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />

@@ -26,15 +26,18 @@ namespace WPF.Practice04.Ex02.CustomCommand
         {
             InitializeComponent();
             CommandBinding abinding = new CommandBinding();
-            abinding.Command = CustomCommands.Launch;
-            abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
-            abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
-            this.CommandBindings.Add(abinding);
+            //abinding.Command = CustomCommands.Launch;
+            //abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
+            //abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
+            //this.CommandBindings.Add(abinding);
         }
         private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = (bool)check.IsChecked;
         }
+
+    
+        MyWindow myWin;
         private void Launch_Handler(object sender, ExecutedRoutedEventArgs e)
         {
             if (myWin == null)
@@ -110,6 +113,11 @@ namespace WPF.Practice04.Ex02.CustomCommand
                 RetBut.IsEnabled = true;
                 isDataDirty = false;
             }
+        }
+
+        private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
         }
     }
 }
