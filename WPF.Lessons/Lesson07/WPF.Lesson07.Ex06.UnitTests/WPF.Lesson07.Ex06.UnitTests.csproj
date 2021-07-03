@@ -96,7 +96,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WPF.Lesson07.Ex07.DemoApp\WPF.Lesson07.Ex07.DemoApp.csproj">
       <Project>{26CFD5D4-94BD-40F3-BABA-E5FC7B6DB623}</Project>
-      <Name>DemoApp</Name>
+      <Name>WPF.Lesson07.Ex07.DemoApp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
