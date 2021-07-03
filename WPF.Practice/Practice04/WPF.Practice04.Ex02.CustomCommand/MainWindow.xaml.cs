@@ -26,10 +26,10 @@ namespace WPF.Practice04.Ex02.CustomCommand
         {
             InitializeComponent();
             CommandBinding abinding = new CommandBinding();
-            //abinding.Command = CustomCommands.Launch;
-            //abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
-            //abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
-            //this.CommandBindings.Add(abinding);
+            abinding.Command = CustomCommands.Launch;
+            abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
+            abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
+            this.CommandBindings.Add(abinding);
         }
         private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
         {
@@ -117,7 +117,16 @@ namespace WPF.Practice04.Ex02.CustomCommand
 
         private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
-
+            if (this.isDataDirty)
+            {
+                string msg = "Данные были изменены, но не сохранены!\n Закрыть окно без сохранения?";
+                MessageBoxResult result = MessageBox.Show(msg, "Контроль данных",
+                    MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.No)
+                {                 
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }
