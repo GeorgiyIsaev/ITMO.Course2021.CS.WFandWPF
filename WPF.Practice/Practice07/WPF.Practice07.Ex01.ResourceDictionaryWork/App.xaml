@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:WPF.Practice07.Ex01.ResourceDictionaryWork"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--<ResourceDictionary Source="Aero.NormalColor.xaml"/>-->
+        <ResourceDictionary Source="ShinyBlue.xaml"/>
     </Application.Resources>
 </Application>
