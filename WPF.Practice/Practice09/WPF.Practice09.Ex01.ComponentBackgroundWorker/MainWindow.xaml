@@ -6,14 +6,10 @@
         xmlns:local="clr-namespace:WPF.Practice09.Ex01.ComponentBackgroundWorker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Loaded="Grid_Loaded">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="21*"/>
-            <ColumnDefinition Width="67*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="button1" Content="Start" HorizontalAlignment="Left" Margin="55,93,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button2"  Content="Cancel" HorizontalAlignment="Left" Margin="189,91,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
-        <Label x:Name="labal1"  Content="Cycles:" HorizontalAlignment="Left" Margin="55,34,0,0" VerticalAlignment="Top"/>
+    <Grid>      
+        <Button x:Name="button1" Content="Start" HorizontalAlignment="Left" Margin="55,93,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button2"  Content="Cancel" HorizontalAlignment="Left" Margin="189,91,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="button2_Click"/>
+        <Label x:Name="label1"  Content="Cycles:" HorizontalAlignment="Left" Margin="55,34,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2"  Content="" HorizontalAlignment="Left" Margin="189,34,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
     </Grid>
