@@ -7,6 +7,43 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Canvas Height="300" Width="300">
+            <!-- Рисует треугольник с голубым наполнением -->
+            <Polygon Points="10,110 60,10 110,110"
+                Fill="Blue" />
+            <!-- Рисует треугольник с голубым наполнением и черным контуром -->
+            <Polygon Points="10,110 60,10 110,110"
+                Fill="Blue"
+                Stroke="Black" StrokeThickness="4"
+                Canvas.Top="150" />
+            <!-- Рисует еще треугольник с голубым наполнением -->
+            <Polygon Points="10,110 110,110 110,10"
+                Fill="Blue"
+                Canvas.Left="150" />
+            <!-- Рисует треугольник с черным контуром -->
+            <Polygon Points="10,110 110,110 110,10"
+                Stroke="Black" StrokeThickness="4"
+                Canvas.Left="150" Canvas.Top="150" />
+            <!-- Polygon A -->
+            <Polygon
+                Points="10,100 50,0 90,100 0,35 100,35"
+                Fill="Gold"
+                Stroke="Black"
+                StrokeThickness="3"
+                FillRule="Nonzero"
+                Canvas.Left="300"
+                Canvas.Top="10">
+            </Polygon>
+            <!-- Polygon B -->
+            <Polygon
+                Points="10,100 50,0 90,100 0,35 100,35"
+                Fill="Gold"
+                Stroke="Black"
+                StrokeThickness="3"
+                FillRule="EvenOdd"
+                Canvas.Left="300"
+                Canvas.Top="150">
+            </Polygon>
+        </Canvas>
     </Grid>
 </Window>
