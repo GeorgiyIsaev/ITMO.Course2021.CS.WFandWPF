@@ -8,10 +8,12 @@
         xmlns:my="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="243.258" Width="437.453">
     <Grid>
         <WindowsFormsHost Height="19" HorizontalAlignment="Left" Margin="30,12,0,0" Name="windowsFormsHost1" VerticalAlignment="Top" Width="129" >
-            <wf:MaskedTextBox />
+            <wf:MaskedTextBox Name="MaskedTextBox1" Mask="(000)-000-0000" />
         </WindowsFormsHost>
+        <Button Height="23" Margin="21,70,125,0" Name="Button1" VerticalAlignment="Top" Click="Button1_Click">Add to collection</Button>
+        <Button Margin="21,136,125,0" Name="Button2" Height="22" VerticalAlignment="Top" Click="Button2_Click">Save collection to file</Button>
     </Grid>
 </Window>
