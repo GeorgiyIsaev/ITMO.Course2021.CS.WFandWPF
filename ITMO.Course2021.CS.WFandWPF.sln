@@ -404,6 +404,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Practice09", "WPF.Pract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice09.Ex01.ComponentBackgroundWorker", "WPF.Practice\Practice09\WPF.Practice09.Ex01.ComponentBackgroundWorker\WPF.Practice09.Ex01.ComponentBackgroundWorker.csproj", "{FABDFB18-3BD6-46D6-BD9E-374B25E97497}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Practice10", "WPF.Practice10", "{CA5CB065-B117-4CC2-AA97-E9AB2A32C7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice10.Ex01.WinFormsToWPF", "WPF.Practice\Practice10\WPF.Practice10.Ex01.WinFormsToWPF\WPF.Practice10.Ex01.WinFormsToWPF.csproj", "{534408EA-5B54-4686-977C-E3C1073765D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1656,6 +1660,14 @@ Global
 		{FABDFB18-3BD6-46D6-BD9E-374B25E97497}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FABDFB18-3BD6-46D6-BD9E-374B25E97497}.Release|x86.ActiveCfg = Release|Any CPU
 		{FABDFB18-3BD6-46D6-BD9E-374B25E97497}.Release|x86.Build.0 = Release|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{534408EA-5B54-4686-977C-E3C1073765D9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1835,6 +1847,7 @@ Global
 		{AFBBA59B-C72C-4E8E-AF6D-53801F84ADF2} = {C7D64044-1C98-4419-9449-DA0A333FE2F2}
 		{D88E1DEC-18DA-499E-92A8-49934F89811B} = {6F8F4427-96F0-4E98-A0EB-F64CEA5D48DC}
 		{FABDFB18-3BD6-46D6-BD9E-374B25E97497} = {CBEC084F-E4CB-48AC-83AB-80642AD3BA1D}
+		{534408EA-5B54-4686-977C-E3C1073765D9} = {CA5CB065-B117-4CC2-AA97-E9AB2A32C7D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
