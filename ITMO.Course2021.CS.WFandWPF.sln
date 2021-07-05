@@ -414,6 +414,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF.Practice11", "WPF.Pract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice11.Ex01.PointsPolygon", "WPF.Practice\Practice11\WPF.Practice11.Ex01.PointsIt\WPF.Practice11.Ex01.PointsPolygon.csproj", "{90031DC6-465C-4C59-AAA4-CD04A04CCD1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.Practice11.Ex02.PaintEditWPF", "WPF.Practice\Practice11\WPF.Practice11.Ex02.PaintEditWPF\WPF.Practice11.Ex02.PaintEditWPF.csproj", "{10423E25-0551-4D16-8AC9-A807A29C2779}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1690,6 +1692,14 @@ Global
 		{90031DC6-465C-4C59-AAA4-CD04A04CCD1D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90031DC6-465C-4C59-AAA4-CD04A04CCD1D}.Release|x86.ActiveCfg = Release|Any CPU
 		{90031DC6-465C-4C59-AAA4-CD04A04CCD1D}.Release|x86.Build.0 = Release|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Debug|x86.Build.0 = Debug|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Release|x86.ActiveCfg = Release|Any CPU
+		{10423E25-0551-4D16-8AC9-A807A29C2779}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1872,6 +1882,7 @@ Global
 		{534408EA-5B54-4686-977C-E3C1073765D9} = {CA5CB065-B117-4CC2-AA97-E9AB2A32C7D8}
 		{1801D169-352D-411D-9A82-84F3AA969D48} = {CA5CB065-B117-4CC2-AA97-E9AB2A32C7D8}
 		{90031DC6-465C-4C59-AAA4-CD04A04CCD1D} = {BBCAB112-23C9-47D9-A247-370E6ED0764C}
+		{10423E25-0551-4D16-8AC9-A807A29C2779} = {BBCAB112-23C9-47D9-A247-370E6ED0764C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {078411D2-3C8D-47A6-83FE-582FF0EE8138}
