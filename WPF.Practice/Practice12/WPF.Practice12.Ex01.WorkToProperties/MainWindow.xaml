@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox Margin="15,15,0,0" Name="listBox1" Height="78" HorizontalAlignment="Left" VerticalAlignment="Top" Width="107">
+            <ListBoxItem>Red</ListBoxItem>
+            <ListBoxItem>Blue</ListBoxItem>
+            <ListBoxItem>Green</ListBoxItem>
+            <ListBoxItem>Tomato</ListBoxItem>
+        </ListBox>
+        <Button Margin="15,106,110,130" Name="button1" Click="button1_Click">Change Background
+Color</Button>
     </Grid>
 </Window>
