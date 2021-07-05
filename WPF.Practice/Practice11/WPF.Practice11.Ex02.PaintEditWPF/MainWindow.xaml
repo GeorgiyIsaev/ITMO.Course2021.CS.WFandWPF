@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Practice11.Ex02.PaintEditWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ink Pad" Height="550" Width="370" Background="LightGray">
     <Grid>
-        
+        <InkCanvas x:Name="inkCanvas1"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="LightYellow" />
+        <Button x:Name="button1" Content="Clear" Margin="0,490,200,0" Click="button1_Click" />
+        <Button x:Name="button2" Content="Close"  Margin="200,490,0,0" Click="button2_Click" />
     </Grid>
 </Window>

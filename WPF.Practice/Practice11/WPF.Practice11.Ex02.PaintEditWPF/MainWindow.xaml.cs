@@ -24,5 +24,15 @@ namespace WPF.Practice11.Ex02.PaintEditWPF
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.inkCanvas1.Strokes.Clear();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
