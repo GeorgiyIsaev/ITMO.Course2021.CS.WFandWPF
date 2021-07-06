@@ -30,7 +30,5 @@ namespace WPF.Lab01.Ex01.CreateApp
             ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(expenseReportPage);
         }
-
-
     }
 }
