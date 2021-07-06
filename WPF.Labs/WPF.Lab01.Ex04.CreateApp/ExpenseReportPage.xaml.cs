@@ -24,5 +24,11 @@ namespace WPF.Lab01.Ex01.CreateApp
         {
             InitializeComponent();
         }
+
+        public ExpenseReportPage(object data) : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
     }
 }
