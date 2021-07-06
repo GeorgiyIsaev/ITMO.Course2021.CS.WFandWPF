@@ -41,7 +41,7 @@ namespace WPF.Lab02.Ex01.MVVM.ViewModel
         /// </summary>
         private void ClickMethod()
         {
-            MessageBox.Show("Сlick command");
+            MessageBox.Show("Person - " + People.FirstName + " " + People.LastName);
         }
         #endregion
 
@@ -51,7 +51,6 @@ namespace WPF.Lab02.Ex01.MVVM.ViewModel
         /// </summary>
         public ICommand ClickCommand { get; set; }
         #endregion
-
-        
+       
     }
 }
